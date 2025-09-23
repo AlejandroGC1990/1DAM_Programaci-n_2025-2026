@@ -51,3 +51,15 @@ print("La suma de los cuatro números es: ")
 print(suma)
 print("El promedio de los cuatro números es: ")
 print(promedio)
+
+"""Calcular el sueldo mensual de un operario conociendo la cantidad de horas trabajadas y el valor por hora"""
+
+horasTrabajadas = float(input("Ingrese la cantidad de horas trabajadas: "))
+valorPorHoras = float(input("Ingrese el valor por horas: "))
+
+horasTrabajadas = float(horasTrabajadas)
+valorPorHoras = float(valorPorHoras)
+sueldoMensual = horasTrabajadas * valorPorHoras
+
+print("El sueldo anual del operario es: ")
+print(sueldoMensual)
