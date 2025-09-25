@@ -107,12 +107,24 @@ not10= float(input("Introducir nota de alumno10"))
 """
 Se introducen un conjunto de n alturas de personas por teclado. Mostrar la altura promedio de las personas.
 """
+n = int(input("¿Cuántas personas?"))
+counter = 0
+suma = 0 
+
+while counter < n:
+    altura = float(input("Inserta la altura de la persona"))
+    suma += altura
+    counter += 1
+
+promedio = suma / n
+print("La altura media es ", promedio)
 
 """
 En una empresa trabajan n empleados cuyos sueldos oscilan entre $100 y $500, realizar un programa que lea los
 sueldos que cobra cada empleado e informe cuántos empleados cobran entre $100 y $300 y cuántos cobran más de
 $300. Además el programa deberá mostrar el importe que gasta la empresa en sueldos al personal.
 """
+
 """
 Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se introducen valores por
 teclado)
