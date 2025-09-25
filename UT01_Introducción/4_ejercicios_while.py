@@ -17,3 +17,12 @@ while counter >= 50 and counter <= 100:
     print(counter)
     counter += 1
 
+"""
+3 - Imprimir los números del -50 al 0.
+"""
+
+counter = -50
+
+while counter >= -50 and counter <= 0:
+    print(counter)
+    counter += 1
