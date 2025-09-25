@@ -48,3 +48,23 @@ counter = 1
 while counter != num:
     print(counter)
     counter += 1
+
+"""
+Desarrollar un programa que permita la carga de 10 valores por teclado y 
+nos muestre posteriormente la suma de los valores introducidos y su 
+promedio.
+"""
+num1 = float(input("Insertar número1"))
+num2 = float(input("Insertar número2"))
+num3 = float(input("Insertar número3"))
+num4 = float(input("Insertar número4"))
+num5 = float(input("Insertar número5"))
+num6 = float(input("Insertar número6"))
+num7 = float(input("Insertar número7"))
+num8 = float(input("Insertar número8"))
+num9 = float(input("Insertar número9"))
+num10 = float(input("Insertar número10"))
+
+suma = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10 
+print(suma)
+print(suma/10)
