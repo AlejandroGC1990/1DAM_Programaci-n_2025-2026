@@ -26,3 +26,13 @@ counter = -50
 while counter >= -50 and counter <= 0:
     print(counter)
     counter += 1
+
+"""
+4 - Imprimir los números del 2 al 100 pero de 2 en 2 (2,4,6,8 ....100).
+"""
+
+counter = 2
+
+while counter >= 2 and counter <= 100:
+    print(counter)
+    counter += 2
