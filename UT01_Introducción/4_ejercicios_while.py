@@ -38,7 +38,7 @@ while counter >= 2 and counter <= 100:
     counter += 2
 
 """
-Codificar un programa que solicite la carga de un valor positivo y nos 
+5 - Codificar un programa que solicite la carga de un valor positivo y nos 
 muestre desde 1 hasta el valor introducido de uno en uno.
 """
 
@@ -50,7 +50,7 @@ while counter != num:
     counter += 1
 
 """
-Desarrollar un programa que permita la carga de 10 valores por teclado y 
+6 - Desarrollar un programa que permita la carga de 10 valores por teclado y 
 nos muestre posteriormente la suma de los valores introducidos y su 
 promedio.
 """
@@ -70,7 +70,7 @@ print(suma)
 print(suma/10)
 
 """
-Una planta que fabrica perfiles de hierro posee un lote de n piezas.
+7 - Una planta que fabrica perfiles de hierro posee un lote de n piezas.
 Confeccionar un programa que pida introducir por teclado la cantidad de piezas a procesar y luego
 introduzca la longitud de cada perfil; sabiendo que la pieza cuya longitud esté comprendida en el 
 rango de 1.20 y 1.30 son aptas. Imprimir por pantalla la cantidad de piezas aptas que hay en el lote.
@@ -89,7 +89,7 @@ while counter <= numPiezas:
     counter += 1
 
 """
-Problemas propuestos
+8 - Problemas propuestos
 Escribir un programa que solicite introducir 10 notas de alumnos y nos imprima por pantalla cuántos
 tienen notas mayores o iguales a 7 y cuántos menores
 """
@@ -105,7 +105,7 @@ not9= float(input("Introducir nota de alumno9"))
 not10= float(input("Introducir nota de alumno10"))
 
 """
-Se introducen un conjunto de n alturas de personas por teclado. Mostrar la altura promedio de las personas.
+9 - Se introducen un conjunto de n alturas de personas por teclado. Mostrar la altura promedio de las personas.
 """
 n = int(input("¿Cuántas personas?"))
 counter = 0
@@ -120,7 +120,7 @@ promedio = suma / n
 print("La altura media es ", promedio)
 
 """
-En una empresa trabajan n empleados cuyos sueldos oscilan entre $100 y $500, realizar un programa que lea los
+10 - En una empresa trabajan n empleados cuyos sueldos oscilan entre $100 y $500, realizar un programa que lea los
 sueldos que cobra cada empleado e informe cuántos empleados cobran entre $100 y $300 y cuántos cobran más de
 $300. Además el programa deberá mostrar el importe que gasta la empresa en sueldos al personal.
 """
@@ -143,7 +143,7 @@ while counter < empleados:
     importeSueldos += sueldo
 
 """
-Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se introducen valores por
+11 - Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se introducen valores por
 teclado)
 """
 counter = 0
@@ -155,13 +155,20 @@ while counter < 25:
     print(num)   
 
 """
-Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 - 16 - 24, etc.
+122 - Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla.
 """
+num = 8
+
+while num <= 500:
+    print(num)
+    num += 8
+
 """ 
-Realizar un programa que permita cargar dos listas de 15 valores cada una. Mostrar con un mensaje cuál de las dos
+13 - Realizar un programa que permita cargar dos listas de 15 valores cada una. Mostrar con un mensaje cuál de las dos
 listas tiene un valor acumulado mayor (mensajes "Lista 1 mayor", "Lista 2 mayor", "Listas iguales")
 Tener en cuenta que puede haber dos o más estructuras repetitivas en un algoritmo.
 """
+
 """
 Desarrollar un programa que permita cargar n números enteros y luego nos indique cuántos valores fueron pares y
 cuántos impares.
