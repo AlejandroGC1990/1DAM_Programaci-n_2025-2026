@@ -52,3 +52,21 @@ if num1 == num2 and num1 == num3:
     print("La suma de los 2 primeros números, multiplicando la suma por el num3, el resultado es " + result)
 else:
     print("Los números son " + num1 + "/" + num2 + "/" + num3)
+
+"""
+Escribir un programa que pida introducir la coordenada de un punto en el plano, es decir dos valores enteros x e y
+(distintos a cero). Posteriormente imprimir en pantalla en que cuadrante se ubica dicho punto. (1º Cuadrante si x > 0 Y
+y > 0 , 2º Cuadrante: x < 0 Y y > 0, etc.)
+"""
+x = float(int("Ingresar primer número"))
+y = float(int("Ingresar segundo número"))
+
+if x > 0 and y > 0:
+    print("Se ubica en el cuadrante 1")
+
+else:
+    if x < 0 and y > 0:
+        print("Se ubica en el 2º cuadrante")
+    else: 
+        print("No se pueden introducir valores menores a 0")
+
