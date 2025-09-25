@@ -96,3 +96,23 @@ else:
 Escribir un programa en el cual: dada una lista de tres valores numéricos distintos se calcule e imprima su rango de
 variación (debe mostrar el mayor y el menor de ellos)
 """
+valor1 = float(input("Introduzca el valor 1: "))
+valor2 = float(input("Introduzca el valor 2: "))
+valor3 = float(input("Introduzca el valor 3: "))
+
+if valor1 > valor2 and valor1> valor3:
+    mayor = valor1
+    
+elif valor2 > valor1 and valor2 > valor3:
+        mayor = valor2
+else:
+        mayor = valor3
+
+if valor1< valor2 and valor1< valor3:
+    menor = valor1
+elif valor2 < valor1 and valor2 < valor3:
+        menor = valor2
+else:
+    menor = valor3
+
+print(f"El mayor valor es {mayor} y el menor valor es {menor}")
