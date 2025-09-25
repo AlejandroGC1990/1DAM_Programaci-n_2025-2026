@@ -68,3 +68,22 @@ num10 = float(input("Insertar número10"))
 suma = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10 
 print(suma)
 print(suma/10)
+
+"""
+Una planta que fabrica perfiles de hierro posee un lote de n piezas.
+Confeccionar un programa que pida introducir por teclado la cantidad de piezas a procesar y luego
+introduzca la longitud de cada perfil; sabiendo que la pieza cuya longitud esté comprendida en el 
+rango de 1.20 y 1.30 son aptas. Imprimir por pantalla la cantidad de piezas aptas que hay en el lote.
+"""
+
+numPiezas = int(input("Número de piezas"))
+numPiezasAptas = 0
+counter = 0
+
+while counter <= numPiezas:
+    longPiezas = float(input("Longitud de los perfiles"))
+
+    if longPiezas >= 1.20 and longPiezas <= 1.30:
+        print(counter)
+
+    counter += 1
