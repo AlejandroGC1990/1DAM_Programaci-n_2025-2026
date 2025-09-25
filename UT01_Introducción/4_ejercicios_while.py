@@ -36,3 +36,15 @@ counter = 2
 while counter >= 2 and counter <= 100:
     print(counter)
     counter += 2
+
+"""
+Codificar un programa que solicite la carga de un valor positivo y nos 
+muestre desde 1 hasta el valor introducido de uno en uno.
+"""
+
+num = int(input("Insertar número positivo"))
+counter = 1
+
+while counter != num:
+    print(counter)
+    counter += 1
