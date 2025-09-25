@@ -142,11 +142,18 @@ while counter < empleados:
     
     importeSueldos += sueldo
 
-
 """
 Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se introducen valores por
 teclado)
 """
+counter = 0
+num = 0
+
+while counter < 25:
+    num += 11
+    counter += 1 
+    print(num)   
+
 """
 Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 - 16 - 24, etc.
 """
