@@ -124,6 +124,24 @@ En una empresa trabajan n empleados cuyos sueldos oscilan entre $100 y $500, rea
 sueldos que cobra cada empleado e informe cuántos empleados cobran entre $100 y $300 y cuántos cobran más de
 $300. Además el programa deberá mostrar el importe que gasta la empresa en sueldos al personal.
 """
+empleados = int(input("Introduce el número de empleados: "))
+counter = 0
+sueldoMenor = 0
+sueldoMayor = 0
+importeSueldos = 0
+
+while counter < empleados:
+    sueldo = float(input("Introduce el sueldo del empleado: "))
+
+    if sueldo <= 300:
+        sueldoMenor += 1
+        counter += 1
+    else:
+        sueldoMayor += 1
+        counter += 1
+    
+    importeSueldos += sueldo
+
 
 """
 Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se introducen valores por
