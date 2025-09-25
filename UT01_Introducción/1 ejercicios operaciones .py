@@ -9,7 +9,6 @@ perimetro = lado * 4
 print("El perimetro del cuadrado es: ")
 print(perimetro)
 
-
 """Escribir un programa en el cual se introduzcan cuatro números, calcular e imprimir la suma de los dos primeros
 y el producto del tercero y el cuarto"""
 
