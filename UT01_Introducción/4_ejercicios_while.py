@@ -87,3 +87,20 @@ while counter <= numPiezas:
         print(counter)
 
     counter += 1
+
+"""
+Problemas propuestos
+Escribir un programa que solicite introducir 10 notas de alumnos y nos imprima por pantalla cuántos
+tienen notas mayores o iguales a 7 y cuántos menores
+"""
+not1 = float(input("Introducir nota de alumno1 "))
+not2= float(input("Introducir nota de alumno2 "))
+not3= float(input("Introducir nota de alumno3"))
+not4= float(input("Introducir nota de alumno4"))
+not5= float(input("Introducir nota de alumno5"))
+not6= float(input("Introducir nota de alumno6"))
+not7= float(input("Introducir nota de alumno7"))
+not8= float(input("Introducir nota de alumno8"))
+not9= float(input("Introducir nota de alumno9"))
+not10= float(input("Introducir nota de alumno10"))
+
