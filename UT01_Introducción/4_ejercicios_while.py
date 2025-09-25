@@ -7,3 +7,13 @@ while counter <= 500:
     print(counter)
     counter += 1
 
+"""
+2 - Imprimir los números del 50 al 100.
+"""
+
+counter = 50
+
+while counter >= 50 and counter <= 100:
+    print(counter)
+    counter += 1
+
