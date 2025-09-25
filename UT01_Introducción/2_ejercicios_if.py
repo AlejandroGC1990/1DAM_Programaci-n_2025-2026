@@ -49,9 +49,9 @@ else:
 """
 Se carga por teclado tres números distintos. Mostrar por pantalla el mayor de ellos
 """
-num1=float(input("Ingrese el primer número: "))
-num2=float(input("Ingrese el segundo número: "))
-num3=float(input("Ingrese el tercer número: "))
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+num3 = float(input("Ingrese el tercer número: "))
 
 if num1 > num2 and num1 > num3:
     print("El mayor es: ")
@@ -77,4 +77,46 @@ if num < 0:
     print("El número es negativo")
 else:
     print("El número es nulo")
-    
+
+"""
+Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras y
+muestre un medidor indicando si tiene 1, 2 o 3 cifras. Mostrar un mensaje de error si el 
+número de cifras es mayor 
+"""
+num = int(input("Introduce un valor de hasta tres dígitos positivo:"))
+if num < 10:
+    print("Tiene un dígito")
+else:
+    if num < 100:
+        print("Tiene dos dígitos")
+    else:
+        if num < 1000:
+            print("Tiene tres dígitos")
+        else:
+            print("Error en la entrada de datos.")
+
+"""
+Un postulante a un empleo, realiza un test de capacitación, se obtuvo la siguiente información: cantidad total de
+preguntas que se le realizaron y la cantidad de preguntas que contestó correctamente. Se pide confeccionar un
+programa que introduzca los dos datos por teclado e imprima por pantalla el nivel del mismo según el porcentaje de
+respuestas correctas que ha obtenido, y sabiendo que:
+
+Nivel máximo: Porcentaje >= 90%.
+Nivel medio: Porcentaje >= 75% y < 90%.
+Nivel regular: Porcentaje >= 50% y < 75%.
+Fuera de nivel: Porcentaje < 50%.
+"""
+numPreOk = int(input("Número de preguntas acertadas"))
+numPreResp = int(input("Número de preguntas respondidas"))
+porcent = numPreOk * 100 / numPreResp
+
+if porcent >= 90:
+    print("Nivel máximo")
+else:
+    if porcent >= 75:
+        print("Nivel medio")
+    else:
+        if porcent >= 50:
+            print("Nivel regular")
+        else: 
+            print("Fuera de nivel")
