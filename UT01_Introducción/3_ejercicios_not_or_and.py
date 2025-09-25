@@ -70,3 +70,29 @@ else:
     else: 
         print("No se pueden introducir valores menores a 0")
 
+"""
+De un operario se conoce su sueldo y los años de antigüedad. Se pide confeccionar un programa que lea los datos de
+entrada e informe:
+a) Si el sueldo es inferior a 500 y su antigüedad es igual o superior a 10 años, otorgarle un aumento del 20 %,
+ mostrar el sueldo a pagar.
+b) Si el sueldo es inferior a 500 pero su antigüedad es menor a 10 años, otorgarle un aumento de 5 %.
+c) Si el sueldo es mayor o igual a 500 mostrar el sueldo en pantalla sin cambios.
+"""
+sueldo = float(input("Introducir sueldo del operario"))
+time = int(input("Introducir los años de antigüedad"))
+
+if sueldo < 500 and time >= 10:
+    newSueldo = sueldo * 0,20
+    print("El sueldo acaba siendo " + newSueldo)
+else:
+    if sueldo < 500 and time < 10:
+        newSueldo = sueldo * 0,50
+        print("El sueldo acaba siendo " + newSueldo)
+    else:
+        if sueldo >= 500:
+            print("El sueldo se queda como está: " + sueldo)
+
+"""
+Escribir un programa en el cual: dada una lista de tres valores numéricos distintos se calcule e imprima su rango de
+variación (debe mostrar el mayor y el menor de ellos)
+"""
