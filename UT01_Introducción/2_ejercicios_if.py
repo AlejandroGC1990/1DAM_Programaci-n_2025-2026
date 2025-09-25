@@ -46,3 +46,35 @@ else:
     else:
         print("El número no es válido.")
 
+"""
+Se carga por teclado tres números distintos. Mostrar por pantalla el mayor de ellos
+"""
+num1=float(input("Ingrese el primer número: "))
+num2=float(input("Ingrese el segundo número: "))
+num3=float(input("Ingrese el tercer número: "))
+
+if num1 > num2 and num1 > num3:
+    print("El mayor es: ")
+    print(num1)
+else:
+    if num2 > num1 and num2 > num3:
+        print("El mayor es: ")
+        print(num2)
+    else:
+        print("El mayor es: ")
+        print(num3)
+
+"""
+Se introduce por teclado un valor entero, mostrar una leyenda
+que indique que el número es positivo, negativo o nulo (es decir, 0)
+"""
+
+num = float(input("Ingresar el número"))
+
+if num > 0:
+    print("El número es positivo")
+if num < 0:
+    print("El número es negativo")
+else:
+    print("El número es nulo")
+    
