@@ -1,6 +1,7 @@
 """
 1 - Imprimir los números del 1 al 500.
 """
+
 counter = 1
 
 while counter <= 500:
@@ -65,9 +66,9 @@ num8 = float(input("Insertar número8"))
 num9 = float(input("Insertar número9"))
 num10 = float(input("Insertar número10"))
 
-suma = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10 
+suma = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10
 print(suma)
-print(suma/10)
+print(suma / 10)
 
 """
 7 - Una planta que fabrica perfiles de hierro posee un lote de n piezas.
@@ -94,22 +95,22 @@ Escribir un programa que solicite introducir 10 notas de alumnos y nos imprima p
 tienen notas mayores o iguales a 7 y cuántos menores
 """
 not1 = float(input("Introducir nota de alumno1 "))
-not2= float(input("Introducir nota de alumno2 "))
-not3= float(input("Introducir nota de alumno3"))
-not4= float(input("Introducir nota de alumno4"))
-not5= float(input("Introducir nota de alumno5"))
-not6= float(input("Introducir nota de alumno6"))
-not7= float(input("Introducir nota de alumno7"))
-not8= float(input("Introducir nota de alumno8"))
-not9= float(input("Introducir nota de alumno9"))
-not10= float(input("Introducir nota de alumno10"))
+not2 = float(input("Introducir nota de alumno2 "))
+not3 = float(input("Introducir nota de alumno3"))
+not4 = float(input("Introducir nota de alumno4"))
+not5 = float(input("Introducir nota de alumno5"))
+not6 = float(input("Introducir nota de alumno6"))
+not7 = float(input("Introducir nota de alumno7"))
+not8 = float(input("Introducir nota de alumno8"))
+not9 = float(input("Introducir nota de alumno9"))
+not10 = float(input("Introducir nota de alumno10"))
 
 """
 9 - Se introducen un conjunto de n alturas de personas por teclado. Mostrar la altura promedio de las personas.
 """
 n = int(input("¿Cuántas personas?"))
 counter = 0
-suma = 0 
+suma = 0
 
 while counter < n:
     altura = float(input("Inserta la altura de la persona"))
@@ -139,7 +140,7 @@ while counter < empleados:
     else:
         sueldoMayor += 1
         counter += 1
-    
+
     importeSueldos += sueldo
 
 """
@@ -151,8 +152,8 @@ num = 0
 
 while counter < 25:
     num += 11
-    counter += 1 
-    print(num)   
+    counter += 1
+    print(num)
 
 """
 122 - Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla.
@@ -168,11 +169,50 @@ while num <= 500:
 listas tiene un valor acumulado mayor (mensajes "Lista 1 mayor", "Lista 2 mayor", "Listas iguales")
 Tener en cuenta que puede haber dos o más estructuras repetitivas en un algoritmo.
 """
+lista1 = 0
+counter1 = 0
+valor1 = 0
+lista2 = 0
+counter2 = 0
+valor2 = 0
+
+while counter1 < 15:
+    valor1 = float(input("Introducir valor lista 1: "))
+    lista1 += valor1
+
+while counter2 < 15:
+    valor2 = float(input("Introducir valor lista 2: "))
+    lista2 += valor2
+
+if lista1 < lista2:
+    print("Lista1 es mayor que lista2. Lista1 = ", lista1)
+elif lista2 < lista1:
+    print("Lista2 es mayor que lista1. Lista2 = ", lista2)
+else:
+    print("Ambas listas valen igual")
+
 
 """
-Desarrollar un programa que permita cargar n números enteros y luego nos indique cuántos valores fueron pares y
+14 - Desarrollar un programa que permita cargar n números enteros y luego nos indique cuántos valores fueron pares y
 cuántos impares.
 Emplear el operador “%” en la condición de la estructura condicional (este operador retorna el resto de la división de
 dos valores, por ejemplo 11 % 2 retorna un 1):
- if valor % 2 == 0: 
 """
+n = int(input("¿Cuántos números quieres cargar?"))
+
+counter = 0
+pares = 0
+impares = 0
+
+while counter < n:
+    num = int(input("Introduce el número: "))
+
+    if num % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+
+    counter += 1
+
+print("Cantidad de números pares: ", pares)
+print("Cantidad de números impares: ", impares)
