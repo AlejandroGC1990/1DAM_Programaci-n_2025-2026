@@ -131,31 +131,35 @@ print("La suma de los últimos 5 números es: ", suma)
 for x in range(5,51,5):
     print(x)
 """
-Confeccionar un programa que permita introducir un valor del 1 al 10 y nos muestre la 
-tabla de multiplicar del mismo (los primeros 12 términos)
+11. Confeccionar un programa que permita introducir un valor del 1 al 10 y nos muestre 
+la tabla de multiplicar del mismo (los primeros 12 términos)
 Ejemplo: Si introducimos 3 deberá aparecer en pantalla los valores 3, 6, 9, hasta el 36.
 """
+n = int(input("Introduce un número del 1 al 10: "))
+
+for i in range(n,n*13,n):
+    print(x)
 """
-Realizar un programa que lea los lados de n triángulos y muestre:
+12. Realizar un programa que lea los lados de n triángulos y muestre:
 a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales), 
 isósceles (dos lados iguales), o escaleno (ningún lado igual)
 b) Cantidad de triángulos de cada tipo.
 """
 """
-Escribir un programa que pida introducir coordenadas (x,y) que representan puntos en 
+13. Escribir un programa que pida introducir coordenadas (x,y) que representan puntos en 
 el plano. Mostrar cuántos puntos se han introducido en el primer, segundo, tercer y 
 cuarto cuadrante. Al comenzar el programa se pide que se introduzca la cantidad de 
 puntos a procesar.
 """
 """
-Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
+14. Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
 a) La cantidad de valores introducidos negativos.
 b) La cantidad de valores introducidos positivos.
 c) La cantidad de múltiplos de 15.
 d) El valor acumulado de los números introducidos que son pares.
 """
 """
-Se cuenta con la siguiente información:
+15. Se cuenta con la siguiente información:
 Las edades de 5 estudiantes del turno mañana.
 Las edades de 6 estudiantes del turno tarde.
 Las edades de 11 estudiantes del turno noche.
