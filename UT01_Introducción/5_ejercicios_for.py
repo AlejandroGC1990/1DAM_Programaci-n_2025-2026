@@ -139,12 +139,37 @@ n = int(input("Introduce un número del 1 al 10: "))
 
 for i in range(n,n*13,n):
     print(x)
+
 """
 12. Realizar un programa que lea los lados de n triángulos y muestre:
 a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales), 
 isósceles (dos lados iguales), o escaleno (ningún lado igual)
 b) Cantidad de triángulos de cada tipo.
 """
+n = int(input("Introduce el número de triángulos: "))
+equ = 0
+iso = 0
+esc = 0
+
+for i in range(n):
+    lado1 = float(input("Introduce la medida del lado 1: "))
+    lado2 = float(input("Introduce la medida del lado 2: "))
+    lado3 = float(input("Introduce la medida del lado 3: "))
+
+    if lado1 == lado2 and lado1 == lado3:
+        equ += 1
+        tipo = "Equilátero"
+    elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
+        iso += 1
+        tipo = "Isósceles"
+    else:
+        esc += 1
+        tipo = "Escaleno"
+
+    print("Este triángulo es: ", tipo)
+
+print("El número de triángulos equiláteros es ", equ,", de isósceles hay", iso, " y escaleno ", esc)
+
 """
 13. Escribir un programa que pida introducir coordenadas (x,y) que representan puntos en 
 el plano. Mostrar cuántos puntos se han introducido en el primer, segundo, tercer y 
