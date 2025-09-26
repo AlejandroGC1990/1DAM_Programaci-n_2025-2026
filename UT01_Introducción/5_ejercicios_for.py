@@ -176,6 +176,7 @@ el plano. Mostrar cuántos puntos se han introducido en el primer, segundo, terc
 cuarto cuadrante. Al comenzar el programa se pide que se introduzca la cantidad de 
 puntos a procesar.
 """
+
 """
 14. Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
 a) La cantidad de valores introducidos negativos.
