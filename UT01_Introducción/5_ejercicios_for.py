@@ -34,3 +34,20 @@ promedio = suma / 10
 
 print("La suma es ", suma)
 print("El promedio es ", promedio)
+
+"""
+5. Escribir un programa que solicite por teclado 10 notas de alumnos y nos informe 
+cuántos tienen notas mayores o iguales a 5 y cuántos menores.
+"""
+aprobados = 0
+suspensos = 0
+
+for n in range(10):
+    nota = float(input("Introducir nota del alumno "))
+
+    if nota < 5:
+        suspensos += 1
+    else:
+        aprobados += 1
+
+print("La cantidad de aprobados es ", aprobados, " y la de suspensos es ", suspensos)
