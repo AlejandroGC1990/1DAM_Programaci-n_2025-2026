@@ -128,7 +128,8 @@ print("La suma de los últimos 5 números es: ", suma)
 """
 10. Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50)
 """
-
+for x in range(5,51,5):
+    print(x)
 """
 Confeccionar un programa que permita introducir un valor del 1 al 10 y nos muestre la 
 tabla de multiplicar del mismo (los primeros 12 términos)
