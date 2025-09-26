@@ -93,7 +93,7 @@ b) La cantidad de triángulos cuya superficie es mayor a 12.
 n = int(input("Número de triángulos: "))
 mayores12 = 0
 
-for x in range (n):
+for x in range(n):
     base = float(input("Introducir en cm la medida de la base: "))
     altura = float(input("Introducir en cm la medida de la altura: "))
 
@@ -109,12 +109,26 @@ for x in range (n):
 print("La cantidad de triángulos con superficie mayor a 12 es: ", mayores12)
 
 """
-Desarrollar un programa que solicite la carga de 10 números e imprima la suma de los 
-últimos 5 valores introducidos.
+9. Desarrollar un programa que solicite la carga de 10 números e imprima la suma de 
+los últimos 5 valores introducidos.
 """
+counter = 0
+suma = 0
+
+for n in range(10):
+    valor = float(input("Introduce un valor: "))
+
+    if counter > 4:
+        suma += valor
+    
+    counter += 1
+
+print("La suma de los últimos 5 números es: ", suma)
+
 """
-Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50)
+10. Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50)
 """
+
 """
 Confeccionar un programa que permita introducir un valor del 1 al 10 y nos muestre la 
 tabla de multiplicar del mismo (los primeros 12 términos)
