@@ -51,3 +51,35 @@ for n in range(10):
         aprobados += 1
 
 print("La cantidad de aprobados es ", aprobados, " y la de suspensos es ", suspensos)
+
+"""
+6. Escribir un programa que lea 10 números enteros y luego muestre cuántos valores 
+introducidos fueron múltiplos de 3 y cuántos de 5. Debemos tener en cuenta que hay 
+números que son múltiplos de 3 y de 5 a la vez.
+"""
+mul3 = 0
+mul5 = 0
+
+for n in range(10):
+    valor = int(input("Introduce el número: "))
+
+    if valor % 3 == 0:
+        mul3 += 1
+    elif valor % 5 == 0:
+        mul5 += 1
+
+print("Los múltiplos de 3 son ", mul3, " y los múltiplos de 5 son ", mul5)
+
+"""
+7. Codificar un programa que lea n números enteros y calcule la cantidad de valores 
+mayores o iguales a 1000 (n se carga por teclado)
+"""
+igualMayor = 0
+n = int(input("Cuantos valores quieres introducir: "))
+
+for x in range(n):
+    valor = int(input("Introduce un valor: "))
+    if valor >= 1000:
+        igualMayor += 1
+
+print("La cantidad de valores introducidos mayores o iguales a 1000 son: ", igualMayor)
