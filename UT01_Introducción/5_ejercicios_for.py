@@ -12,3 +12,25 @@ for x in range(101):
 for x in range (20, 31):
     print(x)
 
+"""
+3. Imprimir todos los números impares que hay entre 1 y 100.
+"""
+for x in range(1,100,2):
+    print(x)
+
+"""
+4. Desarrollar un programa que permita la carga de 10 valores por teclado y nos muestre
+posteriormente la suma de los valores introducidos y su promedio. Este problema ya lo 
+desarrollamos, lo resolveremos empleando la estructura for para repetir la carga de los
+diez valores por teclado.
+"""
+suma = 0
+
+for x in range(10):
+    n = int(input("Introduce un número: "))
+    suma += n
+
+promedio = suma / 10
+
+print("La suma es ", suma)
+print("El promedio es ", promedio)
