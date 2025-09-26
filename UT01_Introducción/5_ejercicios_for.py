@@ -83,3 +83,69 @@ for x in range(n):
         igualMayor += 1
 
 print("La cantidad de valores introducidos mayores o iguales a 1000 son: ", igualMayor)
+
+"""
+8. Confeccionar un programa que lea n pares de datos, cada par de datos corresponde a 
+la medida de la base y la altura de un triángulo. El programa deberá mostrar:
+a) De cada triángulo la medida de su base, su altura y su superficie.
+b) La cantidad de triángulos cuya superficie es mayor a 12.
+"""
+n = int(input("Número de triángulos: "))
+mayores12 = 0
+
+for x in range (n):
+    base = float(input("Introducir en cm la medida de la base: "))
+    altura = float(input("Introducir en cm la medida de la altura: "))
+
+    superficie = (base * altura) / 2
+
+    if superficie > 12:
+        mayores12 += 1
+    
+    print("Base: ", base)
+    print("Altura: ", altura)
+    print("Superficie: ", superficie)
+
+print("La cantidad de triángulos con superficie mayor a 12 es: ", mayores12)
+
+"""
+Desarrollar un programa que solicite la carga de 10 números e imprima la suma de los 
+últimos 5 valores introducidos.
+"""
+"""
+Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50)
+"""
+"""
+Confeccionar un programa que permita introducir un valor del 1 al 10 y nos muestre la 
+tabla de multiplicar del mismo (los primeros 12 términos)
+Ejemplo: Si introducimos 3 deberá aparecer en pantalla los valores 3, 6, 9, hasta el 36.
+"""
+"""
+Realizar un programa que lea los lados de n triángulos y muestre:
+a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales), 
+isósceles (dos lados iguales), o escaleno (ningún lado igual)
+b) Cantidad de triángulos de cada tipo.
+"""
+"""
+Escribir un programa que pida introducir coordenadas (x,y) que representan puntos en 
+el plano. Mostrar cuántos puntos se han introducido en el primer, segundo, tercer y 
+cuarto cuadrante. Al comenzar el programa se pide que se introduzca la cantidad de 
+puntos a procesar.
+"""
+"""
+Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
+a) La cantidad de valores introducidos negativos.
+b) La cantidad de valores introducidos positivos.
+c) La cantidad de múltiplos de 15.
+d) El valor acumulado de los números introducidos que son pares.
+"""
+"""
+Se cuenta con la siguiente información:
+Las edades de 5 estudiantes del turno mañana.
+Las edades de 6 estudiantes del turno tarde.
+Las edades de 11 estudiantes del turno noche.
+Las edades de cada estudiante deben introducirse por teclado.
+a) Obtener el promedio de las edades de cada turno (tres promedios)
+b) Imprimir dichos promedios (promedio de cada turno)
+c) Mostrar por pantalla un mensaje que indique cuál de los tres turnos tiene un promedio de edades mayor.
+"""
