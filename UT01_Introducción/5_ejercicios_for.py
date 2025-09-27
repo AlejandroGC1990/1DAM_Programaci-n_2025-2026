@@ -188,7 +188,7 @@ for cor in range(z):
 
     if x > 0 and y > 0:
         cuadrante1 += 1
-    elif x > 0 and y < 0:
+    elif x < 0 and y > 0:
         cuadrante2 += 1
     elif x < 0 and y < 0:
         cuadrante3 += 1
