@@ -176,6 +176,29 @@ el plano. Mostrar cuántos puntos se han introducido en el primer, segundo, terc
 cuarto cuadrante. Al comenzar el programa se pide que se introduzca la cantidad de 
 puntos a procesar.
 """
+z = int(input("Introduce la cantidad de coordenadas a calcular: "))
+cuadrante1 = 0
+cuadrante2 = 0
+cuadrante3 = 0
+cuadrante4 = 0
+
+for cor in range(z):
+    x = float(input("Introduce coordenadas X :"))
+    y = float(input("Introduce coordenadas Y :"))
+
+    if x > 0 and y > 0:
+        cuadrante1 += 1
+    elif x > 0 and y < 0:
+        cuadrante2 += 1
+    elif x < 0 and y < 0:
+        cuadrante3 += 1
+    else:
+        cuadrante4 += 1
+
+print("El número de coordenadas en el primer cuadrante es ", cuadrante1)
+print("El número de coordenadas en el segundo cuadrante es ", cuadrante2)
+print("El número de coordenadas en el tercer cuadrante es ", cuadrante3)
+print("El número de coordenadas en el cuarto cuadrante es ", cuadrante4)
 
 """
 14. Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
