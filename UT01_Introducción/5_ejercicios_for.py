@@ -207,6 +207,30 @@ b) La cantidad de valores introducidos positivos.
 c) La cantidad de múltiplos de 15.
 d) El valor acumulado de los números introducidos que son pares.
 """
+numValores = 10
+neg = 0
+pos = 0
+mul15 = 0
+valorPares = 0
+
+for x in range(numValores):
+    valor = int(input("Introduce el valor del número: "))
+
+    if valor % 15 == 0:
+        mul15 += 1
+    if valor % 2 == 0:
+        valorPares += valor
+    if valor > 0:
+        pos += 1
+    elif valor < 0:
+        neg += 1
+    
+print("Cantidad de valores negativos: ", neg)
+print("Cantidad de valores positivos: ", pos)
+print("Cantidad de valores múltiplos de 15: ", mul15)
+print("Suma de los valores pares: ", valorPares)   
+
+
 """
 15. Se cuenta con la siguiente información:
 Las edades de 5 estudiantes del turno mañana.
