@@ -230,7 +230,6 @@ print("Cantidad de valores positivos: ", pos)
 print("Cantidad de valores múltiplos de 15: ", mul15)
 print("Suma de los valores pares: ", valorPares)   
 
-
 """
 15. Se cuenta con la siguiente información:
 Las edades de 5 estudiantes del turno mañana.
@@ -241,3 +240,40 @@ a) Obtener el promedio de las edades de cada turno (tres promedios)
 b) Imprimir dichos promedios (promedio de cada turno)
 c) Mostrar por pantalla un mensaje que indique cuál de los tres turnos tiene un promedio de edades mayor.
 """
+sumM = 0
+sumT = 0
+sumN = 0
+promM = 0
+promT = 0
+promN = 0
+
+for m in range(5):
+    edadM = int(input("Introduce la edad: "))
+    sumM += edadM
+
+promM = sumM/5
+
+for m in range(6):
+    edadT = int(input("Introduce la edad: "))
+    sumT += edadT
+
+promT = sumT/6
+
+for m in range(11):
+    edadN = int(input("Introduce la edad: "))
+    sumN += edadN
+
+promN = sumN/11
+
+print("El promedio del turno de mañana es de: ", promM)
+print("El promedio del turno de tarde es de: ", promT)
+print("El promedio del turno de noche es de: ", promN)
+
+if promM > promT and promM > promN:
+    print("El promedio de edad más alto es el del turno de mañana")
+elif promT > promM and promT > promN:
+    print("El promedio de edad más alto es el del turno de tarde")
+elif promN > promM and promN > promT:
+    print("El promedio de edad más alto es el del turno de noche")
+else:
+    print("Hay al menos dos turnos con el mismo promedio más alto")
