@@ -1,7 +1,7 @@
 """
 1. Imprime tu nombre y edad en la misma línea utilizando la función print.
 """
-
+print("Alejandro García Carmona, 35 años")
 
 """
 2. Usa la función type() para imprimir el tipo de dato de una cadena de texto, un
