@@ -1,7 +1,8 @@
 """
-1. Realizar la carga de dos nombres por teclado. Mostrar cuál de los dos es 
+1. Realizar la carga de dos nombres por teclado. Mostrar cuál de los dos es
 mayor alfabéticamente o si son iguales.
 """
+
 nombre1 = input("Introduce el primer nombre: ")
 nombre2 = input("Introduce el segundo nombre: ")
 
@@ -30,3 +31,17 @@ while comando == "si":
 
 print("La suma total da ", suma)
 
+"""
+3. Realizar la carga de dos nombres de personas distintos. Mostrarlos por
+pantalla ordenados en forma alfabética.
+"""
+nombre1 = input("Introduce el primer nombre:")
+nombre2 = input("Introduce el segundo nombre:")
+
+print("Listado alfabético:")
+if nombre1 < nombre2:
+    print(nombre1)
+    print(nombre2)
+else:
+    print(nombre2)
+    print(nombre1)
