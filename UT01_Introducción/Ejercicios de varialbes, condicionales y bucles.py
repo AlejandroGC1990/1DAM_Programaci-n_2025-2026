@@ -4,17 +4,25 @@
 print("Alejandro García Carmona, 35 años")
 
 """
-2. Usa la función type() para imprimir el tipo de dato de una cadena de texto, un
-número entero y un número decimal.
+2. Usa la función type() para imprimir el tipo de dato de una cadena de 
+texto, un número entero y un número decimal.
+"""
+valor1 = input("Introduce texto para ver el tipo de dato: ")
+valor2 = float(input("Introduce un número decimal para ver el tipo de dato: "))
+valor3 = int(input("Introduce un número entero para ver el tipo de dato: "))
+
+print(type(valor1))
+print(type(valor2))
+print(type(valor3))
+
+"""
+3. Escribe un comentario en varias líneas explicando qué son los tipos de
+datos en Python.
 """
 
 """
-3. Escribe un comentario en varias líneas explicando qué son los tipos de datos en
-Python.
-"""
-"""
-4. Imprime el resultado de concatenar dos cadenas de texto, por ejemplo: "Hola" y
-"Mundo".
+4. Imprime el resultado de concatenar dos cadenas de texto, por ejemplo: 
+"Hola" y "Mundo".
 """
 """
 5. Crea una variable para almacenar tu nombre, otra para tu edad, e imprime ambas
