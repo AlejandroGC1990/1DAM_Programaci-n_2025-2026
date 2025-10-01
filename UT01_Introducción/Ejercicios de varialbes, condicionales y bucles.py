@@ -48,6 +48,10 @@ print("Hola " + "mundo")
 5. Crea una variable para almacenar tu nombre, otra para tu edad, e imprime ambas
 en la misma línea.
 """
+name = "Alejandro"
+age = 35
+
+print(name, age)
 """
 6. Escribe un programa que solicite al usuario su nombre y lo imprima junto con
 un saludo.
