@@ -42,6 +42,8 @@ según el valor que contenga.
 4. Imprime el resultado de concatenar dos cadenas de texto, por ejemplo: 
 "Hola" y "Mundo".
 """
+print("Hola " + "mundo")
+
 """
 5. Crea una variable para almacenar tu nombre, otra para tu edad, e imprime ambas
 en la misma línea.
