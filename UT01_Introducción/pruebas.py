@@ -1,11 +1,8 @@
 """
-9. Compara dos cadenas de texto (“apple” y “banana”) usando los operadores > y <
-y explica cuál tiene mayor orden alfabético.
+10. Usa el operador or para verificar si el número 7 es menor que 3 o mayor que 5.
+Imprime el resultado.
 """
-if "apple" < "banana":
-    print("apple es menor que banana en orden alfabético")
+if 7 < 3 or 5 > 7:
+    print("La condición es falsa")
 else:
-    print("banana es menor que banana en orden alfabético")
-
-#Banana es mayor porque la primera letra de apple es la "A", que es la primera letra del
-#abecedario
+    print("La condición es verdadera")
