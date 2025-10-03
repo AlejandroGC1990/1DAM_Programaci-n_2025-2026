@@ -165,13 +165,24 @@ else:
 color (rojo, amarillo,verde) y muestra un mensaje indicando si debe detenerse,
 estar alerta o avanzar.
 """
+color = input("Introduce rojo, amarillo o verde: ")
+
+if color == "rojo":
+    print("PARAAAAA")
+elif color == "amarillo":
+    print("Atento a la calle")
+else:
+    print("Arranca!!")
+    
 """
 17. Usa un bucle while para encontrar el primer número divisible por 7 entre 1 y 50.
 """
+
 """
 18. Escribe un programa que use un bucle while para imprimir los números pares
 entre 1 y 20.
 """
+
 """
 19. Usa un bucle for con la función range() para imprimir los números del 1 al 10 en
 orden inverso.

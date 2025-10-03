@@ -1,11 +1,13 @@
 """
-15. Crea un programa que solicite una contraseña al usuario y verifique si coincide
-con una contraseña predefinida. Si no coincide, muestra un mensaje de error.
+16. Escribe un programa que simule un semáforo: solicita al usuario que ingrese un
+color (rojo, amarillo,verde) y muestra un mensaje indicando si debe detenerse,
+estar alerta o avanzar.
 """
-password = 12345
-passwordUser = input("Introduce la contraseña: ")
+color = input("Introduce rojo, amarillo o verde: ")
 
-if password == passwordUser:
-    print("Bienvenid@")
-else: 
-    print("Error: La contraseña no coincide")
+if color == "rojo":
+    print("PARAAAAA")
+elif color == "amarillo":
+    print("Atento a la calle")
+else:
+    print("Arranca!!")
