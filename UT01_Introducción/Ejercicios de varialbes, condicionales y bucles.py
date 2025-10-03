@@ -147,11 +147,19 @@ elif num1 < num2:
     print(f"{num2} es mayor que {num1}")
 else:
     print(f"{num1} es igual que {num2}")
-    
+
 """
 15. Crea un programa que solicite una contraseña al usuario y verifique si coincide
 con una contraseña predefinida. Si no coincide, muestra un mensaje de error.
 """
+password = 12345
+passwordUser = input("Introduce la contraseña: ")
+
+if password == passwordUser:
+    print("Bienvenid@")
+else: 
+    print("Error: La contraseña no coincide")
+
 """
 16. Escribe un programa que simule un semáforo: solicita al usuario que ingrese un
 color (rojo, amarillo,verde) y muestra un mensaje indicando si debe detenerse,
