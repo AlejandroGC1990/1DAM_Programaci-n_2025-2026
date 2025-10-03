@@ -1,7 +1,10 @@
 """
-6. Escribe un programa que solicite al usuario su nombre y lo imprima junto con
-un saludo.
+7. Usa print() para mostrar el resultado de la suma de dos números enteros y el tipo
+de dato resultante.
 """
-nombre = input("¿Cómo te llamas?")
+num1 = int(input("Inserta el primer número a sumar"))
+num2 = int(input("Inserta el segundo número a sumar"))
 
-print("Hola ", nombre)
+suma = num1 + num2
+
+print(f"La suma de {num1} y {num2} es {suma}")
