@@ -122,15 +122,32 @@ if operation > 10 and operation < 20:
     print("El resultado está entre 10 y 20")
 else:
     print("El resultado no está entre 10 y 20")
-    
+
 """
 13. Solicita al usuario que ingrese su edad y muestra un mensaje indicando si es
 mayor de edad (18 años o más) o menor de edad.
 """
+age = int(input("Introduce tu edad "))
+
+if age < 18:
+    print("Eres menor de edad")
+else:
+    print("Eres mayor de edad")
+
 """
 14. Crea un programa que solicite dos números al usuario y compare cuál es mayor.
 Si son iguales, muestra un mensaje indicando la igualdad.
 """
+num1 = float(input("Introduce un número "))
+num2 = float(input("Introduce un número "))
+
+if num1 > num2:
+    print(f"{num1} es mayor que {num2}")
+elif num1 < num2:
+    print(f"{num2} es mayor que {num1}")
+else:
+    print(f"{num1} es igual que {num2}")
+    
 """
 15. Crea un programa que solicite una contraseña al usuario y verifique si coincide
 con una contraseña predefinida. Si no coincide, muestra un mensaje de error.

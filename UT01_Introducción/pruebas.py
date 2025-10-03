@@ -1,10 +1,13 @@
 """
-12. Combina operadores aritméticos y lógicos: Verifica si el número resultante de la
-expresión (5 * 3) + 2 es mayor que 10 y menor que 20. Imprime el resultado.
+14. Crea un programa que solicite dos números al usuario y compare cuál es mayor.
+Si son iguales, muestra un mensaje indicando la igualdad.
 """
-operation = (5 * 3) + 2
+num1 = float(input("Introduce un número "))
+num2 = float(input("Introduce un número "))
 
-if operation > 10 and operation < 20:
-    print("El resultado está entre 10 y 20")
+if num1 > num2:
+    print(f"{num1} es mayor que {num2}")
+elif num1 < num2:
+    print(f"{num2} es mayor que {num1}")
 else:
-    print("El resultado no está entre 10 y 20")
+    print(f"{num1} es igual que {num2}")
