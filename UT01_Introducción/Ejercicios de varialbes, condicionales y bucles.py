@@ -105,11 +105,13 @@ if 7 < 3 or 5 > 7:
     print("La condición es falsa")
 else:
     print("La condición es verdadera")
-    
+
 """
 11. Aplica el operador not para invertir el resultado de la comparación 15 > 20.
 ¿Cuál es el resultado?
 """
+print(not (15 > 20))
+
 """
 12. Combina operadores aritméticos y lógicos: Verifica si el número resultante de la
 expresión (5 * 3) + 2 es mayor que 10 y menor que 20. Imprime el resultado.
