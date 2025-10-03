@@ -1,13 +1,10 @@
 """
-17. Usa un bucle while para encontrar el primer número divisible por 7 entre 1 y 50.
+18. Escribe un programa que use un bucle while para imprimir los números pares
+entre 1 y 20.
 """
-n = 1
+n = 2
 
-while n < 50:
+while n <= 20:
     print(n)
 
-    if n % 7 == 0:
-        print(f"El primer número divisible por 7 es {n}")
-        n = 50
-    
-    n += 1
+    n += 2

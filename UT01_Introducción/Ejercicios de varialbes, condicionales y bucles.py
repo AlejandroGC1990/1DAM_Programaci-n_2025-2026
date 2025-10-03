@@ -187,11 +187,17 @@ while n < 50:
         n = 50
     
     n += 1
-    
+
 """
 18. Escribe un programa que use un bucle while para imprimir los números pares
 entre 1 y 20.
 """
+n = 2
+
+while n <= 20:
+    print(n)
+
+    n += 2
 
 """
 19. Usa un bucle for con la función range() para imprimir los números del 1 al 10 en
