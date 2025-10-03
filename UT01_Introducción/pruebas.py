@@ -1,8 +1,7 @@
 """
-5. Crea una variable para almacenar tu nombre, otra para tu edad, e imprime ambas
-en la misma línea.
+6. Escribe un programa que solicite al usuario su nombre y lo imprima junto con
+un saludo.
 """
-name = "Alejandro"
-age = 35
+nombre = input("¿Cómo te llamas?")
 
-print(name, age)
+print("Hola ", nombre)

@@ -52,10 +52,15 @@ name = "Alejandro"
 age = 35
 
 print(name, age)
+
 """
 6. Escribe un programa que solicite al usuario su nombre y lo imprima junto con
 un saludo.
 """
+nombre = input("¿Cómo te llamas?")
+
+print("Hola ", nombre)
+
 """
 7. Usa print() para mostrar el resultado de la suma de dos números enteros y el tipo
 de dato resultante.
