@@ -79,6 +79,12 @@ print(f"La suma de {num1} y {num2} es {suma}")
 - height: un número flotante que represente tu altura.
 Imprime cada variable en una línea separada.
 """
+name = "Alejandro"
+age = 35
+height = "1.86m"
+
+print(f"{name} \n {age} \n {height}")
+
 """
 9. Compara dos cadenas de texto (“apple” y “banana”) usando los operadores > y <
 y explica cuál tiene mayor orden alfabético.

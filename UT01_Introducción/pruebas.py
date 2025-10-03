@@ -1,10 +1,12 @@
 """
-7. Usa print() para mostrar el resultado de la suma de dos números enteros y el tipo
-de dato resultante.
+8. Declara y asigna valores a las siguientes variables:
+- name: una cadena que contenga tu nombre.
+- age: un número entero que represente tu edad.
+- height: un número flotante que represente tu altura.
+Imprime cada variable en una línea separada.
 """
-num1 = int(input("Inserta el primer número a sumar"))
-num2 = int(input("Inserta el segundo número a sumar"))
+name = "Alejandro"
+age = 35
+height = "1.86m"
 
-suma = num1 + num2
-
-print(f"La suma de {num1} y {num2} es {suma}")
+print(f"{name} \n {age} \n {height}")
