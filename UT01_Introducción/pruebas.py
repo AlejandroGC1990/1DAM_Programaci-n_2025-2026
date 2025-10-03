@@ -1,13 +1,13 @@
 """
-16. Escribe un programa que simule un semáforo: solicita al usuario que ingrese un
-color (rojo, amarillo,verde) y muestra un mensaje indicando si debe detenerse,
-estar alerta o avanzar.
+17. Usa un bucle while para encontrar el primer número divisible por 7 entre 1 y 50.
 """
-color = input("Introduce rojo, amarillo o verde: ")
+n = 1
 
-if color == "rojo":
-    print("PARAAAAA")
-elif color == "amarillo":
-    print("Atento a la calle")
-else:
-    print("Arranca!!")
+while n < 50:
+    print(n)
+
+    if n % 7 == 0:
+        print(f"El primer número divisible por 7 es {n}")
+        n = 50
+    
+    n += 1

@@ -173,11 +173,21 @@ elif color == "amarillo":
     print("Atento a la calle")
 else:
     print("Arranca!!")
-    
+
 """
 17. Usa un bucle while para encontrar el primer número divisible por 7 entre 1 y 50.
 """
+n = 1
 
+while n < 50:
+    print(n)
+
+    if n % 7 == 0:
+        print(f"El primer número divisible por 7 es {n}")
+        n = 50
+    
+    n += 1
+    
 """
 18. Escribe un programa que use un bucle while para imprimir los números pares
 entre 1 y 20.
