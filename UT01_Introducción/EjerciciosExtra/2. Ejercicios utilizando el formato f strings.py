@@ -15,10 +15,16 @@ c = 2 * pi * r
 print(f"El diámetro de la circunferencia es {dia} y la longitud de la circunferencia es {c}")
 
 """
-2. Escribir un programa que pida al usuario una temperatura en grados Celsius. A
-continuación, convertir esa temperatura a grados Fahrenheit utilizando la
+2. Escribir un programa que pida al usuario una temperatura en grados Fahrenheit. A
+continuación, convertir esa temperatura a grados Celsius utilizando la
 fórmula C= 5/9(F-32) y mostrar el resultado.
 """
+f = float(input("Introduce la temperatura en Fahrenheit a transformar: "))
+
+c = (5/9) * (f - 32)
+
+print(f"{f:.2f}ºF equivalen a {c:.2f}ºC")
+
 """
 3. Escribir un programa en que muestre una tabla formateada de la siguiente
 manera: * El nombre en un campo de 10 caracteres (alineado a la izquierda). *

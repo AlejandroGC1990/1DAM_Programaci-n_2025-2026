@@ -1,16 +1,10 @@
 """
-1. Escribir un programa en que pida al usuario el radio de un círculo. Calcular la
-longitud de la circunferencia y el diámetro del círculo y mostrar el resultado
-utilizando cadenas con formato (f-strings). Mostrar solo dos decimales
+2. Escribir un programa que pida al usuario una temperatura en grados Fahrenheit. A
+continuación, convertir esa temperatura a grados Celsius utilizando la
+fórmula C= 5/9(F-32) y mostrar el resultado.
 """
-r = float(input("Introduce la longitud del radio del círculo: "))
-pi = 3.14
+f = float(input("Introduce la temperatura en Fahrenheit a transformar: "))
 
-dia = r * 2
+c = (5/9) * (f - 32)
 
-c = 2 * pi * r
-
-print(f"El diámetro de la circunferencia es {dia} y la longitud de la circunferencia es {c}")
-
-
-
+print(f"{f:.2f}ºF equivalen a {c:.2f}ºC")
