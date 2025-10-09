@@ -1,17 +1,13 @@
 """
-Ej. 64: Introducir un mail por teclado. Verificar si el string introducido contiene 
-solo un carácter "@".
+Ej. 65: Inicializamos un string con la cadena "mAriA" después llamamos a sus métodos upper(), lower() 
+y capitalize(), guardar los datos retornados en otros string y mostrarlos por pantalla.
 """
-mail = input("Introduce tu email:")
-count = 0
-x = 0
+nombre1 = "mAriA"
+nombre2 = nombre1.upper()
+nombre3 = nombre1.lower()
+nombre4 = nombre1.capitalize()
 
-while x < len(mail):
-    if mail[x] == "@":
-        count += 1
-    x += 1
-
-if count == 1:
-    print("Mail aprobado")
-else:
-    print(f"El mail introducido es erróneo, tiene {count} @")
+print(nombre1)
+print(nombre2)
+print(nombre3)
+print(nombre4)
