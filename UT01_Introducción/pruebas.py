@@ -1,10 +1,14 @@
 """
-2. Escribir un programa que pida al usuario una temperatura en grados Fahrenheit. A
-continuación, convertir esa temperatura a grados Celsius utilizando la
-fórmula C= 5/9(F-32) y mostrar el resultado.
+3. Escribir un programa en que muestre una tabla formateada de la siguiente
+manera: * El nombre en un campo de 10 caracteres (alineado a la izquierda). *
+La edad en un campo de 5 dígitos (alineado a la derecha). * El saldo en un
+campo de 12 dígitos (alineado a la derecha).
+                        Nombre  Edad    Saldo
+                        Juan      25  123.456
+                        Ana       30  245.987
+                        Carlos    22  567.123
 """
-f = float(input("Introduce la temperatura en Fahrenheit a transformar: "))
-
-c = (5/9) * (f - 32)
-
-print(f"{f:.2f}ºF equivalen a {c:.2f}ºC")
+print(f"{'Nombre':<10}{'Edad':>5}{'Saldo':>12}")
+print(f"{'Juan':<10}{25:>5}{123.456:>12}")
+print(f"{'Ana':<10}{30:>5}{245.987:>12}")
+print(f"{'Carlos':<10}{22:>5}{567.123:>12}")
