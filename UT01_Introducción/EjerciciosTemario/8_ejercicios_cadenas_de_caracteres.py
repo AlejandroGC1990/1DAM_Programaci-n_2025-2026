@@ -54,8 +54,27 @@ eJ. 66: Cargar una oración por teclado. Mostrar cuantos espacios en blanco se i
 en blanco es igual a " ", en cambio una cadena vacía es ""
 
 """
-oracion = input("Introduce una oración: ")
+frase = input("Introduce una oración: ")
 count = 0
 x = 0
 
-print(oracion.count(" "))
+print(frase.count(" "))
+
+"""
+Ej. 67: Introducir una oración que pueda tener letras tanto en mayúsculas como minúsculas.
+Contar la cantidad de vocales.
+Crear un segundo string con toda la oración en minúsculas para que sea más fácil
+disponer la condición que verifica que es una vocal.
+"""
+frase = input("Introduce la oración: ")
+fraseMinus = frase.lower()
+vocales = 0
+count = 0
+
+while count < len(frase):
+    if fraseMinus[count] in "aeiou":
+        vocales += 1
+
+    count += 1
+
+print(f"la oración tiene {vocales} vocales")
