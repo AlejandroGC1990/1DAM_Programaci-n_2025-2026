@@ -1,10 +1,17 @@
 """
-Ej. 63: Solicitar la carga del nombre de una persona en minúsculas. Mostrar un mensaje si 
-comienza con vocal dicho nombre.
+Ej. 64: Introducir un mail por teclado. Verificar si el string introducido contiene 
+solo un carácter "@".
 """
-name = input("Introduce un nombre en minúsculas: ")
+mail = input("Introduce tu email:")
+count = 0
+x = 0
 
-if name[0] == "a" or name[0] == "e" or name[0] == "i" or name[0] == "o" or name[0] == "u":
-    print("El nombre introducido empieza con vocal")
+while x < len(mail):
+    if mail[x] == "@":
+        count += 1
+    x += 1
+
+if count == 1:
+    print("Mail aprobado")
 else:
-    print("El nombre introducido no empieza con vocal")
+    print(f"El mail introducido es erróneo, tiene {count} @")
