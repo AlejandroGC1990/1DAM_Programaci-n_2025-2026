@@ -11,5 +11,3 @@ while count < len(lista):
     count += 1
 
 print(f"Los elementos de la lista son {lista} y su suma total es {suma}")
-
-
