@@ -13,3 +13,8 @@ for x in range (pisos):
     print(f"{' ' * pisos}{'*' * asteriscos}")
     asteriscos += 2
     pisos -= 1
+
+"""
+for x in range(1, pisos + 1):
+    print(' ' * (pisos - x) + '*' * (2 * x -1))
+"""
