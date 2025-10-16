@@ -1,29 +1,28 @@
 """
-Ej. 78: Cargar por teclado y almacenar en una lista las alturas de 5 personas (valores float)
-Obtener el promedio de las mismas. Contar cuántas personas son más altas que el promedio y
-cuántas más bajas.
+Ej. 79: Una empresa tiene dos turnos (mañana y tarde) en los que trabajan 8 empleados (4 por
+la mañana y 4 por la tarde). Confeccionar un programa que permita almacenar los sueldos de
+los empleados agrupados en dos listas. Imprimir las dos listas de sueldos.
 """
 
-alturas = []
-sumaAlturas = 0
-alturasMpromedio = 0
-alturas_m_promedio = 0
-for x in range (5):
+sueldosM = []
+sueldosT = []
+
+for x in range (4):
     while True:
         try:
-            altura = float(input(f"Introduce la altura {x + 1}"))
-            alturas.append(altura)
-            sumaAlturas += altura
+            sueldoM = float(input(f"Introduce el sueldo del operario {x + 1} de mañana: "))
+            sueldosM.append(sueldoM)
             break
         except ValueError:
-            print("X Introduce un valor válido")
+            print("X Introduce un valor válido en los sueldos")
 
-promedioAlturas = sumaAlturas / len(alturas)
+    while True:
+        try:
+            sueldoT = float(input(f"Introduce el sueldo del operario {x + 1} de tarde: "))
+            sueldosT.append(sueldoT)
+            break
+        except ValueError:
+            print("X Introduce un valor válido en los sueldos")
 
-for y in range (len(alturas)):
-    if y > promedioAlturas:
-        alturasMpromedio += 1
-    elif y < promedioAlturas:
-        alturas_m_promedio += 1
 
-print(f"El promedio de alturas es {promedioAlturas} y hay {alturasMpromedio} más altas que el promedio y {alturas_m_promedio} más bajas")
+print(f"El sueldo del turno de mañana es {sueldosM} y el de tarde es {sueldosT}.")
