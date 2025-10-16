@@ -73,7 +73,7 @@ alturas_m_promedio = 0
 for x in range (5):
     while True:
         try:
-            altura = float(input(f"Introduce la altura {x + 1}"))
+            altura = float(input(f"Introduce la altura {x + 1}: "))
             alturas.append(altura)
             sumaAlturas += altura
             break
@@ -82,10 +82,10 @@ for x in range (5):
 
 promedioAlturas = sumaAlturas / len(alturas)
 
-for y in range (len(alturas)):
-    if y > promedioAlturas:
+for altura in alturas:
+    if altura > promedioAlturas:
         alturasMpromedio += 1
-    elif y < promedioAlturas:
+    elif altura < promedioAlturas:
         alturas_m_promedio += 1
 
 print(f"El promedio de alturas es {promedioAlturas} y hay {alturasMpromedio} más altas que el promedio y {alturas_m_promedio} más bajas")
