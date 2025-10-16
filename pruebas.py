@@ -1,3 +1,15 @@
-pisos = int(input("Introduce el número de pisos de la pirámide: "))
-for x in range(1, pisos + 1):
-    print(' ' * (pisos - x) + '*' * (2 * x -1))
+"""
+Ej. 73: Definir una lista por asignación con 5 enteros. Mostrar por pantalla solo los elementos con valor iguale o superiore a
+7.
+"""
+num = []
+for i in range(5):
+    while True:
+        try:
+            n = int(input(f"Introduce el número entero {i + 1}: "))
+            num.append(n)
+            break
+        except ValueError:
+            print("X Introduce un numero válido")
+    
+print(num)    
