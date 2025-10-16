@@ -58,6 +58,8 @@ Ej. 73: Definir una lista por asignación con 5 enteros. Mostrar por pantalla so
 """
 
 num = []
+numMsiete = []
+
 for i in range(5):
     while True:
         try:
@@ -67,4 +69,8 @@ for i in range(5):
         except ValueError:
             print("X Introduce un numero válido")
     
-print(num)    
+for x in num:
+    if x >= 7:
+        numMsiete.append(x)
+        
+print(f"Los números mayores a 7 son: {numMsiete}")
