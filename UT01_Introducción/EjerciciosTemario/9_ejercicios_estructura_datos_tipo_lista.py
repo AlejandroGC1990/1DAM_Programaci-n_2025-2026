@@ -74,3 +74,26 @@ for x in num:
         numMsiete.append(x)
         
 print(f"Los números mayores a 7 son: {numMsiete}")
+
+"""
+Ej. 74: Definir una lista que almacene por asignación los nombres de 5 personas. Contar
+cuántos de esos nombres tienen 5 o más caracteres
+"""
+
+names = []
+namesMcharacters = []
+
+for i in range(5):
+    while True:
+        try:
+            n = input(f"Introduce el nombre {i + 1}: ")
+            names.append(n)
+            break
+        except ValueError:
+            print("X Introduce un nombre válido")
+    
+for x in names:
+    if len(x) >= 5:
+        namesMcharacters.append(x)
+        
+print(f"Los nombres con más de 5 caracteres son {len(namesMcharacters)}: {namesMcharacters}")
