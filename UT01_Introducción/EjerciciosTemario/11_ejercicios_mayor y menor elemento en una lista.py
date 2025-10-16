@@ -2,7 +2,6 @@
 Ej. 80: Crear y cargar una lista con 5 enteros. Implementar un algoritmo que identifique el
 mayor valor de la lista.
 """
-
 lista= []
 
 for x in range (5):
@@ -21,4 +20,3 @@ for y in range (1,5):
         mayor = lista[y]
 
 print(f"{mayor} es el mayor número de la lista {lista}")
-    
