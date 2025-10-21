@@ -64,3 +64,29 @@ for y in range(1, 5):
         menor = lista[y]
 
 print(f"{menor} es el nombre más pequeño alfabéticamente de la lista: {lista}")
+
+"""
+Ej. 83: Cargar una lista con 5 elementos enteros. Imprimir el mayor y un mensaje si se repite
+dentro de la lista (es decir si dicho valor se encuentra en 2 o más posiciones en la lista) 
+"""
+lista= []
+
+for x in range(5):
+    while True:
+        try:
+            num = int(input(f"Introduce el número {x + 1}: "))
+            lista.append(num)
+            break
+        except ValueError:
+            print("X Introduce un valor correcto")
+
+mayor = lista[0]
+counter = 0
+
+for y in range(1, 5):
+    if lista[y] == mayor:
+        counter += 1
+    if lista[y] > mayor:
+        mayor = lista[y]
+
+print(f"{mayor} es el número más alto y se repite en la lista {counter} veces")
