@@ -43,4 +43,24 @@ for y in range (1,5):
         menor = lista[y]
 
 print(f"{menor} es el menor número de la lista {lista}")
-    
+
+"""
+Ej. 82: Introducir por teclado los nombres de 5 personas y almacenarlos en una lista. Mostrar
+el nombre de la persona menor en orden alfabético.
+
+"""
+lista= []
+
+for x in range(5):
+    while True:
+        name = input(f"Introduce el nombre {x + 1}: ")
+        lista.append(name)
+        break
+
+menor = lista[0]
+
+for y in range(1, 5):
+    if lista[y] < menor:
+        menor = lista[y]
+
+print(f"{menor} es el nombre más pequeño alfabéticamente de la lista: {lista}")
