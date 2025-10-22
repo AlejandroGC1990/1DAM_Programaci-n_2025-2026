@@ -52,3 +52,45 @@ for y in range(5):
         mayores.append(listaName[y])
 
 print(f"Los productos más caros que el primero son: {mayores}")
+
+"""
+Ej. 86: En un curso de 4 alumnos se registraron las notas de sus exámenes y se deben procesar
+de acuerdo a lo siguiente:
+a) Introducir nombre y nota de cada alumno (almacenar los datos en dos listas paralelas)
+b) Realizar un listado que muestre los nombres, notas y condición del alumno. En la
+condición, colocar "Muy Bueno" si la nota es mayor o igual a 8, "Bueno" si la nota está
+entre 4 y 7, y colocar "Insuficiente" si la nota es inferior a 4.
+c) Imprimir cuantos alumnos tienen la leyenda “Muy Bueno”.
+ 
+"""
+
+listaName = []
+listaNotes = []
+listaCondiciones = []
+listaMuyBueno = []
+
+for x in range(4):
+    while True:
+        try:
+            name = input(f"Introduce el nombre {x + 1}: ")
+            listaName.append(name)
+            note = float(input(f"Introduce también la nota: "))
+            listaNotes.append(note)
+            break
+        except ValueError:
+            print("X Introduce un valor correcto")
+
+for y in range(4):
+    if listaNotes[y] >= 8:
+        listaCondiciones.append("Muy bueno")
+        listaMuyBueno.append(listaName[y])
+    elif listaNotes[y] < 4:
+        listaCondiciones.append("Insuficiente")
+    else:
+        listaCondiciones.append("Bueno")
+
+print(f"Nombres : {listaName}")
+print(f"Notas: {listaNotes}")
+print(f"Condición: {listaCondiciones}")
+print(f"Alumnos muy buenos: {listaMuyBueno}")
+
