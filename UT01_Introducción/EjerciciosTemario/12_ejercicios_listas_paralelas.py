@@ -94,3 +94,27 @@ print(f"Notas: {listaNotes}")
 print(f"Condición: {listaCondiciones}")
 print(f"Alumnos muy buenos: {listaMuyBueno}")
 
+"""
+Ej. 87: Realizar un programa que pida la carga de dos listas numéricas enteras de 4 elementos
+cada una. Generar una tercera lista que surja de la suma de los elementos de la misma posición
+de cada lista. Mostrar esta tercera lista. 
+"""
+
+lista1 = []
+lista2 = []
+listaSuma = []
+
+for x in range(4):
+    while True:
+        try:
+            num1 = int(input(f"Introduce el número {x +1} de la primera lista: "))
+            lista1.append(num1)
+            num2 = int(input(f"Introduce el número {x +1} de la segunda lista: "))
+            lista2.append(num2)
+            listaSuma.append(num1 + num2)
+            break
+        except ValueError:
+            print("X Introduce un valor válido")
+
+
+print(listaSuma)
