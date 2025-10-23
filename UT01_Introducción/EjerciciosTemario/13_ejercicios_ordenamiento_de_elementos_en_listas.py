@@ -76,3 +76,31 @@ for y in range(4):
             paises[z + 1] = aux
 
 print(paises)
+
+"""
+Ej. 91: Solicitar por teclado la cantidad de empleados que tiene la empresa. Crear y cargar
+una lista con todos los sueldos de dichos empleados. Imprimir la lista de sueldos ordenamos
+de menor a mayor.
+
+"""
+
+sueldos = []
+empleados = int(input("¿Cuántos empleados tiene la empresa? "))
+
+for x in range(empleados):
+    while True:
+        try:
+            valor = float(input(f"Ingresa el sueldo {x + 1}: "))
+            sueldos.append(valor)
+            break
+        except ValueError:
+            print("X Introduce un valor correcto")
+
+for y in range(empleados - 1):
+    for z in range(empleados - 1 - y):
+        if sueldos[z] > sueldos[z + 1]:
+            aux = sueldos[z]
+            sueldos[z] = sueldos[z + 1]
+            sueldos[z + 1] = aux
+
+print(f"Estos son los sueldos ordenador de menor a mayor: {sueldos}")
