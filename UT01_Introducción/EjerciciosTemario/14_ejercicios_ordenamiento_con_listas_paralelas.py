@@ -35,3 +35,53 @@ for y in range(4):
 
 print(alumnos)
 print(notas)
+
+"""
+Ej. 94: Crear y cargar una lista con los nombres de 5 países y en otra lista paralela la
+cantidad de habitantes del mismo. Ordenar alfabéticamente e imprimir los resultados. Por
+último ordenar con respecto a la cantidad de habitantes (de mayor a menor) e imprimir nuevamente.
+
+
+"""
+paises = []
+poblaciones = []
+
+for u in range(5):
+    while True:
+        try:
+            country = input(f"Introduce el país número {u + 1}: ")
+            paises.append(country)
+            habitantes = int(input(f"Introdue la población del país {u + 1}: "))
+            poblaciones.append(habitantes)
+            break
+        except ValueError:
+            print("X Introduce un valor correcto")
+
+for v in range(4):
+    for w in range(4 - v):
+        if paises[w] > paises[w + 1]:
+            aux = paises[w]
+            paises[w] = paises[w + 1]
+            paises[w + 1] = aux
+            aux2 = poblaciones[w]
+            poblaciones[w] = poblaciones[w + 1]
+            poblaciones[w + 1] = aux2
+
+print("Países ordenador alfabéticamente")
+print(paises)
+print(poblaciones)
+
+for x in range(4):
+    for y in range(4 - x):
+        if poblaciones[y] < poblaciones[y + 1]:
+            aux = poblaciones[y]
+            poblaciones[y] = poblaciones[y + 1]
+            poblaciones[y + 1] = aux
+            aux2 = paises[y]
+            paises[y] = paises[y + 1]
+            paises[y + 1] = aux2
+
+print("Países ordenador por población de mayor a menor")
+print(paises)
+print(poblaciones)
+
