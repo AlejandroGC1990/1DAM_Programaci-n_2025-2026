@@ -26,3 +26,30 @@ for y in range(4):
         sueldos[y + 1] = aux
 
 print(sueldos)
+
+"""
+Ej. 89: Siguiendo con el anterior ejercicio. Ordena el resto de elementos para que vayan de
+menor a mayor
+"""
+
+sueldos = []
+sueldosOrdenados = []
+
+for x in range(5):
+    while True:
+        try:
+            valor = float(input(f"Introduce el sueldo {x + 1}: "))
+            sueldos.append(valor)
+            break
+        except ValueError:
+            print("X Introduce un valor correcto")
+
+for y in range(4):
+    for z in range(4):
+        if sueldos[z] > sueldos[z + 1]:
+            aux = sueldos[z]
+            sueldos[z] = sueldos[z + 1]
+            sueldos[z + 1] = aux
+
+print(sueldos)
+
