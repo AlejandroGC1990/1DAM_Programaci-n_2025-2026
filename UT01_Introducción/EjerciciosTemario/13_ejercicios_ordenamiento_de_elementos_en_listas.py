@@ -104,3 +104,39 @@ for y in range(empleados - 1):
             sueldos[z + 1] = aux
 
 print(f"Estos son los sueldos ordenador de menor a mayor: {sueldos}")
+
+"""
+Ej. 92: Cargar una lista con 5 elementos enteros. Ordenarla de menor a mayor y mostrarla por
+pantalla, luego ordenar de mayor a menor e imprimir nuevamente.
+
+
+"""
+
+nums = []
+
+for x in range(5):
+    while True:
+        try:
+            valor = int(input(f"Ingresar el valor {x + 1}: "))
+            nums.append(valor)
+            break
+        except ValueError:
+            print("X Ingresa un valor correcto")
+
+for y in range(4):
+    for z in range(4 - y):
+        if nums[z] > nums[z + 1]:
+            aux = nums[z]
+            nums[z] = nums[z + 1]
+            nums[z + 1] = aux
+
+print(f"Valores de menor a mayor: {nums}")
+
+for y in range(4):
+    for z in range(4 - y):
+        if nums[z] < nums[z + 1]:
+            aux = nums[z]
+            nums[z] = nums[z + 1]
+            nums[z + 1] = aux
+
+print(f"Valores de mayor a menor: {nums}")
