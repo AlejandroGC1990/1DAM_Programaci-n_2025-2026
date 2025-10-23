@@ -33,7 +33,6 @@ menor a mayor
 """
 
 sueldos = []
-sueldosOrdenados = []
 
 for x in range(5):
     while True:
