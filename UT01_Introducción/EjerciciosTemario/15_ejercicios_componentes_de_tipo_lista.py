@@ -61,3 +61,34 @@ suma = [[
     ]] 
 
 print(suma)
+
+"""
+Ej. 97: Crear una lista por asignación. La lista tiene que tener 5 elementos. Cada elemento
+debe ser una lista, la primera lista tiene que tener un elemento, la segunda dos elementos,
+la tercera tres elementos y así sucesivamente. Sumar todos los valores de las listas.
+"""
+listaN = []
+
+for x in range(1, 6):
+    sublista = []
+    print(f"Sublista {x}")
+
+    for y in range(x):
+        while True:
+            try:
+                valor = int(input(f"Introduce el valor {y + 1} de la lista {x}: "))
+                sublista.append(valor)
+                break
+            except ValueError:
+                print("X Introduce un valor correcto")
+
+    listaN.append(sublista)
+
+suma = 0
+
+for z in range(len(listaN)):
+    for a in range(len(listaN[z])):
+        suma += listaN[z][a]
+
+print(f"Lista de números: {listaN}")
+print(f"La suma total de los elementos es: {suma}")
