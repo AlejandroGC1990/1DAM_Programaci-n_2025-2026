@@ -128,3 +128,33 @@ for x in range(len(lista)):
             lista[x][y] = 0
 
 print(lista)
+
+"""
+Ej. 100: Crear una lista por asignación con la cantidad de elementos de tipo lista que desees.
+A continuación imprimir el último elemento de la lista principal
+
+"""
+ 
+lista = []
+numE = int(input("¿Cuántos elementos quieres en la lista? "))
+
+for x in range(1, numE + 1):
+    sublista = []
+    numES = int(input("¿Cuántos elementos quieres en la sublista? "))
+        
+    for y in range(numES):
+        while True:
+            try:
+                valor = input(f"Introduce el valor {y + 1} de la sublista {x}")
+                sublista.append(valor)
+                break
+            except ValueError:
+                print("X Introduce un valor válido")
+            
+    lista.append(sublista)
+
+if lista and lista[-1]:
+    print(f"El último valor de la última sublista es {lista[-1][-1]}")
+else:
+    print("No hay nada que mostrar, la lista está vacía")
+    
