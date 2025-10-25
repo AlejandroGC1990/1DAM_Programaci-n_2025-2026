@@ -26,3 +26,47 @@ for x in range(3):
 for z in range(len(listaNombres)):
     print(f"{listaNombres[z]} tiene las notas: {listaNotas[z]}")
                         
+"""
+Ej. 102: Se tiene que cargar la siguiente información:
+ Nombres de 3 empleados
+ Ingresos en concepto de sueldo, cobrado por cada empleado, en los últimos 3 meses.
+ Confeccionar el programa para:
+a) Realizar la carga de los nombres de empleados y los tres sueldos por cada empleado.
+b) Generar una lista que contenga el ingreso acumulado en sueldos en los últimos 3 meses para cada empleado.
+c) Mostrar por pantalla el total pagado en sueldos a cada empleado en los últimos 3 meses
+d) Obtener el nombre del empleado que tuvo el mayor ingreso acumulado
+
+"""
+ 
+listaNombres = []
+listaSueldos = []
+listaSueldosSumados = []
+
+for x in range(3):
+        nombre = input(f"Introduce el nombre del empleado número {x + 1}")
+        listaNombres.append(nombre)
+
+        sublista = []
+        sueldoSumado = 0
+
+        for y in range(3):
+            while True:
+                try:
+                    sueldo = float(input(f"Introduce el sueldo número {y + 1} del empleado número {x + 1}: "))
+                    sublista.append(sueldo)
+                    sueldoSumado += sueldo
+                    break
+                except ValueError:
+                    print("X Introduce un valor válido para el sueldo")
+
+        listaSueldos.append(sublista)
+        listaSueldosSumados.append(sueldoSumado)
+        
+for z in range(3):
+    print(f"{listaNombres[z]} cobró estos sueldos: {listaSueldos[z]} (Total: {listaSueldosSumados[z]})")
+
+                 
+mayor_ingreso = max(listaSueldosSumados)
+indice_mayor = listaSueldosSumados.index(mayor_ingreso)
+print(f"El empleado con mayor ingreso acumulado es {listaNombres[indice_mayor]}")                
+                
