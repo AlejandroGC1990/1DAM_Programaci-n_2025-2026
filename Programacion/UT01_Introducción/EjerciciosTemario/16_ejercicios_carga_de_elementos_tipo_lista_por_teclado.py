@@ -102,3 +102,52 @@ for x in range(elementos):
 print(lista)
 print(sumaSuma)
 
+"""
+Ej. 104: Definir dos listas de 3 elementos.
+En la primera lista cada elemento es una sublista con el nombre del padre y la madre de una familia.
+La segunda lista está constituida por listas con los nombres de los hijos de cada familia. Puede haber familias sin hijos.
+Imprimir los nombres del padre, la madre y sus hijos.
+También imprimir solo el nombre del padre y la cantidad de hijos que tiene dicho padre.
+"""
+listaPadres = []
+listaHijos = []
+
+for x in range(3):
+        sublistaPadres = []
+        sublistaHijos = []
+
+        while True:
+                try:
+                        nombrePadre = input(f"Introduce el nombre del padre de la familia {x + 1}: ")
+                        sublistaPadres.append(nombrePadre)
+                        nombreMadre = input(f"Introduce el nombre de la madrede la familia {x + 1}: ")
+                        sublistaPadres.append(nombreMadre)
+
+                        hijos = input("¿Tienen hijos?(Sí/No) ").lower()
+
+                        if hijos in ("si", "sí", "s", "yes", "y"):
+                                while True:
+                                        try:
+                                                numHijos = int(input("¿Cuántos hijos tienen? "))
+                                                
+                                                for y in range(numHijos):
+                                                        nombreHijo = input(f"Introduce el nombre del hijo {y + 1} de la lista {x + 1}: ")
+                                                        sublistaHijos.append(nombreHijo)
+
+                                                break
+                                        except ValueError:
+                                                print("X Introduce un número válido para la cantidad de hijos.")
+                        else:
+                                sublistaHijos.append(0)
+
+                        break
+                
+                except ValueError:
+                         print("X Introduce un valor correcto")
+
+        listaPadres.append(sublistaPadres)
+        listaHijos.append(sublistaHijos)
+
+for i in range(3):
+        print(f"Padre: {listaPadres[i][0]}\nMadre:{listaPadres[i][1]}\nHijos: {listaHijos[i]}")
+        print(f"{listaPadres[i][0]} tiene {len(listaHijos)} hijo/s")
