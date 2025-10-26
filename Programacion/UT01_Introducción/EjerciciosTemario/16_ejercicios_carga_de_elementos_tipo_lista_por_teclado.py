@@ -70,3 +70,35 @@ mayor_ingreso = max(listaSueldosSumados)
 indice_mayor = listaSueldosSumados.index(mayor_ingreso)
 print(f"El empleado con mayor ingreso acumulado es {listaNombres[indice_mayor]}")                
                 
+"""
+Ej. 103: Solicitar por teclado la introducción de dos enteros. El primer valor indica la cantidad de elementos que crearemos en la lista.
+El segundo valor indica la cantidad de elementos que tendrá cada una de las listas internas a la lista principal.
+Mostrar la lista y la suma de todos sus elementos.
+"""
+
+elementos = int(input("Introduyce el número de sublistas: "))
+subelementos = int(input("Introduyce el número de elementos para las sublistas: "))
+
+lista = []
+sumaSuma = 0
+
+for x in range(elementos):
+        sublista = []
+        suma = 0
+
+        for y in range(subelementos):
+                while True:
+                        try:
+                                valor = float(input(f"Introduce el valor {y + 1} de la sublista {x + 1}: "))
+                                sublista.append(valor)
+                                suma += valor
+                                break
+                        except ValueError:
+                                print("X Introduce un valor correcto")
+
+        lista.append(sublista)
+        sumaSuma += suma
+        
+print(lista)
+print(sumaSuma)
+
