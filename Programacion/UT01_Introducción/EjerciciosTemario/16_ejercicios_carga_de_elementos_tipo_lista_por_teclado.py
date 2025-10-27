@@ -151,3 +151,51 @@ for x in range(3):
 for i in range(3):
         print(f"Padre: {listaPadres[i][0]}\nMadre:{listaPadres[i][1]}\nHijos: {listaHijos[i]}")
         print(f"{listaPadres[i][0]} tiene {len(listaHijos)} hijo/s")
+
+"""
+Ej. 105: Se desea saber la temperatura media trimestral de cuatro países. Para ello se tiene como dato las temperaturas medias
+mensuales de dichos países.
+Se debe introducir el nombre del país y seguidamente las tres temperaturas medias mensuales.
+Seleccionar las estructuras de datos adecuadas para el almacenamiento de los datos en memoria.
+a - Cargar por teclado los nombres de los países y las temperaturas medias mensuales.
+b - Imprimir los nombres de las países y las temperaturas medias mensuales de las mismas.
+c - Calcular la temperatura media trimestral de cada país.
+c - Imprimir los nombres de los países y las temperaturas medias trimestrales.
+b - Imprimir el nombre del país con la temperatura media trimestral mayor
+"""
+paises = []
+temperaturaT = []
+temperaturaTMes = []
+
+for x in range(4):
+        pais = input(f"Introduce el nombre del país {x + 1}: ")
+        paises.append(pais)
+        sumaTemperatura = 0
+        sublista = []
+        
+        for y in range(3):
+                while True:
+                        try:
+                                g = float(input(f"Introduce la temperatura media del país {x + 1} del mes {y + 1}: "))
+                                sumaTemperatura += g
+                                sublista.append(g)
+                                break
+                        except ValueError:
+                                print("X Introduce un valor correcto")
+
+        temperaturaT.append(sumaTemperatura / 3)
+        temperaturaTMes.append(sublista)
+
+temperaturaTMayor = temperaturaT[0]
+paisTM = paises[0]
+for z in range(1, 4):
+        if temperaturaT[z] > temperaturaT[0]:
+                temperaturaTMayor = temperaturaT[z]
+                paisTM = paises[z]
+
+print(paises)
+print(temperaturaT)
+for i in range(4):
+        print(f"El país {paises[i]} tiene una temperatura media trimestral de {temperaturaT[i]} grados centígrados\ny unas temperaturas duramnte esos meses de {temperaturaTMes[i]}grados centígrados")
+        
+print(f"El país con la temperatura trimestral media superior es {paisTM} con {temperaturaTMayor}grados centígrados")
