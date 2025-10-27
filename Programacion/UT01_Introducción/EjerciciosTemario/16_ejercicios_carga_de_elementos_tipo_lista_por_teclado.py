@@ -199,3 +199,54 @@ for i in range(4):
         print(f"El país {paises[i]} tiene una temperatura media trimestral de {temperaturaT[i]} grados centígrados\ny unas temperaturas duramnte esos meses de {temperaturaTMes[i]}grados centígrados")
         
 print(f"El país con la temperatura trimestral media superior es {paisTM} con {temperaturaTMayor}grados centígrados")
+
+"""
+Ej. 106: Definir una lista y almacenar los nombres de 3 empleados.
+Por otro lado definir otra lista y almacenar en cada elemento una sublista con los números de días del mes que el
+empleado faltó.
+Imprimir los nombres de empleados y los días que faltó.
+Mostrar los empleados con la cantidad de inasistencias.
+Finalmente mostrar el nombre o los nombres de empleados que faltaron menos días.
+"""
+nombres = []
+dias = []
+cuantosDias = []
+
+for x in range(3):
+        name = input(f"Ingresa el nombre del empleado número {x + 1}: ")
+        nombres.append(name)
+
+        while True:
+                try:
+                        cuantos = int(input("¿Cuántos días ha faltado? "))
+                        break
+                except ValueError:
+                        print("X Introduce un valor correcto")
+
+        sublista = []
+
+        for y in range(cuantos):
+                while True:
+                        try:                                      
+                                d = int(input(f"Intruce el número del día {y + 1} que faltó {name}"))
+                                sublista.append(d)
+                                break
+                        except:
+                                print("X Introduce un valor correcto")
+
+        dias.append(sublista)
+        cuantosDias.append(cuantos)
+
+menosFaltas = cuantosDias[0]
+for z in range(1, len(cuantosDias)):
+        if cuantosDias[z] < cuantosDias[0]:
+                menosFaltas = cuantosDias[z]
+        
+for i in range(len(nombres)):
+        print(f"El empleado {nombres[i]} ha faltado {cuantosDias[i]} los siguientes días: {dias[i]}")
+
+print(f"Empleados con menos faltas:")
+for j in range(len(nombres)):
+        if cuantosDias[j] == menosFaltas:
+                print(f"- {nombres[j]}")
+
