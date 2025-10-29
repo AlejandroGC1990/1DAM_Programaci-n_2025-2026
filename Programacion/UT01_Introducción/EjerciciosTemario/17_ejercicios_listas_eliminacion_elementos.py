@@ -85,3 +85,30 @@ while cont < len(listaSueldos):
 for y in range(len(listaSueldos)):
         print(listaNombres[y], listaSueldos[y])
         
+"""
+Ej. 111: Crear una lista de 5 enteros y cargarlos por teclado. Borrar los elementos mayores
+o iguales a 10 y generar una nueva lista con dichos valores.
+"""
+lista = []
+lista2 = []
+
+for x in range(5):
+        while True:
+                try:
+                        num  = int(input(f"Escribe el número {x + 1} de la lista: "))
+                        lista.append(num)
+                        break
+                except ValueError:
+                        print("X Introduce un valor correcto")
+
+
+print(f"Previa eliminación: {lista}")
+
+count = 0
+while count < len(lista):
+        if lista[count] >= 10:
+                lista2.append(lista.pop(count))
+        else:
+                count += 1
+
+print(lista2)
