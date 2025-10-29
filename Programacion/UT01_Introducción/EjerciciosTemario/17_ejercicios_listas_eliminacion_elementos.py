@@ -47,3 +47,41 @@ for y in range(len(lista)):
 
 print(f"Tras la eliminación: {lista}")
         
+"""
+Ej. 110: Crear dos listas paralelas. En la primera introducir los nombres de empleados y en
+la segunda los sueldos de cada empleado.
+Introducir por teclado cuando inicia el programa la cantidad de empleados de la empresa.
+Borrar luego todos los empleados que tienen un sueldo mayor a 10000 (tanto el sueldo como su
+nombre)
+ 
+"""
+listaNombres = []
+listaSueldos = []
+
+numEmpleados = int(input("¿Cuántos empleados tiene  la empresa? "))
+
+for x in range(numEmpleados):
+        while True:
+                try:
+                        name = input(f"Escribe el nombre del empleado {x + 1} de la lista: ")
+                        listaNombres.append(name)
+                        sueldo = float(input(f"Escribe el sueldo de {name}: "))
+                        listaSueldos.append(sueldo)
+                        break
+                except ValueError:
+                        print("X Introduce un valor correcto")
+
+
+print(f"Previa eliminación: {listaNombres}")
+print(f"Previa eliminación: {listaSueldos}")
+
+cont = 0
+while cont < len(listaSueldos):
+        if listaSueldos[cont] > 1000:
+                listaSueldos.pop(cont)
+                listaNombres.pop(cont)
+        else:
+                cont += 1
+for y in range(len(listaSueldos)):
+        print(listaNombres[y], listaSueldos[y])
+        
