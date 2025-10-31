@@ -58,3 +58,24 @@ def multiplicacion():
         
 cuadrado()
 multiplicacion()
+
+"""
+Ej. 115: Desarrollar un programa que solicite la carga de tres valores y muestre el menor.
+Desde el bloque principal del programa llamar 2 veces a dicha función (sin utilizar una
+estructura repetitiva)
+
+"""
+def menorValor():
+        num1 = float(input("Introduce el primer número: "))
+        num2 = float(input("Introduce el segundo número: "))
+        num3 = float(input("Introduce el tercer número: "))
+
+        if num1 < num2 and num1 < num3:
+                print(num1)
+        elif num2 < num1 and num2 < num3:
+                print(num2)
+        else:
+                print(num3)
+
+menorValor()
+menorValor()
