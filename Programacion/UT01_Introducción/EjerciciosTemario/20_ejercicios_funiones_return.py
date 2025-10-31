@@ -26,3 +26,26 @@ def returnMayor(v1, v2):
 valor1 = int(input("Introduce el primer valor: "))
 valor2 = int(input("Introduce el segundo valor: "))
 print(returnMayor(valor1, valor2))
+
+"""
+Ej. 122: Confeccionar una función a la que le enviemos como parámetro un string y nos retorne
+la cantidad de caracteres que tiene. En el bloque principal solicitar la carga de dos nombres
+por teclado y llamar a la función dos veces. Imprimir en el bloque principal cuál de las dos
+palabras tiene más caracteres.
+"""
+def largo(cadena):
+        return len(cadena)
+
+nombre1 = input("Introduce el primer nombre: ")
+nombre2 = input("Introduce el segundo nombre: ")
+la1 = largo(nombre1)
+la2 = largo(nombre2)
+
+if la1 == la2:
+        print("Los nombres tienen la misma cantidad de carácteres")
+else:
+        if la1 > la2:
+                print(f"{nombre1} es más largo")
+        else:
+                print(f"{nombre2} es más largo")
+        
