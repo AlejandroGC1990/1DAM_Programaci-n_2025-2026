@@ -21,7 +21,7 @@ sumar_numeros()
 despedida()
 
 """
-Ej. 112: Confeccionar una aplicación que solicite la carga de dos valores enteros y muestre
+Ej. 113: Confeccionar una aplicación que solicite la carga de dos valores enteros y muestre
 su suma. Repetir la carga e impresion de la suma 5 veces.
 Mostrar una línea separadora después de cada vez cargados los dos valores y su suma.
 """
@@ -38,3 +38,23 @@ def lineaSeparadora():
 for x in range(5):
         sumaNumeros()
         lineaSeparadora()
+
+"""
+Ej. 114: Desarrollar un programa con dos funciones. La primera solicita introducir un entero
+y muestra el cuadrado de dicho valor. La segunda que solicite la carga de dos valores y
+muestre el producto de los mismos. LLamar desde el bloque del programa principal a ambas
+funciones.
+"""
+def cuadrado():
+        num1 = int(input("Introduce un número entero: "))
+        cuadrado = num1 * num1
+        print(f"El cuadrado de {num1} es {cuadrado}")
+
+def multiplicacion():
+        num1 = float(input("Introduce el primer número: "))
+        num2 = float(input("Introduce el segundo número: "))
+        multiplicacion = num1 * num2
+        print(f"La multiplicación de {num1} y {num2} es {multiplicacion}")
+        
+cuadrado()
+multiplicacion()
