@@ -38,3 +38,27 @@ def cargarValores():
         mostrarValorMayor(num1, num2, num3)
 
 cargarValores()
+
+"""
+Ej. 118: Desarrollar un programa que permita introducir el lado de un cuadrado. Despues
+preguntar si quiere calcular y mostrar su perímetro o su superficie
+"""
+def calcularPerimetro(lado):
+        per = lado * 4
+        print(f"El perímetro del cuadrado es {per}")
+
+def calcularSuperficie(lado):
+        sup = lado * lado
+        print(f"La superficie del cuadrado {sup}")
+
+def cargarDato():
+        la = float(input("Introduce el valor del lado del cuadrado: "))
+        respuesta = input("¿Quieres calcular el perímetro o la superficie [introducir texto: perímetro / superficie]?")
+
+        if respuesta == "perímetro":
+                calcularPerimetro(la)
+        else:
+                calcularSuperficie(la)
+
+
+cargarDato()
