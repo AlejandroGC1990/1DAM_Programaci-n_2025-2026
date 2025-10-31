@@ -19,3 +19,22 @@ def despedida():
 presentacion()
 sumar_numeros()
 despedida()
+
+"""
+Ej. 112: Confeccionar una aplicación que solicite la carga de dos valores enteros y muestre
+su suma. Repetir la carga e impresion de la suma 5 veces.
+Mostrar una línea separadora después de cada vez cargados los dos valores y su suma.
+"""
+
+def sumaNumeros():
+        num1 = int(input("Introduce el primer número: "))
+        num2 = int(input("Introduce el segundo número: "))
+        suma = num1 + num2
+        print(f"El valor de la suma es {suma}")
+
+def lineaSeparadora():
+        print("********************")
+
+for x in range(5):
+        sumaNumeros()
+        lineaSeparadora()
