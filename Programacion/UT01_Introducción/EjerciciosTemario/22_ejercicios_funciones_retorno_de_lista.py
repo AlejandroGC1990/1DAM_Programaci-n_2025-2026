@@ -53,3 +53,31 @@ def imprimir_menorMayor(li):
 
 lista = cargaLista()
 imprimir_menorMayor(lista)
+
+"""
+Ej. 134: Desarrollar un programa que permita cargar 5 nombres de personas y sus edades
+respectivas. Despues de realizar la carga por teclado de todos los datos, imprimir los
+nombres de las personas mayores de edad (mayores o iguales a 18 años)
+Imprimir la edad promedio de las personas.
+"""
+def cargaLista():
+        liNames = []
+        liAges = []
+        
+        for x in range(5):
+                name = input(f"Introduce el nombre {x + 1} de la lista: ")
+                age = int(input(f"Introduce la edad {x + 1} de la lista: "))
+                liNames.append(name)
+                liAges.append(age)
+
+        return liNames, liAges
+        
+def imprimirMayoresEdad(liNames, liAges):
+        print(f"Los mayores de edad son: ")
+        
+        for y in range(len(liAges)):
+                if liAges[y] >= 18:
+                        print(f"{liNames[y]}, con {liAges[y]} años")
+
+names, ages = cargaLista()
+imprimirMayoresEdad(names, ages)
