@@ -130,3 +130,25 @@ for z in range(5):
         lista.append(word)
         
 print("Palabra con mas caracteres:",moreCharacters(lista)) 
+
+"""
+Ej. 131: Definir una lista de enteros por asignación en el bloque principal.
+Llamar a una función que reciba la lista y nos retorne el producto de todos sus elementos.
+Mostrar dicho producto en el bloque principal de nuestro programa.
+"""
+def multiLista(lista):
+        producto = lista[0]
+
+        for x in range(1, len(lista)):
+                producto *= lista[x]
+
+        return producto
+        
+numLista = int(input("¿Cuántos componenetes tiene la lista? "))                       
+lista = []
+
+for z in range(numLista):
+        num = int(input(f"Introduce el valor {z + 1} de la lista"))
+        lista.append(num)
+        
+print(f"El producto de la lista {lista} es {multiLista(lista)}") 
