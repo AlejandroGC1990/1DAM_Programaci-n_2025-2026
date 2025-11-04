@@ -62,3 +62,38 @@ n2 = int(input("Introduce el segundo valor"))
 n3 = int(input("Introduce el tercer valor"))
 
 print("El promedio de los tres valores es", retornar_promedio(n1, n2, n3))
+
+"""
+Ej. 124: Elaborar una función que nos retorne el perímetro de un cuadrado pasando como
+parámetros el valor de un lado.
+"""
+def retornar_perimetro(n):
+        perimetro = n * 4
+        return perimetro
+
+lado = float(input("Introduce el valor del lado del cuadrado: "))
+
+print("El perímetro del cuadrado es", retornar_perimetro(lado))
+
+"""
+Ej. 125: Confeccionar una función que calcule la superficie de un rectángulo y la retorne,
+la función recibe como parámetros los valores de dos de sus lados:
+def retornar_superficie(lado1, lado2):
+En el bloque principal del programa cargar los lados de dos rectángulos y luego mostrar
+cual de los dos tiene una superficie mayor.
+"""
+def retornarSuperficie(lado1, lado2):
+        superficie = lado1 * lado2
+        return superficie
+
+v1r1 = float(input("Introduce el valor 1 del rectángulo 1: "))
+v2r1 = float(input("Introduce el valor 2 del rectángulo 1: "))
+v1r2 = float(input("Introduce el valor 1 del rectángulo 2: "))
+v2r2 = float(input("Introduce el valor 2 del rectángulo 2: "))
+mayorSuperficie = 0
+
+if retornarSuperficie(v1r1, v2r1) > retornarSuperficie(v1r2, v2r2):
+        print("El primer rectángulo tiene una superficie mayor, con", retornarSuperficie(v1r1, v2r1))
+        
+else:
+        print("El segundo rectángulo tiene una superficie mayor, con", retornarSuperficie(v1r2, v2r2))
