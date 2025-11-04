@@ -101,3 +101,32 @@ for z in range(5):
         lista.append(num)
         
 print(f"La lista introducida es {lista} y ha sido multiplicada por {numMult}, dando como resultado {multiplicarLista(lista, numMult)}")
+
+"""
+Ej. 130: Desarrollar una función que reciba una lista de string y retorne el que tiene más
+caracteres.
+Si hay más de uno con dicha cantidad de caracteres debe retornar el que tiene un valor de
+componente más baja.
+En el bloque principal iniciamos por asignación la lista de string:
+palabras=["enero", "febrero", "marzo", "abril", "mayo", "junio"]
+print("Palabra con mas caracteres:",mascaracteres(palabras)) 
+"""
+def moreCharacters(lista):
+        mayor = lista[0]
+        
+        for x in range(1, len(lista)):
+                if len(lista[x]) == len(mayor):
+                        if lista[x] < mayor:
+                                mayor = lista[x]
+                elif len(lista[x]) > len(mayor):
+                        mayor = lista[x]
+
+        return mayor
+                                
+lista = []
+
+for z in range(5):
+        word = input(f"Introduce la palabra {z + 1} de la lista")
+        lista.append(word)
+        
+print("Palabra con mas caracteres:",moreCharacters(lista)) 
