@@ -49,3 +49,16 @@ else:
         else:
                 print(f"{nombre2} es más largo")
         
+"""
+Ej. 123: Elaborar una función que reciba tres enteros y nos retorne el valor promedio de los
+mismos 
+"""
+def retornar_promedio(v1, v2, v3):
+        promedio = (v1 + v2 + v3)/3
+        return promedio
+
+n1 = int(input("Introduce el primero valor"))
+n2 = int(input("Introduce el segundo valor"))
+n3 = int(input("Introduce el tercer valor"))
+
+print("El promedio de los tres valores es", retornar_promedio(n1, n2, n3))
