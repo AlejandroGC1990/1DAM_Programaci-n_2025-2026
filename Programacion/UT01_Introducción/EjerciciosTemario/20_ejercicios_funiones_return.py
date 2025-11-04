@@ -97,3 +97,20 @@ if retornarSuperficie(v1r1, v2r1) > retornarSuperficie(v1r2, v2r2):
         
 else:
         print("El segundo rectángulo tiene una superficie mayor, con", retornarSuperficie(v1r2, v2r2))
+
+"""
+Ej. 126: Plantear una función que reciba un string en mayúsculas o minúsculas y retorne la
+cantidad de letras 'a' o 'A'.
+
+"""
+def contarAes(palabra):
+        count = 0
+        for x in range(len(palabra)):
+                if palabra[x] == "a" or palabra[x] == "A":
+                        count += 1
+
+        return count
+
+palabra = input("Introduce una palabra: ")
+
+print(f"La palabra {palabra} tiene {contarAes(palabra)} 'a's")
