@@ -75,3 +75,29 @@ resultado = mayorMenor(lista)
         
 print("El valor mayor de la lista es ", resultado[0])
 print("El valor menor de la lista es ", resultado[1])
+
+"""
+Ej. 129: Crear una lista de enteros por asignación. Definir una función que reciba una lista
+de enteros y un segundo parámetro de tipo entero. Dentro de la función mostrar cada elemento
+de la lista multiplicado por el valor entero enviado.
+lista=[3, 7, 8, 10, 2]
+multiplicar(lista,3)
+"""
+def multiplicarLista(lista, num):
+        newLista = []
+
+        for x in range(len(lista)):
+                mult = lista[x] * num
+                newLista.append(mult)
+
+        return newLista
+                
+numMult = int(input("Introduce un número entero como multiplicador: "))
+cantidadLista = int(input("¿Cuántos números tiene la lista? "))
+lista = []
+
+for z in range(5):
+        num = int(input(f"Introduce el valor {z + 1} de la lista"))
+        lista.append(num)
+        
+print(f"La lista introducida es {lista} y ha sido multiplicada por {numMult}, dando como resultado {multiplicarLista(lista, numMult)}")
