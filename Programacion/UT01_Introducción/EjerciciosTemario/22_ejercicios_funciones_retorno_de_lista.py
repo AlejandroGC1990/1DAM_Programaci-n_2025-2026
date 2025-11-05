@@ -197,3 +197,37 @@ liNames, liPrecios = cargaLista()
 imprimirNombreYPrecio(liNames, liPrecios)
 imprimirNombreMasCaro(liNames, liPrecios)
 filtroPorPrecio(liNames, liPrecios)
+
+"""
+Ej. 137: Confeccionar un programa que permita:
+1) Cargar una lista de 10 elementos enteros.
+2) Generar dos listas a partir de la primera. En una guardar los valores positivos
+y en otra los negativos.
+3) Imprimir las dos listas generadas.
+"""
+def cargaLista():
+    liNums = []
+    
+    for x in range(10):
+        num = int(input(f"Introduce el número positivo o negativo {x + 1} de la lista: ")) 
+        liNums.append(num)
+
+    return liNums
+
+def asignarLista(liNums):
+    liPos = []
+    liNeg = []
+    
+    for i in range(len(liNums)):
+        if liNums[i] < 0:
+                liNeg.append(liNums[i])
+        else:
+                liPos.append(liNums[i])
+
+    return liPos, liNeg
+
+liNums = cargaLista()
+liPos, liNeg = asignarLista(liNums)
+
+print("Lista de negativos: \n", liNeg)
+print("Lista de positivos: \n", liPos)
