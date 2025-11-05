@@ -137,3 +137,63 @@ imprimirSueldos(lista)
 contarMayoresA4000(lista)
 promedio = calcularPromedio(lista)
 mostrarMenoresPromedio(lista, promedio)
+
+"""
+Ej. 136: Desarrollar una aplicación que permita introducir por teclado los nombres de 5
+artículos y sus precios.
+Definir las siguientes funciones:
+1) Cargar los nombres de articulos y sus precios.
+2) Imprimir los nombres y precios.
+3) Imprimir el nombre de artículo con un precio mayor
+4) Introducir por teclado un importe y luego mostrar todos los artículos con un precio menor
+o igual al valor introducido
+"""
+def cargaLista():
+    liNames = []
+    liPrecios = []
+    
+    for x in range(5):
+        name = input(f"Introduce el nombre del producto {x + 1}: ") 
+        precio = float(input(f"Introduce el precio del producto {x + 1}: "))
+        liNames.append(name)
+        liPrecios.append(precio)
+
+    return liNames, liPrecios
+
+
+def imprimirNombreYPrecio(liNames, liPrecios):
+    print("\nLista de productos y precios:")
+    for i in range(len(liNames)):
+        print(f"{liNames[i]} - {liPrecios[i]}€")
+
+
+def imprimirNombreMasCaro(liNames, liPrecios):
+    mayor = liPrecios[0]
+    indice_mayor = 0
+
+    for s in range(1, len(liPrecios)):
+        if liPrecios[s] > mayor:
+            mayor = liPrecios[s]
+            indice_mayor = s
+
+    print(f"\nEl artículo más caro es '{liNames[indice_mayor]}' con un precio de {liPrecios[indice_mayor]}€")
+
+
+def filtroPorPrecio(liNames, liPrecios):
+    valor = float(input("\nIntroduce un valor para recomendarte artículos más baratos o iguales: "))
+    print(f"\nArtículos con precio menor o igual a {valor}€:")
+
+    encontrado = False
+    for j in range(len(liPrecios)):
+        if liPrecios[j] <= valor:
+            print(f"{liNames[j]} - {liPrecios[j]}€")
+            encontrado = True
+
+    if not encontrado:
+        print("No hay artículos con un precio igual o inferior a ese valor.")
+
+
+liNames, liPrecios = cargaLista()
+imprimirNombreYPrecio(liNames, liPrecios)
+imprimirNombreMasCaro(liNames, liPrecios)
+filtroPorPrecio(liNames, liPrecios)
