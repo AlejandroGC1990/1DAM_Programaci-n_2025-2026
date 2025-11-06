@@ -11,3 +11,21 @@ calcular_sueldo("juan", 10, 120)
 calcular_sueldo(costeHoras = 12, horas = 40, nombre = "ana")
 calcular_sueldo(nombre = "juan", costeHoras = 22, horas = 140 )
 
+"""
+Ej. 141: Cargar una lista de 10 enteros, luego mostrarlos por pantalla a cada elemento separados
+por una coma. 
+"""
+def cargar():
+        lista = []
+        for x in range(10):
+                num = int(input("Introduce un valor numérico entero: "))
+                lista.append(num)
+
+        return lista
+
+def imprimirLista(lista):
+        for y in range(len(lista)):
+                print(lista[y], end = ", ")
+
+lista = cargar()
+imprimirLista(lista)
