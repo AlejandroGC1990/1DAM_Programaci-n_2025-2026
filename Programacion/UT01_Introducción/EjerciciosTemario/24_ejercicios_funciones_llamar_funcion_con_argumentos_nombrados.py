@@ -29,3 +29,25 @@ def imprimirLista(lista):
 
 lista = cargar()
 imprimirLista(lista)
+
+"""
+Ej. 142: Elaborar una función que muestre la tabla de multiplicar del valor que le enviemos
+como parámetro.
+Definir un segundo parámetro llamado termino que por defecto almacene el valor 10.
+Se deben mostrar tantos términos de la tabla de multiplicar como indicque el segundo
+parámetro.
+Llamar a la función desde el bloque principal de nuestro programa con argumentos nombrados.
+ 
+"""
+def tablaMultiplicar(num, terminos = 10):
+        resultados = []
+        for x in range(terminos):
+                resultados.append((x + 1) * num)
+
+        return resultados
+
+
+
+print("Tabla del 3")
+print(tablaMultiplicar(3))
+print(tablaMultiplicar(3, 5))
