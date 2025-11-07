@@ -71,3 +71,49 @@ def mayorSueldo(empleados):
 empleados = carga()
 imprimirSueldo(empleados)
 mayorSueldo(empleados)
+
+"""
+Ej. 154: Se tiene que cargar los votos obtenidos por tres candidatos en unas elecciones.
+En una lista cargar en el primer componente el nombre del candidato y en el segundo componente
+cargar una lista con componentes de tipo tupla con el nombre de la provincia y la cantidad de
+votos obtenidos en dicha provincia.
+Se deben cargar los datos por teclado, pero si se cargaran por asignación tendría una estructura
+similar a esta:
+candidatos = [
+        ("juan",[("cordoba",100),("buenos aires",200)]) ,
+        ("ana", [("cordoba",55)]) ,
+        ("luis", [("buenos aires",20)])
+]
+1) Función para cargar todos los candidatos, sus nombres y las provincias con los votos
+obtenidos.
+2) Imprimir el nombre del candidato y la cantidad total de votos obtenidos en todas las
+provincias.
+ , etc.]
+"""
+def carga():
+        candidatos = []
+        
+        for x in range(3):
+                nombre = input(f"Introduce el nombre del candidato {x + 1}: ")
+                cantidadProv = int(input(f"¿En cuantas provincias ha tenido vostos {nombre}?"))
+
+                provincias = []
+                for s in range(cantidadProv):
+                        provincia = input(f"Introduce el nombre de la provincia {s + 1}")
+                        votos = int(input(f"Introduce la cantidad de votos obtenidos en {provincia}"))
+                        provincias.append((provincia,votos))
+
+                candidatos.append((nombre, provincias))
+                
+        return candidatos
+
+def imprimirCandidatos(candidatos):
+        for y in range(len(candidatos)):
+                votos = 0
+                for z in range(len(candidatos[y][1])):
+                        votos = votos + candidatos[y][1][z][1] 
+
+                print(f"El candidato {candidatos[y][0]} tiene {votos} votos")
+
+candidatos = carga()
+imprimirCandidatos(candidatos)
