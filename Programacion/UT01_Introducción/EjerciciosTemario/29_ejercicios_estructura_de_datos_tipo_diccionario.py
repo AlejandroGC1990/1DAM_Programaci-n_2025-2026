@@ -74,3 +74,37 @@ def consulta_palabra(diccionario):
 diccionario = cargar()
 imprimir(diccionario)
 consulta_palabra(diccionario)
+
+"""
+Ej. 162: Crear un diccionario en Python que defina como clave el número
+de documento de una persona y como valor un string con su nombre.
+Desarrollar las siguientes funciones:
+1) Cargar por teclado los datos de 4 personas.
+2) Listado completo del diccionario.
+3) Consulta del nombre de una persona introduciendo su número de
+documento.
+"""
+def cargar():
+        personas = {}
+        for x in range(4):
+                numero = int(input("Introduce el número de documento: "))
+                nombre = input("Introduce el nombre: ")
+                persona[numero] = nombre
+
+        return personas
+
+def imprimir(personas):
+        print("Listado del diccionario completo")
+        for numero in personas:
+                print(numero, personas[numero])
+
+def consulta_por_numero(personas):
+        nro = int(input("Introduce el número de documento a consultar: "))
+        if nro in personas:
+                print("Nombre de la persona: ", personas[nro])
+        else:
+                print("No existe una persona con dicho número de documento")
+
+personas = cargar()
+imprimir(personas)
+consulta_por_numero(personas)
