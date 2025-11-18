@@ -39,3 +39,51 @@ productos = cargar()
 imprimir(productos)
 consulta(productos)
 listado_stock_cero(productos)
+
+"""
+Ej. 164: Confeccionar una agenda. Utilizar un diccionario cuya clave
+sea la fecha. Permitir almacenar distintas actividades para la misma
+fecha (se introduce la hora y la actividad)
+Implementar las siguientes funciones:
+1) Carga de datos en la agenda.
+2) Listado completo de la agenda.
+3) Consulta de una fecha.
+
+"""
+def cargar():
+        agenda = {}
+        continua1 = "s"
+        while continua1 == "s":
+                fecha = input("Introduce la fecha con formato dd/mm/aa. ")
+                continua2 = "s"
+                lista = []
+                while continua2 == "s":
+                        hora = input("Introduce la hora de la actividad con formato hh:mm ")
+                        actividad = input("Introduce la desccripcion de la actividad: ")
+                        lista.append((hora,actividad))
+                        continua2 = input("Introduce otra actividad para la misma fecha: [s/n]")
+
+                agenda[fecha] = lista
+                continua1 = input("Introduce otra fecha: [s/n]")
+
+        return agenda
+
+def imprimir(agenda):
+    print("Listado completa de la agenda")
+    for fecha in agenda:
+        print("Para la fecha: ", fecha)
+    
+        for hora, actividad in agenda[fecha]:
+            print(hora, actividad)
+
+def consulta_fecha(agenda):
+        fecha = input("Introduce la fecha que desea consultar: ")
+        if fecha in agenda:
+                for hora,actividad in agenda[fecha]:
+                        print(hora, actividad)
+        else:
+                print("No hay actividades agendadas para dicha fecha")
+
+agenda = cargar()
+imprimir(agenda)
+consulta_fecha(agenda)
