@@ -108,3 +108,4 @@ def consulta_por_numero(personas):
 personas = cargar()
 imprimir(personas)
 consulta_por_numero(personas)
+
