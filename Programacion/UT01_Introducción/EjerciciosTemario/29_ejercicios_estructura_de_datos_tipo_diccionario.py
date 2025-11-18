@@ -40,3 +40,37 @@ def imprimirMayor100(productos):
 productos = cargar()
 imprimir(productos)
 imprimirMayor100(productos)
+
+"""
+Ej. 161: Desarrollar una aplicación que nos permita crear un diccionario
+inglés/castellano. La clave es la palabra en inglés y el valor es la
+palabra en castellano.
+Crear las siguientes funciones:
+1) Cargar el diccionario.
+2) Listado completo del diccionario.
+3) Introducir por teclado una palabra en inglés y si existe en el
+diccionario mostrar su traducción.
+"""
+def cargar():
+        diccionario = {}
+        continua = "s"
+        while continua == "s":
+                caste = input("Introduce una palabra en castellano")
+                ing = input("Introduce la palabra en inglés: ")
+                diccionario[ing] = caste
+                continua = input("Quiere cargar otra palabra?:[s/n]")
+        return diccionario
+
+def imprimir(diccionario):
+        print("Listado completo del diccionario")
+        for ingles in diccionario:
+                print(ingles, diccionario[ingles])
+
+def consulta_palabra(diccionario):
+        pal = input("Introduce la palabra en inglés a consultar: ")
+        if pal in diccionario:
+                print("En castellano significa: ", diccionario[pal])
+
+diccionario = cargar()
+imprimir(diccionario)
+consulta_palabra(diccionario)
