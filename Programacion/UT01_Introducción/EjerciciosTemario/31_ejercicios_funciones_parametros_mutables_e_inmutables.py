@@ -57,8 +57,45 @@ def ordenar(nombres):
 
 def imprimir(nombres):
         for a in range(len(nombres)):
-                print(nombres[x], " ", end = "")
+                print(nombres[a], " ", end = "")
 
 nombres = cargar()
 ordenar(nombres)
 imprimir(nombres)
+
+"""
+Ej. 168: Confeccionar un programa que almacene en un diccionario como
+clave el nombre de un contacto y como valor su número telefónico:
+1) Cargar los contactos y su número de teléfono.
+2) Pemitir modificar el número de teléfono. Se introduce el nombre del
+contacto para su búsqueda.
+3) Imprimir la lista completa de contactos con sus números de teléfono.
+
+"""
+def cargar():
+        contactos = {}
+        continua = "s"
+        while continua == "s":
+                nombre = input("Introduce el nombre del contacto: ")
+                telefono = input("Introduce el número de teléfono: ")
+                contactos[nombre] = telefono
+                continua = input("Introduce otro contacto? [s/n]")
+
+        return contactos
+
+def modificar_telefonos(contactos):
+        nombre = input("Introduce el nombre del contacto a modificar el teléfono: ")
+        if nombre in contactos:
+                telefono = input("Introduce el nuevo número de teléfono: ")
+                contactos[nombre] = telefono
+        else:
+                print("No existe un contacto con el nombre ingresado")
+
+def imprimir(contactos):
+        print("Listado de contactos")
+        for nombre in contactos:
+                print(nombre, contactos[nombre])
+
+contactos = cargar()
+modificar_telefonos(contactos)
+imprimir(contactos)
