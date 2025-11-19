@@ -99,3 +99,47 @@ def imprimir(contactos):
 contactos = cargar()
 modificar_telefonos(contactos)
 imprimir(contactos)
+
+"""
+Ej. 169: Crear un diccionario en Python para almacenar los datos de
+empleados de una empresa. La clave será su número de identificación y
+en su valor almacenaremos una lista con el nombre, profesión y sueldo.
+"""
+
+def cargar():
+    empleados = {}
+    continua = "s"
+    while continua == "s":
+        ident = int(input("Introduce el número de identificación: "))
+        nombre = input("Introduce el nombre del empleado: ")
+        profesion = input("Introduce la profesión: ")
+        sueldo = float(input("Introduce el sueldo: "))
+        empleados[ident] = [nombre, profesion, sueldo]
+        continua = input("¿Introducir más empleados? (s/n): ")
+    return empleados
+
+def imprimir(empleados):
+    print("Listado completo de empleados")
+    for ident in empleados:
+        print(ident, empleados[ident][0], empleados[ident][1], empleados[ident][2])
+
+def modificar_sueldo(empleados):
+    ident = int(input("Introduce el número de identificación del empleado: "))
+    if ident in empleados:
+        sueldo = float(input("Introduce el nuevo sueldo: "))
+        empleados[ident][2] = sueldo
+    else:
+        print("No existe un empleado con ese número de identificación")
+
+def imprimir_analistas(empleados):
+    print("Listado de empleados con profesión 'analista de sistemas'")
+    for ident in empleados:
+        if empleados[ident][1].lower() == "analista de sistemas":
+            print(ident, empleados[ident][0], empleados[ident][2])
+
+# Programa principal
+empleados = cargar()
+imprimir(empleados)
+modificar_sueldo(empleados)
+imprimir(empleados)
+imprimir_analistas(empleados)
