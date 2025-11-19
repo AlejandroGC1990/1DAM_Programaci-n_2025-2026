@@ -31,3 +31,34 @@ imprimir(lista)
 fijar_cero(lista)
 print("Lista después de modificar")
 imprimir(lista)
+
+"""
+Ej. 167: Confeccionar un programa que contenga las siguientes funciones:
+1) Cargar una lista de 5 nombres.
+2) Ordenar alfabéticamente la lista.
+3) Imprimir la lista de nombres
+
+"""
+def cargar():
+        nombres = []
+        for x in range(5):
+                nom = input("Introduce un nombre: ")
+                nombres.append(nom)
+
+        return nombres
+
+def ordenar(nombres):
+        for y in range(4):
+                for z in range(4):
+                        if nombres[z] > nombres[z + 1]:
+                                aux = nombres[z]
+                                nombres[z] = nombres[z + 1]
+                                nombres[z + 1] = aux
+
+def imprimir(nombres):
+        for a in range(len(nombres)):
+                print(nombres[x], " ", end = "")
+
+nombres = cargar()
+ordenar(nombres)
+imprimir(nombres)
