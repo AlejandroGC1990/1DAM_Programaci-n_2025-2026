@@ -34,3 +34,33 @@ indice = -1
 for x in range(len(palabra)):
         print(palabra[indice], end = "")
         indice = indice -1
+
+"""
+Ej. 178: Confeccionar un programa con las siguientes funciones:
+1) Cargar una lista con 5 palabras.
+2) Intercambiar la primera palabra con la última.
+3) Imprimir la lista
+
+
+"""
+def cargar():
+        palabras = []
+        for x in range(0,5):
+                pal = input("Introduce una palabra: ")
+                palabras.append(pal)
+
+        return palabras
+
+def intercambiar(palabras):
+        aux = palabras[0]
+        palabras[0] = palabras[-1]
+        palabras[-1] = aux
+
+def imprimir(palabras):
+        print(palabras)
+
+palabras = cargar()
+imprimir(palabras)
+intercambiar(palabras)
+imprimir(palabras)
+        
