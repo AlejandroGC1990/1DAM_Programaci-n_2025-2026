@@ -50,3 +50,30 @@ imprimir(lista)
 mezclar(lista)
 print("La misma lista luego de mezclar")
 imprimir(lista)
+
+"""
+Ej. 181: Confeccionar un programa que genere un número aleatorio entre 1 y 100 y no se muestre.
+El operador debe tratar de adivinar el número introducido.
+Cada vez que introduzcamos un número se mostrara un mensaje "Gano" si es igual al generado o
+"El número aleatorio es mayor" o "El número aleatorio es menor".
+Mostrar cuando gana el jugador cuantos intentos necesitó
+"""
+import random
+
+intentos = 0
+aleatorio = random.randint(1, 100)
+elegido = -1
+print("Intenta adivinar el número que pensé entre el 1 y el 100")
+
+while (elegido != aleatorio):
+        elegido = int(input("Qué número eliges? "))
+        if aleatorio > elegido:
+                print("Pense un valor mayor")
+        else:
+                if aleatorio < elegido:
+                        print("Pense un valor menor")
+
+        intentos += 1
+
+print("Ganaste en", intentos, " intentos")
+        
