@@ -22,3 +22,15 @@ def capicua(cadena):
 capicua("reconocer")
 capicua("casa")
 capicua("kayak")
+
+"""
+Ej. 177: Cargar una cadena de caracteres por teclado. Mostrar la cadena del final al
+principio utilizando subíndices negativos.
+
+
+"""
+palabra = input("Introduce una palabra: ")
+indice = -1
+for x in range(len(palabra)):
+        print(palabra[indice], end = "")
+        indice = indice -1
