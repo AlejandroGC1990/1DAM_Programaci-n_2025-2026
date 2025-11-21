@@ -18,3 +18,28 @@ persona1.imprimir()
 persona2 = Persona()
 persona2.inicializar("Carla")
 persona2.imprimir()
+
+"""
+Ej. 187: Implementar una clase llamada Alumno que tenga como atributos el nombre del alumno
+y su nota. Definir los métodos para inicializar sus atributos, imprimirlos y mostrar un
+mensaje si está regular (nota mayor o igual a 4)
+Definir dos objetos de la clase Alumno.
+"""
+class Alumno:
+    def inicializar(self, nom, nota):
+        self.nombre = nom
+        self.nota = nota
+        
+    def imprimir(self):
+        if self.nota >= 4:
+            print("Regular... Nombre", self.nombre, " -> " , self.nota)
+        else:
+            print("Nombre ", self.nombre, " -> ", self.nota)
+
+alumno1 = Alumno()
+alumno1.inicializar("Pedro", 4)
+alumno1.imprimir()
+
+alumno2 = Alumno()
+alumno2.inicializar("Carla", 1)
+alumno2.imprimir()
