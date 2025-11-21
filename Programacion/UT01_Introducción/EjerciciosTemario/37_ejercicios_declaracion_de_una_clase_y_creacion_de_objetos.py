@@ -43,3 +43,27 @@ alumno1.imprimir()
 alumno2 = Alumno()
 alumno2.inicializar("Carla", 1)
 alumno2.imprimir()
+
+"""
+Ej. 188: Confeccionar una clase que permita carga el nombre y la edad de una persona. Mostrar
+los datos cargados. Imprimir un mensaje si es mayor de edad (edad >= 18)
+
+"""
+class Persona:
+    def inicializar(self, nom, edad):
+        self.nombre = nom
+        self.edad = edad
+        
+    def imprimir(self):
+        if self.edad >= 18:
+            print("Mayor de edad -> Nombre", self.nombre, " -> " , self.edad)
+        else:
+            print("Nombre ", self.nombre, " -> ", self.edad)
+
+persona1 = Persona()
+persona1.inicializar("Pedro", 4)
+persona1.imprimir()
+
+persona2 = Persona()
+persona2.inicializar("Carla", 18)
+persona2.imprimir()
