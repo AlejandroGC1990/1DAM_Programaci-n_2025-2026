@@ -96,3 +96,80 @@ class Alumnos:
 
 alumno = Alumnos()
 alumno.menu()
+
+"""
+Ej. 196: Confeccionar una clase que administre una agenda personal. Se debe almacenar el nombre
+de la persona, teléfono y mail.
+Debe mostrar un menú con las siguientes opciones:
+1- Carga de un contacto en la agenda.
+2- Listado completo de la agenda.
+3- Consulta ingresando el nombre de la persona.
+4- Modificación de su teléfono y mail.
+5- Finalizar programa.
+
+"""
+class Agenda:
+    def __init__(self):
+        self.contactos = {}
+
+    def menu(self):
+        option = 0
+        while option != 5:
+            print("\n1- Cargar un contacto en la agenda")
+            print("2- Listado completo de la agenda")
+            print("3- Consulta introduciendo el nombre de la persona")
+            print("4- Modificación del teléfono y mail")
+            print("5- Finalizar programa")
+            option = int(input("Introduce una opción: "))
+            if option == 1:
+                self.cargar()
+            elif option == 2:
+                self.listado()
+            elif option == 3:
+                self.consultar()
+            elif option == 4:
+                self.modificaciones()
+            elif option == 5:
+                print("Programa finalizado.")
+            else:
+                print("Opción no válida.")
+
+    def cargar(self):
+        nombre = input("Introduce el nombre de la persona: ")
+        telefono = input("Introduce el número de la persona: ")
+        mail = input("Introduce el mail de la persona: ")
+        self.contactos[nombre] = (telefono, mail)
+        print("Contacto agregado correctamente.")
+        print("_____________________________")
+        
+    def listado(self):
+        print("_____________________________")
+        print("Listado completo de la agenda: ")
+        for nombre in self.contactos:
+            print(nombre, self.contactos[nombre][0], self.contactos[nombre][1])
+        print("_____________________________")
+
+    def consultar(self):
+        print("_____________________________")
+        nombre = input("Introduce el nombre de la persona a consultar: ")
+        if nombre in self.contactos:
+            print(nombre, "su teléfono es", self.contactos[nombre][0], "y su mail es", self.contactos[nombre][1])
+        else:
+            print("No existe un contacto con ese nombre")
+        print("_____________________________")
+
+    def modificaciones(self):
+        print("_____________________________")
+        nombre = input("Introduce el nombre de la persona a modificar el teléfono y mail: ")
+        if nombre in self.contactos:
+            telefono = input("Introduce el nuevo teléfono: ")
+            mail = input("Introduce el nuevo mail: ")
+            self.contactos[nombre] = (telefono, mail)
+            print("Contacto modificado correctamente.")
+        else:
+            print("No existe un contacto con ese nombre")
+        print("_____________________________")
+
+
+agenda = Agenda()
+agenda.menu()
