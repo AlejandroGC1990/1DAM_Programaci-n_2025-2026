@@ -75,3 +75,38 @@ class Cuadrado:
 cuadrado1 = Cuadrado()
 cuadrado1.mostrar_perimetro()
 cuadrado1.mostrar_superficie()
+
+"""
+Ej. 193: Implementar la clase Operaciones. Se deben cargar dos valores enteros por teclado
+en el método __init__, calcular su suma, resta, multiplicación y división, cada una en un
+método, imprimir dichos resultados.
+
+"""
+class Operaciones:
+    def __init__(self):
+        self.valor1 = int(input("Introduce el primer valor: "))
+        self.valor2 = int(input("Introduce el segundo valor: "))
+
+    def sumar(self):
+        suma = self.valor1 + self.valor2
+        print("La suma de los 2 valores es: ", suma)
+
+    def restar(self):
+        resta = self.valor1 - self.valor2
+        print("La resta de los 2 valores es: ", resta)
+
+    def multiplicar(self):
+        multi = self.valor1 * self.valor2
+        print("La multiplacicón de los 2 valores es: ", multi)
+
+    def dividir(self):
+        div = self.valor1 / self.valor2
+        print("La división de los 2 valores es: ", div)
+
+
+  
+operacion1 = Operaciones()
+operacion1.sumar()
+operacion1.restar()
+operacion1.multiplicar()
+operacion1.dividir()
