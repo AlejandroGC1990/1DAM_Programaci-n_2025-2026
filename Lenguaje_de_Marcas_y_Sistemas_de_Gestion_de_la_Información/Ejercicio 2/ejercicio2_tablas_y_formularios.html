@@ -7,7 +7,7 @@
   <body>
     <h1>Ejemplos del Tema 2: Tablas y Formularios</h1>
 
-    <!--      TABLAS BÁSICAS       -->
+    <!-- Tabla básica -->
     <h2>1. Tabla básica</h2>
 
     <table border="1">
@@ -27,5 +27,174 @@
         <td>2</td>
       </tr>
     </table>
+
+    <!-- ========================= -->
+    <!--  CELLPADDING & CELLSPACING -->
+    <!-- ========================= -->
+    <h2>2. Tabla con cellpadding y cellspacing</h2>
+
+    <table border="3" cellpadding="10" cellspacing="10" bordercolor="blue">
+      <tr>
+        <td>Celda A</td>
+        <td>Celda B</td>
+      </tr>
+      <tr>
+        <td>Celda C</td>
+        <td>Celda D</td>
+      </tr>
+    </table>
+
+    <!-- ========================= -->
+    <!--         COLORES           -->
+    <!-- ========================= -->
+    <h2>
+      3. Tabla con colores y <code>&lt;thead&gt;</code>,
+      <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>
+    </h2>
+
+    <table border="2" width="500">
+      <caption>
+        Título de la tabla
+      </caption>
+
+      <thead bgcolor="#cccccc">
+        <tr>
+          <th>Color 1</th>
+          <th>Color 2</th>
+          <th>Color 3</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr bgcolor="pink">
+          <td>Pink</td>
+          <td>Pink</td>
+          <td>Pink</td>
+        </tr>
+
+        <tr bgcolor="#00ffcc">
+          <td>Turquesa</td>
+          <td>Turquesa</td>
+          <td>Turquesa</td>
+        </tr>
+
+        <tr bgcolor="yellow">
+          <td>Amarillo</td>
+          <td>Amarillo</td>
+          <td>Amarillo</td>
+        </tr>
+      </tbody>
+
+      <tfoot bgcolor="#dddddd">
+        <tr>
+          <td colspan="3" align="center">Pie</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- ========================= -->
+    <!--      ROWSPAN & COLSPAN    -->
+    <!-- ========================= -->
+    <h2>4. Tabla con <code>colspan</code> y <code>rowspan</code></h2>
+
+    <table border="2">
+      <tr>
+        <th colspan="3">Asignaturas de 1º DAM</th>
+      </tr>
+
+      <tr>
+        <td rowspan="2">Programación</td>
+        <td>Java</td>
+        <td>POO</td>
+      </tr>
+
+      <tr>
+        <td>Python</td>
+        <td>Estructuras</td>
+      </tr>
+
+      <tr>
+        <td>Bases de datos</td>
+        <td colspan="2">SQL y diseño relacional</td>
+      </tr>
+    </table>
+
+    <!-- ========================= -->
+    <!--         FORMULARIOS       -->
+    <!-- ========================= -->
+    <h1>Formularios</h1>
+
+    <h2>5. Formulario simple con texto</h2>
+
+    <form action="procesar.php" method="post">
+      Nombre: <input type="text" name="nombre" /><br /><br />
+      Apellido: <input type="text" name="apellido" /><br /><br />
+      Sueldo: <input type="text" name="sueldo" /><br /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <h2>6. Inputs de diferentes tipos</h2>
+
+    <form>
+      Texto: <input type="text" name="texto" /><br /><br />
+      Contraseña: <input type="password" name="clave" /><br /><br />
+
+      Checkbox:<br />
+      <input type="checkbox" name="deporte" value="futbol" /> Fútbol<br />
+      <input type="checkbox" name="deporte" value="tenis" /> Tenis<br /><br />
+
+      Radio:<br />
+      <input type="radio" name="genero" value="h" checked /> Hombre<br />
+      <input type="radio" name="genero" value="m" /> Mujer<br /><br />
+
+      Botones:<br />
+      <input type="submit" value="Enviar" /><br />
+      <input type="reset" value="Limpiar" /><br />
+      <input type="button" value="Botón" /><br /><br />
+    </form>
+
+    <h2>7. Área de texto &lt;textarea&gt;</h2>
+
+    <form>
+      Comentarios:<br />
+      <textarea name="comentarios" cols="50" rows="6">Escribe aquí...</textarea>
+    </form>
+
+    <h2>8. Lista desplegable &lt;select&gt;</h2>
+
+    <form>
+      Ciudad:
+      <select name="ciudad">
+        <option value="buenosaires">Buenos Aires</option>
+        <option value="madrid" selected>Madrid</option>
+        <option value="asuncion">Asunción</option>
+        <option value="lima">Lima</option>
+      </select>
+    </form>
+
+    <!-- ========================= -->
+    <!--      FIELDSET & LEGEND    -->
+    <!-- ========================= -->
+    <h2>9. Fieldset y Legend</h2>
+
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        Nombre: <input type="text" name="n1" /><br /><br />
+        Apellido: <input type="text" name="a1" /><br /><br />
+        Edad: <input type="text" name="e1" /><br /><br />
+
+        Ciudad:
+        <select name="ciudad">
+          <option value="valencia">Valencia</option>
+          <option value="sevilla">Sevilla</option>
+          <option value="zaragoza">Zaragoza</option>
+        </select>
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Registrar" />
+    </form>
   </body>
 </html>
