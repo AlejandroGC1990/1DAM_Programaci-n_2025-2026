@@ -28,3 +28,42 @@ def mostrar_ticket(cesta_compra):
 mi_cesta = gestionar_cesta()
 mostrar_ticket(mi_cesta)
 """"""
+"""
+Crear un programa que converta un número entero (mayor que 1 y menor o igual que 1000) a
+número romano
+"""
+
+
+def convertir_a_romano(numero):
+    if not (1 <= numero <= 1000):
+        return "Error: El número debe ser igual o mayor que 1 y menor o igual a 1000."
+
+    valores = [
+        (1000, "M"),
+        (900, "CM"),
+        (500, "D"),
+        (400, "CD"),
+        (100, "C"),
+        (90, "XC"),
+        (50, "L"),
+        (40, "XL"),
+        (10, "X"),
+        (9, "IX"),
+        (5, "V"),
+        (4, "IV"),
+        (1, "I"),
+    ]
+
+    resultado = ""
+
+    for valor_entero, simbolo_romano in valores:
+        while numero >= valor_entero:
+            resultado += simbolo_romano
+            numero -= valor_entero
+
+    return resultado
+
+
+numero = int(input("Introduce un número entero entre el 1 y el 1000: "))
+romano = convertir_a_romano(numero)
+print(f"El número {numero} en romano es: {romano}")
