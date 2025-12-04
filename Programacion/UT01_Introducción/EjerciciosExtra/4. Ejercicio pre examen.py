@@ -67,3 +67,54 @@ def convertir_a_romano(numero):
 numero = int(input("Introduce un número entero entre el 1 y el 1000: "))
 romano = convertir_a_romano(numero)
 print(f"El número {numero} en romano es: {romano}")
+
+"""
+escribir un programa que solicite una cantidad de dinero y calcule el mejor desglose de
+moneda utilizando el mínimo número de billetes y monedas. Usar una tupla para guardar los
+distintos billetes y monedas que existen. Monedas y billetes:
+
+-billetes: 500€, 200€, 100€, 50€, 20€, 10€, 5€.
+-monedas: 2€, 1€, 0.5€, 0.20€, 0.10€, 0.05€, 0.02€, 0.01€
+"""
+def desglosar_dinero():
+
+    sistema_monetario = (
+        500,
+        200,
+        100,
+        50,
+        20,
+        10,
+        5,
+        2,
+        1,
+        0.50,
+        0.20,
+        0.10,
+        0.05,
+        0.02,
+        0.01,
+    )
+
+    entrada = float(input("Introduce la cantidad de dinero (ej. 137.56): "))
+
+    cantidad_centimos = int((entrada * 100) + 0.001)
+
+    print(f"--- Desglose para {entrada} euros ---")
+
+    for valor in sistema_monetario:
+        valor_centimos = int((valor * 100) + 0.001)
+
+        if cantidad_centimos >= valor_centimos:
+            num_unidades = cantidad_centimos // valor_centimos
+
+            cantidad_centimos = cantidad_centimos % valor_centimos
+
+            if num_unidades > 0:
+                if valor >= 5:
+                    print(f"{num_unidades} billetes de {valor} euros")
+                else:
+                    print(f"{num_unidades} monedas de {valor} euros")
+
+
+desglosar_dinero()
