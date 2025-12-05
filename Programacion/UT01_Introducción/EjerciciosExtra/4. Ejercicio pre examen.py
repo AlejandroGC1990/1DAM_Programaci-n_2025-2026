@@ -161,3 +161,112 @@ def mostrar_informacion(lista_tuplas):
 
 datos = gestionar_clima()
 mostrar_informacion(datos)
+
+"""
+Escribe un programa que utilice un diccionario para almacenar el inventario de una tienda.
+1.La Clave del diccionario será el Código del Producto (un número entero).
+2.El Valor asociado a esa clave será una Lista con tres datos: [Nombre, Precio, Cantidad].
+    -Ejemplo visual de la estructura: { 101: ["Ratón", 15.50, 10], 102: ["Teclado", 20.00, 5] }.
+
+El programa debe tener un menú (controlado por un bucle) con estas funciones:
+-Añadir Producto: Pide los datos. Si el código ya existe, avisa del error.
+-Actualizar Stock: Pide el código y la nueva cantidad. Modifica solo la cantidad en la lista del producto.
+-Listar Inventario: Muestra una tabla bonita con todos los productos.
+-Valor del Almacén: Calcula cuánto dinero hay invertido en total (suma de Precio * Cantidad de todos los productos).
+"""
+
+
+def añadirProducto(inventario):
+    try:
+        codigo = int(input("Introduce el c'odigo del producto nuevo (n'umero): "))
+
+        if codigo in inventario:
+            print("Error!! Ese c'odigo ya existe en el inventario")
+        else:
+            nombre = input("Nombre del producto: ")
+            precio = float(input("Precio del producto: "))
+            cantidad = int(input("Cantidad del producto en el almac'en: "))
+
+            inventario[codigo] = [nombre, precio, cantidad]
+            print("Producto a;adido correctamente")
+
+    except ValueError:
+        print("Error: El c'odigo, precio y cantidad deben ser num'ericos")
+
+
+def actualizar_stock(inventario):
+    try:
+        codigo = int(input("Introduce el c'odigo del producto a actualizar: "))
+
+        if codigo in inventario:
+            stock_actual = inventario[codigo][2]
+            print(f"El stock actual de {inventario[codigo][0]} es: {stock_actual}")
+
+            nuevo_stock = int(input("Introduce la nueva cantidad total: "))
+
+            inventario[codigo][2] = nuevo_stock
+        else:
+            print("El producto no existe.")
+    except ValueError:
+        print("Error: Introduce un código numérico.")
+
+
+def listar_inventario(inventario):
+    print("\n--- INVENTARIO ACTUAL ---")
+    print(f"{'CODIGO':<15} | {'NOMBRE':<6} | {'PRECIO':<6} | {'STOCK':<6}")
+    print("_" * 45)
+
+    for codigo in inventario:
+        datos = inventario[codigo]
+        nombre = datos[0]
+        precio = datos[1]
+        stock = datos[2]
+
+        print(f"{codigo:<15} | {nombre:<6} | {precio:<6} | {stock:<6}")
+
+
+def calcular_valor_almacen(inventario):
+    valor_total = 0.0
+
+    for codigo in inventario:
+        precio = inventario[codigo][1]
+        cantidad = inventario[codigo][2]
+
+        valor_total = valor_total + (precio * cantidad)
+
+    print(f"\n Valor total del stock en el almac'en: {valor_total}")
+
+
+def menu():
+    almacen = {}
+
+    opcion = 0
+
+    while opcion != 5:
+        print("\n --- GESTIO'ON DEL ALMAC'EN ---")
+        print("1. Añadir producto. ")
+        print("2. Actualizar stock. ")
+        print("3. Listar inventario. ")
+        print("4. Valor total del almacén. ")
+        print("5. Salir. ")
+
+        try:
+            opcion = int(input("Introduce una opci'on: "))
+
+            if opcion == 1:
+                añadirProducto(almacen)
+            elif opcion == 2:
+                actualizar_stock(almacen)
+            elif opcion == 3:
+                listar_inventario(almacen)
+            elif opcion == 4:
+                calcular_valor_almacen(almacen)
+            elif opcion == 5:
+                print("Saliendo...")
+            else:
+                print("Opci'on incorrecta.")
+        except ValueError:
+            print("Error: Debes introducir un número.")
+
+
+menu()
