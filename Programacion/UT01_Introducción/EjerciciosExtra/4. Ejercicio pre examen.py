@@ -118,3 +118,46 @@ def desglosar_dinero():
 
 
 desglosar_dinero()
+
+"""
+Escribe un programa que pida al usuario el nombre de una ciudad, su temperatura máxima y su temperatura mínima.
+-Debes guardar esos tres datos en una tupla (ciudad, max, min).
+-Esa tupla debes guardarla en una lista general.
+-Repetir hasta que el usuario decida parar.
+-Al final, recorre la lista y muestra los datos formateados, calculando la temperatura media de cada ciudad.
+"""
+
+
+def gestionar_clima():
+    registros_climaticos = []
+    continuar = "s"
+
+    print("---ESTACIÓN DE METEOROLOGÍA---")
+
+    while continuar.lower() == "s":
+        ciudad = input("Introduce el nombre de la ciudad: ")
+        tempMax = float(input("Introduce la temperatura m'axima: "))
+        tempMin = float(input("Introduce la temperatura minima: "))
+
+        datosCiudad = (ciudad, tempMax, tempMin)
+
+        registros_climaticos.append(datosCiudad)
+
+        continuar = input("Quieres introducir otra ciudad m'as? ")
+
+    return registros_climaticos
+
+
+def mostrar_informacion(lista_tuplas):
+    print("\n--- INFORME DEL TIEMPO ---")
+    print(f"{'ciudad':<15} | {'max':<6} | {'min':<6} | {'media':<6}")
+    print("-" * 45)
+
+    for ciudad, maxima, minima in lista_tuplas:
+        media = (maxima + minima) / 2
+
+        print(f"{ciudad:<15} | {maxima:<6} | {minima:<6} | {media:<6}")
+
+
+datos = gestionar_clima()
+mostrar_informacion(datos)
