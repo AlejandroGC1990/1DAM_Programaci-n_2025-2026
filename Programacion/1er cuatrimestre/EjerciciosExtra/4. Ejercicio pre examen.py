@@ -174,8 +174,6 @@ El programa debe tener un menú (controlado por un bucle) con estas funciones:
 -Listar Inventario: Muestra una tabla bonita con todos los productos.
 -Valor del Almacén: Calcula cuánto dinero hay invertido en total (suma de Precio * Cantidad de todos los productos).
 """
-
-
 def añadirProducto(inventario):
     try:
         codigo = int(input("Introduce el c'odigo del producto nuevo (n'umero): "))
