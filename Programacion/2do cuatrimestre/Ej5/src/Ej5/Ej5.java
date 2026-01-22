@@ -1,30 +1,34 @@
-/*Se introducen tres notas de un alumno, si el promedio es 
- * mayor o igual a siete mostrar un mensaje "Promocionado".*/
-
 package Ej5;
+/*Realizar un programa que lea por teclado dos números, si el
+ * primero es mayor al segundo mostrar su suma y diferencia, 
+ * en caso contrario mostrar el producto y la división del 
+ * primero respecto al segundo. * */
 
 import java.util.Scanner;
 
 public class Ej5 {
-	public static void main(String [] ar) {
-		Scanner teclado = new Scanner(System.in);
-		float num1, num2, num3, promedio;
-		
-		System.out.println("Primera nota: ");
-		num1 = teclado.nextInt();
-		System.out.println("Segundaa nota: ");
-		num2 = teclado.nextInt();
-		System.out.println("Tercera nota: ");
-		num3 = teclado.nextInt();
-		
-		promedio = (num1 + num2 + num3)/3;
-		
-		if (promedio >= 7) {
-			System.out.println("Promociona");
+
+		public static void main(String[] ar) {
+			Scanner teclado = new Scanner(System.in);
+			float num1, num2;
+			
+			System.out.print("Primer número: ");
+			num1 = teclado.nextFloat();
+			System.out.print("Segundo número: ");
+			num2 = teclado.nextFloat();
+			
+			if (num1 > num2) {
+				float suma = num1 + num2;
+				float diferencia = num1 - num2;
+				System.out.print("Suma: " + suma);
+				System.out.print("Resta: " + diferencia);
+			}
+			else {
+				float producto = num1 * num2;
+				float division = num1 / num2;
+				System.out.print("Producto: " + producto);
+				System.out.print("División: " + division);
+			}
+			teclado.close();
 		}
-		
-		System.out.println("El promedio final es: " + promedio);
-	
-		teclado.close();
-	}
 }
