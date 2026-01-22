@@ -12,11 +12,14 @@ public class ej7 {
 		Scanner teclado = new Scanner(System.in);
 		int num;
 		
+		System.out.print("Introduce un numero entero positivo (1-99): ");
+        num = teclado.nextInt();
+		
 		if (num >= 10) {
-			System.out.println("El número tiene 2 díjitos.")
+			System.out.println("El número tiene 2 díjitos.");
 		}
 		else {
-			System.out.println("El número tiene 1 díjito.")			
+			System.out.println("El número tiene 1 díjito.");		
 		}
 	}
 }
