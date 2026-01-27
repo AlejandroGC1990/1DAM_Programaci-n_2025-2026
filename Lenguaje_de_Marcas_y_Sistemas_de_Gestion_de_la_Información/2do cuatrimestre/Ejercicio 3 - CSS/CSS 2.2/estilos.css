@@ -1,0 +1,89 @@
+/* 11 - Definición de hojas de estilo en un archivo externo. */
+body {
+  background-color: #eafadd;
+}
+
+h1 {
+  color: #0000cc;
+  font-family: times new roman;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+p {
+  color: #555555;
+  font-family: verdana;
+  text-align: justify;
+}
+
+/* 12 - Definición de estilos por medio de clases. */
+.resaltado {
+  color: #000000;
+  background-color: #ffff00;
+  font-style: italic;
+}
+
+/* 13 - Definición de estilos por medio de id. */
+
+#cabecera {
+  font-family: Times New Roman;
+  font-size: 30px;
+  text-align: center;
+  color: #0000ff;
+  background-color: #bbbbbb;
+}
+
+/* 14 - Propiedades relacionadas al borde de un elemento HTML (border-width,
+    border-style, border-color) */
+.pregunta {
+  background-color: #ffff00;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.respuesta {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: #000000;
+}
+
+/* 15 - Más propiedades relacionadas al borde de un elemento HTML */
+/* .titulopagina {
+  background-color: #ffffcc;
+  text-align: center;
+  font-family: verdana;
+  font-size: 40px;
+  border-top-width: 1px;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 1px;
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: dotted;
+  border-top-color: #ffaa00;
+  border-right-color: #ff0000;
+  border-bottom-color: #ff0000;
+  border-left-color: #ffaa00;
+} */
+
+/* 16 - Propiedades relacionadas al padding de un elemento HTML. */
+.codigofuente {
+  font-size: 12px;
+  background-color: #ffffcc;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: #ffaa00;
+  padding: 20px;
+}
+
+/* 17 - Propiedades relacionadas al margen de un elemento HTML. */
+p {
+  background-color: #ffffaa;
+  margin: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff0000;
+}
