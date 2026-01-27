@@ -17,16 +17,16 @@ public class ej16 {
 		System.out.print("Introduce las coordenadas Y: ");
 		y = teclado.nextInt();
 		
-		if (x >= 0 && y >= 0) {
+		if (x > 0 && y > 0) {
 			System.out.println("Las coordenadas son del cuadrante 1.");
 		}
-		else if (x > 0 && y < 0) {
+		else if (x < 0 && y > 0) {
 			System.out.println("Las coordenadas son del cuadrante 2.");
 		}
 		else if (x < 0 && y < 0) {
 			System.out.println("Las coordenadas son del cuadrante 3.");
 		}
-		else if (x < 0 && y > 0) {
+		else if (x > 0 && y > 0) {
 			System.out.println("Las coordenadas son del cuadrante 4.");
 		}
 		else {
