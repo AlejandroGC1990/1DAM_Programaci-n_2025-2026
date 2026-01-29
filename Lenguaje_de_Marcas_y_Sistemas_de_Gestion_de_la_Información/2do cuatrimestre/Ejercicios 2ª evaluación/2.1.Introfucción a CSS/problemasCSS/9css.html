@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Lenguajes de Marcas y Sistemas de Gestión de Información - CSS
+    </title>
+    <style>
+      div h1 em {
+        color: #dddddd;
+      }
+      div h2 em {
+        color: #cccccc;
+      }
+      div h3 em {
+        color: #bbbbbb;
+      }
+      div h4 em {
+        color: #aaaaaa;
+      }
+      div h5 em {
+        color: #999999;
+      }
+      div h6 em {
+        color: #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Definición de un estilo en función del contexto.</h2>
+    </header>
+    <main>
+      <p>
+        Definir distintas escalas de grises para los textos contenidos por el
+        elemento "em" que se encuentren contenidos por los elementos
+        h1,h2,h3,h4,h5 y h6. La escala de grises que podemos utilizar es:
+      </p>
+      <h6>color:#dddddd; si está contenido en un h1.</h6> 
+      <h6>color:#cccccc; si está contenido en un h2.</h6>
+      <h6>color:#bbbbbb; etc.</h6>
+      <h6>color:#aaaaaa;</h6>
+      <h6>color:#999999;</h6>
+      <h6>color:#888888;</h6>
+      <p>
+        Aparecen los bloques de más claro a más oscuro (cuando los tres valores
+        son iguales (rojo,verde,azul) estamos en presencia de un gris (salvo el
+        #000000 y el #ffffff))
+      </p>
+      <div>
+        <h1><em>Texto de ejemplo 1</em></h1>
+        <h2><em>Texto de ejemplo 2</em></h2>
+        <h3><em>Texto de ejemplo 3</em></h3>
+        <h4><em>Texto de ejemplo 4</em></h4>
+        <h5><em>Texto de ejemplo 5</em></h5>
+        <h6><em>Texto de ejemplo 6</em></h6>
+      </div>
+    </main>
+  </body>
+</html>
