@@ -50,7 +50,7 @@ p {
 }
 
 /* 15 - Más propiedades relacionadas al borde de un elemento HTML */
-/* .titulopagina {
+.titulopagina {
   background-color: #ffffcc;
   text-align: center;
   font-family: verdana;
@@ -67,12 +67,12 @@ p {
   border-right-color: #ff0000;
   border-bottom-color: #ff0000;
   border-left-color: #ffaa00;
-} */
+}
 
 /* 16 - Propiedades relacionadas al padding de un elemento HTML. */
 .codigofuente {
   font-size: 12px;
-  background-color: #ffffcc;
+  /* background-color: #ffffcc; */
   border-width: 1px;
   border-style: dotted;
   border-color: #ffaa00;
@@ -87,3 +87,4 @@ p {
   border-style: solid;
   border-color: #ff0000;
 }
+
