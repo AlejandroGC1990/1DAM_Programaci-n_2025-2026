@@ -1,0 +1,10 @@
+body {
+  background-image: url("../img/zombies.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+
+#ex {
+  background-color: brown;
+}
