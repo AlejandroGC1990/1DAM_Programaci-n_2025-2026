@@ -1,0 +1,27 @@
+#a {
+  background-color: aquamarine;
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+  margin-top: 1em;
+}
+
+#b {
+  background-color: greenyellow;
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+  margin-top: 2em;
+}
+
+#c {
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+  background-color: yellow;
+  margin-top: 3em;
+}
+
+#a, #b, #c p {
+  text-align: center;
+}
