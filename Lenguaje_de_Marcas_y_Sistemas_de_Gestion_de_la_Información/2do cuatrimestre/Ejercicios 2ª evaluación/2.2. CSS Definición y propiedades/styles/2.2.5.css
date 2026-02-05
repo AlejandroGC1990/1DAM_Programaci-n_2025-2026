@@ -1,0 +1,26 @@
+h1 {
+  border-top-width: 2px;
+  border-right-width: 0px;
+  border-bottom-width: 2px;
+  border-left-width: 0px;
+
+  border-color: blue;
+  border-style: groove;
+}
+
+.titulosecundario {
+  border-top-width: 15px;
+  border-right-width: 5px;
+  border-bottom-width: 15px;
+  border-left-width: 5px;
+
+  border-top-style: solid;
+  border-right-style: groove;
+  border-bottom-style: inset;
+  border-left-style: ridge;
+
+  border-top-color: greenyellow;
+  border-right-color: blue;
+  border-bottom-color: green;
+  border-left-color: yellow;
+}
