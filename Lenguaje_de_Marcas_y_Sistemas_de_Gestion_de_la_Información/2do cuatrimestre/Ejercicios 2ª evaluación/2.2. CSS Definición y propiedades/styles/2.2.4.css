@@ -1,0 +1,23 @@
+h1 {
+  /* border-width: 25px;
+  border-style: outset;
+  border-color: #0000ff; */
+
+  border: #0000ff 25px outset;
+}
+
+h2 {
+  /* border-width: 20px;
+  border-style: solid;
+  border-color: goldenrod; */
+
+  border: goldenrod 20px solid;
+}
+
+h3 {
+  /* border-width: 15px;
+  border-style: inset;
+  border-color: red; */
+
+  border: red 20px inset;
+}
