@@ -1,0 +1,18 @@
+h1,
+h2,
+h3 {
+  border: 1px solid #000;
+  background-color: #f9f9f9;
+}
+
+.margin-h1 {
+  margin: 40px 0px 10px 50px;
+}
+
+.margin-h2 {
+  margin: 20px 100px 20px 10px;
+}
+
+.margin-h3 {
+  margin: 10px 10px 50px 100px;
+}
