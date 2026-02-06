@@ -1,0 +1,7 @@
+.titulo-fondo {
+  background: #cccccc url("../img/onePiece.jpg") no-repeat center;
+  color: rgb(9, 244, 21);
+  padding: 40px;
+  text-align: center;
+  border: 1px solid #000;
+}
