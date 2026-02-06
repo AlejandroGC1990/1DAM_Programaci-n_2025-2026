@@ -1,14 +1,6 @@
-p {
-  background-color: #ddd;
-  margin-bottom: 10px;
-}
-
-.uno {
-  padding: 20px;
-}
-.dos {
-  padding: 10px 40px;
-}
-.cuatro {
-  padding: 5px 15px 10px 30px;
+h1,
+h2,
+h3 {
+  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
 }

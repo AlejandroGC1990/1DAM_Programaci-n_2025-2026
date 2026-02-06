@@ -1,0 +1,17 @@
+p {
+  background-color: #dddddd;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.formato1 {
+  padding: 20px;
+}
+
+.formato2 {
+  padding: 5px 40px;
+}
+
+.formato3 {
+  padding: 10px 5px 30px 60px;
+}
