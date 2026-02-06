@@ -4,28 +4,33 @@
     <title>
       Lenguajes de Marcas y Sistemas de Gestión de Información - CSS
     </title>
-    <link rel="stylesheet" href="../styles/2.2.10.css">
+    <link rel="StyleSheet" href="../styles/2.3.10.css" type="text/css" />
   </head>
   <body>
     <header>
-      <h1>20. Propiedades relacionadas a fuentes (FORMATO RESUMIDO)</h1>
+      <h1>30 - Propiedades relacionadas a la dimensión</h1>
     </header>
-
     <main>
-      <p>
-        Definir formatos reducidos para la propiedad font de los elementos h1,h2
-        y h3. Luego probar con tres títulos los resultados obtenidos.
-      </p>
+      <h2>Ejercicio de párrafos con dimensiones controladas</h2>
       <div>
-        <h1>
-          Summus thalamus brains sit​​, morbo basal ganglia vel maleficia?
-        </h1>
-        <h2>
-          Summus thalamus brains sit​​, morbo basal ganglia vel maleficia?
-        </h2>
-        <h3>
-          Summus thalamus brains sit​​, morbo basal ganglia vel maleficia?
-        </h3>
+        <pre>
+Crear una página HTML que muestre dos párrafos, a uno de ellos aplicarle
+el siguiente estilo:
+    .parrafoestrecho {
+        width:200px;
+        text-align:justify;
+    }
+        </pre>
+        <p>
+          Este es un párrafo normal. Como no tiene definida la propiedad width,
+          su valor por defecto es "auto" y ocupa todo el ancho disponible.
+        </p>
+
+        <p class="parrafoestrecho">
+          Este párrafo tiene aplicado el estilo .parrafoestrecho. Su ancho está
+          limitado a 200 píxeles y su texto aparece justificado, adaptándose
+          exactamente a la dimensión que le hemos asignado.
+        </p>
       </div>
     </main>
   </body>

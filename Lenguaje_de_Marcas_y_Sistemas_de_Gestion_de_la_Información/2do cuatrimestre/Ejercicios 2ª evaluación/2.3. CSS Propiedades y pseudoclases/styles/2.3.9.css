@@ -16,7 +16,7 @@
   padding: 10px;
   text-decoration: none;
   text-align: center;
-  color: #ff0000;
+  color: red;
   border-right: 1px solid blue;
 }
 
@@ -37,13 +37,13 @@
   background-color: #f7f8e8;
   border-bottom: 1px solid #eeeeee;
   text-decoration: none;
-  color: #ff0000;
+  color: red;
   text-align: center;
 }
 
 #menuvertical a:hover {
   background-color: #336699;
-  color: #ffffff;
+  color: white;
 }
 
 #contenido {
