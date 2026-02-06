@@ -9,6 +9,6 @@ a:visited {
 
 a:hover {
   font-size: 24px;
-  background-color: #0cee53;
-  color: #daed0e;
+  background-color: #ffff00;
+  color: red;
 }
