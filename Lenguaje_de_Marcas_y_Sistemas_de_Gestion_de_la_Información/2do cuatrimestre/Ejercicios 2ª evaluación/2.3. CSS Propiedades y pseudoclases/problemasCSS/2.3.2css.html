@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      Lenguajes de Marcas y Sistemas de Gestión de Información - CSS
+    </title>
+    <link rel="StyleSheet" href="../styles/2.2.2.0.css" type="text/css" />
+    <link rel="StyleSheet" href="../styles/2.2.2.2.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="subrayado">Definición de estilos por medio de clases.</h1>
+    </header>
+
+    <main>
+      <pre>
+    PROBLEMA 1
+    Definir en la hoja de estilo estas dos clases: 
+      .subrayado {
+        color:#00aa00; 
+        text-decoration:underline; 
+      } 
+      .tachado { 
+        color:#00aa00;
+        text-decoration:line-through; 
+      } 
+      
+    Luego, en la página html, definir un
+    título con nivel h1 (subrayar todo el título). Seguidamente un párrafo
+    que tenga algunas palabras subrayadas y otras tachadas (utilizar el
+    elemento span para asignar estilos a una palabra)
+      </pre>
+      <p>
+        Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.
+        De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo
+        vel maleficia? De <span class="subrayado">apocalypsi</span> gorger omero
+        undead survivor dictum mauris. Hi mindless mortuis soulless creaturas,
+        imo evil stalking monstra adventus resi dentevil vultus comedat
+        cerebella viventium. Qui animated corpse, cricket bat max brucks
+        terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat
+        <span class="tachado">mortuos comedere carnem</span> virus. Zonbi
+        tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains
+        an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv
+        ingdead.
+      </p>
+      <pre>
+  PROBLEMA2
+  Definir estas dos reglas en la hoja de estilo externa. Luego crear una página
+  HTML que contenga 3 preguntas y 3 respuestas. A cada pregunta y respuesta
+  disponerla en un párrafo distinto. Asignar los estilos .pregunta y .respueta
+    .pregunta {
+      font-family:verdana;
+      font-size:14px;
+      font-style:italic;
+      color:#0000aa;
+    }
+    .respuesta {
+      font-family:verdana;
+      font-size:12px;
+      font-style:normal;
+      text-align:justify;
+      color:#555555;
+    }
+      </pre>
+      <p class="pregunta">
+        Zombies reversus ab inferno, nam malum cerebro. De carne animata corpora
+        quaeritis. Summus sit​​, morbo vel maleficia?
+      </p>
+      <p class="respuesta">De Apocalypsi undead dictum mauris.</p>
+      <p class="pregunta">An hoc incipere Clairvius Narcisse, an ante? Is bello mundi z?</p>
+      <p class="respuesta">In omni memoria patriae religionis sunt diri undead historiarum.</p>
+      <p class="pregunta">
+        De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo
+        vel maleficia?
+      </p>
+      <p class="respuesta">De apocalypsi gorger omero undead survivor dictum mauris.</p>
+    </main>
+  </body>
+</html>
