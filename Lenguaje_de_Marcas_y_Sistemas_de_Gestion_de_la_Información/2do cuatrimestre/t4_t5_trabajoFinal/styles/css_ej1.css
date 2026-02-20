@@ -1,0 +1,32 @@
+.tabla-ejercicio {
+    width: 100%; 
+    border-collapse: collapse; 
+    background-color: #add8e6;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 18px;
+    border: 3px solid #ffff00; 
+}
+
+.tabla-ejercicio td {
+    border: 2px solid #ffff00; 
+    padding: 15px;
+    vertical-align: top;
+    width: 33.33%;
+}
+
+.tabla-ejercicio > tbody > tr > td > ol > li {
+    color: red;
+}
+
+.tabla-ejercicio > tbody > tr + tr > td > a {
+    background-color: #00ff00; 
+    color: #00008b; 
+}
+
+.tabla-ejercicio > tbody > tr > td > ol > li > span {
+    background-color: yellow;
+}
+
+.tabla-ejercicio > tbody > tr + tr > td {
+    color: orange;
+}

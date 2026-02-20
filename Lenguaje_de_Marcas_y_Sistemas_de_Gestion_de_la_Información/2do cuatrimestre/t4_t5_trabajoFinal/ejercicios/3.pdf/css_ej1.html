@@ -1,1 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Eliminada la etiqueta viewport para forzar modo escritorio -->
+    <title>Ejercicio 1: Selectores Avanzados</title>
+    <!-- Asegúrate de que estas rutas sean correctas según tu carpetas -->
+    <link rel="stylesheet" href="../../styles/plantilla.css" />
+    <link rel="stylesheet" href="../../styles/css_ej1.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <a href="../../index.html">⬅ Volver</a>
+      <span>Ej. 1: Selectores</span>
+    </nav>
 
+    <div class="exercise-content">
+      <div class="box enunciado">
+        <h3>Enunciado</h3>
+        <p>Crear una tabla 2x3. Usar <strong>solo</strong> selectores de hijo (>) y adyacente (+) para:</p>
+        <ul>
+          <li>Listas en color rojo.</li>
+          <li>Enlaces de celdas 2.1 y 2.3 con fondo verde.</li>
+          <li>Segundos elementos de lista con fondo amarillo.</li>
+          <li>Texto de la 2ª fila naranja (salvo enlaces).</li>
+        </ul>
+      </div>
+
+      <div class="box solucion">
+        <h3>Resultado:</h3>
+        
+        <!-- Tabla con estructura rígida -->
+        <table class="tabla-ejercicio">
+          <!-- PRIMERA FILA -->
+          <tr>
+            <td>
+              <ol>
+                <li>primero</li>
+                <li><span>segundo</span></li>
+                <li>tercero</li>
+              </ol>
+            </td>
+            <td>
+              <ol>
+                <li>first</li>
+                <li><span>second</span></li>
+                <li>third</li>
+              </ol>
+            </td>
+            <td>
+              <ol>
+                <li>un</li>
+                <li><span>deux</span></li>
+                <li>trois</li>
+              </ol>
+            </td>
+          </tr>
+
+          <!-- SEGUNDA FILA -->
+          <tr>
+            <td>
+              <a href="#">enlace 1</a>
+              <span><p>celda 2.1 <br />párrafo 1</p></span>
+              <p>celda 2.1 <br />párrafo 2</p>
+            </td>
+            <td>
+              <p>celda 2.2 <br />párrafo 1 (fuera span)</p>
+              <span><a href="#">enlace 2</a></span>
+              <p>celda 2.2 <br />párrafo 2</p>
+            </td>
+            <td>
+              <span><p>celda 2.3 <br />párrafo 1</p></span>
+              <p>celda 2.3 <br />párrafo 2</p>
+              <a href="#">enlace 3</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

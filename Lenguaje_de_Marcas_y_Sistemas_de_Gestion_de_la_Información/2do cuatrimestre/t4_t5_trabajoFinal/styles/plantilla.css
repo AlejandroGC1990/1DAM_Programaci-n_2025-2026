@@ -1,0 +1,61 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  min-width: 920px;
+}
+
+.exercise-content {
+  width: 900px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 40px;
+  border: 1px solid #ddd;
+}
+
+.nav-bar {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  min-width: 920px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 40px;
+  font-size: 1rem;
+}
+
+.nav-bar span {
+  margin-left: 20px;
+  color: #bbb;
+}
+
+/* Cajas de Enunciado y Solución */
+.box {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.box.enunciado {
+  background-color: #e8f4fd; 
+  border-left: 5px solid #2965f1;
+}
+
+.box.solucion {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 30px; 
+}
+
+h3 {
+  margin-top: 0;
+  color: #0056b3;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
