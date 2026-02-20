@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Resuelto</title>
+     <link rel="stylesheet" href="estilos.css">
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background: #f4f4f9; }
+        
+        /* Barra de navegación simple */
+        nav { background: #333; color: white; padding: 10px; display: flex; align-items: center; }
+        nav a { color: white; text-decoration: none; font-weight: bold; margin-right: 15px; }
+        
+        .content { padding: 20px; max-width: 800px; margin: 0 auto; }
+        
+        /* Caja del Enunciado */
+        .enunciado {
+            background: #e8f4fd;
+            border-left: 5px solid #2965f1;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        /* Caja del Resultado */
+        .resultado {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Estilo para mostrar código (opcional) */
+        pre {
+            background: #2d2d2d;
+            color: #76ff03;
+            padding: 10px;
+            overflow-x: auto; /* Scroll lateral en móvil si el código es largo */
+            border-radius: 5px;
+        }
+
+        /* Botón para ver el archivo real */
+        .btn-ver {
+            display: inline-block;
+            background: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">⬅ Volver</a>
+        <span>Ejercicio 1: Tablas CSS</span>
+    </nav>
+
+    <div class="content">
+        
+        <!-- SECCIÓN 1: ENUNCIADO -->
+        <div class="enunciado">
+            <h3>📝 Enunciado</h3>
+            <p>Aquí copias el texto del PDF (ej: "Crea una tabla de 2x3 y usa selectores nth-child...").</p>
+            <!-- Puedes poner una captura del enunciado del PDF aquí con <img src="..."> -->
+        </div>
+
+        <!-- SECCIÓN 2: SOLUCIÓN -->
+        <div class="resultado">
+            <h3>💡 Solución</h3>
+            <p>A continuación se muestra una vista previa del resultado o el código:</p>
+            
+            <!-- Opción A: Mostrar el código fuente -->
+            <pre>
+table { 
+   border: 1px solid red; 
+}
+td:nth-child(odd) {
+   background: #eee;
+}
+            </pre>
+
+            <!-- Opción B: Un botón para abrir el ejercicio real en pantalla completa -->
+            <a href="archivos_ejercicios/ejercicio1.html" class="btn-ver" target="_blank">Ver Resultado Ejecutable</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
