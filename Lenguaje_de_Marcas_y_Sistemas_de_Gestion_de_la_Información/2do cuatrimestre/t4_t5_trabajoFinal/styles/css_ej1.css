@@ -16,7 +16,6 @@
 
 /* --- SOLUCIÓN --- */
 /* Requisito: Usar solo selectores child (>) y sibling (+) */
-
 /* a) Items de lista en rojo */
 .tabla-ejercicio > tbody > tr > td > ol > li {
     color: red;
