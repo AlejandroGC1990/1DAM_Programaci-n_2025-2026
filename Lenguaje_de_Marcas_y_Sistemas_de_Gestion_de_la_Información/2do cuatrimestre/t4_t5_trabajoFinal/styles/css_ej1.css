@@ -1,32 +1,40 @@
 .tabla-ejercicio {
-    width: 100%; 
-    border-collapse: collapse; 
-    background-color: #add8e6;
-    font-family: 'Times New Roman', Times, serif; 
-    font-size: 18px;
-    border: 3px solid #ffff00; 
+    width: 800px;
+    border-collapse: collapse;
+    background-color: #b0e0e6;
+    border: 3px solid #ffff00;
+    margin: 20px auto;
+    font-family: 'Times New Roman', serif;
 }
 
 .tabla-ejercicio td {
-    border: 2px solid #ffff00; 
+    width: 33.33%;
     padding: 15px;
     vertical-align: top;
-    width: 33.33%;
+    border: 2px solid #ffff00;
 }
 
+/* --- SOLUCIÓN --- */
+/* Requisito: Usar solo selectores child (>) y sibling (+) */
+
+/* a) Items de lista en rojo */
 .tabla-ejercicio > tbody > tr > td > ol > li {
     color: red;
 }
 
+/* b) Links fondo verde (Solo hijos directos, excluye el anidado en span de la celda 2.2) */
 .tabla-ejercicio > tbody > tr + tr > td > a {
-    background-color: #00ff00; 
-    color: #00008b; 
+    background-color: #00ff00;
+    color: #00008b;
+    text-decoration: underline;
 }
 
+/* c) Span en segunda posición de lista (fondo amarillo) */
 .tabla-ejercicio > tbody > tr > td > ol > li > span {
     background-color: yellow;
 }
 
+/* d) Texto naranja en 2ª fila (tr adyacente) */
 .tabla-ejercicio > tbody > tr + tr > td {
     color: orange;
 }
