@@ -14,14 +14,12 @@
     border: 2px solid #ffff00;
 }
 
-/* --- SOLUCIÓN --- */
-/* Requisito: Usar solo selectores child (>) y sibling (+) */
 /* a) Items de lista en rojo */
 .tabla-ejercicio > tbody > tr > td > ol > li {
     color: red;
 }
 
-/* b) Links fondo verde (Solo hijos directos, excluye el anidado en span de la celda 2.2) */
+/* b) Links fondo verde (solo hijos directos) */
 .tabla-ejercicio > tbody > tr + tr > td > a {
     background-color: #00ff00;
     color: #00008b;
