@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablero {
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #000;
+    margin-top: 20px;
+}
+
+.tablero div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Lógica para casillas blancas y negras */
+/* Filas impares (1, 3, 5, 7): impares blancas, pares negras */
+.tablero div:nth-child(-n+8):nth-child(odd),
+.tablero div:nth-child(n+17):nth-child(-n+24):nth-child(odd),
+.tablero div:nth-child(n+33):nth-child(-n+40):nth-child(odd),
+.tablero div:nth-child(n+49):nth-child(-n+56):nth-child(odd) { background: #fff; }
+
+.tablero div:nth-child(-n+8):nth-child(even),
+.tablero div:nth-child(n+17):nth-child(-n+24):nth-child(even),
+.tablero div:nth-child(n+33):nth-child(-n+40):nth-child(even),
+.tablero div:nth-child(n+49):nth-child(-n+56):nth-child(even) { background: #000; }
+
+/* Filas pares (2, 4, 6, 8): impares negras, pares blancas */
+.tablero div:nth-child(n+9):nth-child(-n+16):nth-child(odd),
+.tablero div:nth-child(n+25):nth-child(-n+32):nth-child(odd),
+.tablero div:nth-child(n+41):nth-child(-n+48):nth-child(odd),
+.tablero div:nth-child(n+57):nth-child(-n+64):nth-child(odd) { background: #000; }
+
+.tablero div:nth-child(n+9):nth-child(-n+16):nth-child(even),
+.tablero div:nth-child(n+25):nth-child(-n+32):nth-child(even),
+.tablero div:nth-child(n+41):nth-child(-n+48):nth-child(even),
+.tablero div:nth-child(n+57):nth-child(-n+64):nth-child(even) { background: #fff; }
+
+/* Color de las fichas */
+.tablero div:nth-child(-n+16) { color: blue; }    
+.tablero div:nth-child(n+49) { color: #ffcc00; }  
