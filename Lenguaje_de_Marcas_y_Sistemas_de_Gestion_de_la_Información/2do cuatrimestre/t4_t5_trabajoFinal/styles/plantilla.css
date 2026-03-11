@@ -4,57 +4,52 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  min-width: 920px;
 }
 
 .exercise-content {
-  width: 900px;
-  margin: 30px auto;
+  width: 95%; 
+  max-width: 1000px; 
+  margin: 20px auto;
   background-color: white;
-  padding: 40px;
+  padding: 20px;
   border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box; 
 }
 
 .nav-bar {
   background-color: #333;
   color: white;
-  padding: 15px 0;
-  min-width: 920px;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .nav-bar a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  margin-left: 40px;
-  font-size: 1rem;
+  margin-right: 20px;
 }
 
-.nav-bar span {
-  margin-left: 20px;
-  color: #bbb;
+/* contenedor para que la tabla no rompa el diseño en móviles */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* scroll horizontal */
 }
 
-.box {
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.box.enunciado {
-  background-color: #e8f4fd;
-  border-left: 5px solid #2965f1;
-}
-
-.box.solucion {
-  border: 1px solid #ccc;
-  background-color: #fff;
-  padding: 30px;
-}
-
-h3 {
-  margin-top: 0;
-  color: #0056b3;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
+/* media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .exercise-content {
+    padding: 15px;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .tabla-ejercicio td {
+    font-size: 0.8rem; 
+    padding: 5px;
+  }
 }
