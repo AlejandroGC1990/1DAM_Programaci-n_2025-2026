@@ -1,41 +1,108 @@
 <!doctype html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio 3: Pseudo-clase nth-child</title>
+    <title>Ejercicio 4: Tablero de Ajedrez</title>
     <link rel="stylesheet" href="../../styles/plantilla.css" />
-    <link rel="stylesheet" href="../../styles/css_ej3.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="../../styles/css_ej4.css" />
+  </head>
+  <body>
     <nav class="nav-bar">
-        <a href="../../index.html">Inicio</a>
-        <span>Ej. 3: nth-child</span>
+      <a href="../../index.html">Inicio</a>
+      <span>Ej. 4: Ajedrez</span>
     </nav>
 
     <div class="exercise-content">
-        <div class="box enunciado">
-            <h3>Enunciado - Ejercicio 3</h3>
-            <p>Usar la pseudo-clase <strong>nth-child</strong> con fórmulas <em>an+b</em> para dar formato a una tabla de 15 celdas:</p>
-            <ul>
-                <li>Pares: color rojo. Impares: color blanco.</li>
-                <li>Múltiplos de 5 (ciclo 5n): subrayados.</li>
-                <li>Posiciones 11 a 15 (a partir del 11): fondo naranja.</li>
-            </ul>
-        </div>
+      <div class="box enunciado">
+        <h3>Enunciado - Ejercicio 4</h3>
+        <p>
+          Diseñar un tablero de ajedrez usando exclusivamente
+          <strong>nth-child</strong> para el formato:
+        </p>
+        <ul>
+          <li>Casillas alternas en blanco y negro.</li>
+          <li>
+            Fichas del Jugador 1 (superiores) en color <strong>azul</strong>.
+          </li>
+          <li>
+            Fichas del Jugador 2 (inferiores) en color
+            <strong>amarillo</strong>.
+          </li>
+        </ul>
+      </div>
 
-        <div class="box solucion">
-            <h3>Resultado:</h3>
-            <div class="table-container">
-                <table class="tabla-ejercicio3">
-                    <tr>
-                        <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
-                        <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
-                        <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
-                    </tr>
-                </table>
-            </div>
+      <div class="box solucion">
+        <h3>Resultado:</h3>
+        <div class="table-container chess-wrapper">
+          <div class="tablero">
+            <div>TORRE</div>
+            <div>CABALLO</div>
+            <div>ALFIL</div>
+            <div>REY</div>
+            <div>REINA</div>
+            <div>ALFIL</div>
+            <div>CABALLO</div>
+            <div>TORRE</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>PEÓN</div>
+            <div>TORRE</div>
+            <div>CABALLO</div>
+            <div>ALFIL</div>
+            <div>REY</div>
+            <div>REINA</div>
+            <div>ALFIL</div>
+            <div>CABALLO</div>
+            <div>TORRE</div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
