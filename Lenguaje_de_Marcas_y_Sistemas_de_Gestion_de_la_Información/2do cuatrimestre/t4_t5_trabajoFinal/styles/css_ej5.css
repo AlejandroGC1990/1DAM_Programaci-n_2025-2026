@@ -1,0 +1,73 @@
+/* 1. Fondo azul claro para todo el documento */
+body {
+    background-color: #add8e6; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* 2. Configuración del título "ENLACES" */
+h1 {
+    display: inline-block; /* Para que el rectángulo se ajuste al texto */
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    transition: all 0.2s;
+}
+
+/* Efecto hover del título: Rectángulo, borde sólido, fondo amarillo, texto rojo */
+h1:hover {
+    background-color: #ffff00;
+    border: 4px solid blue;
+    color: #ff0000;
+}
+
+/* 3. Estructura de la tabla */
+.tabla-enlaces {
+    border: 10px double yellow;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.tabla-enlaces caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Celdas con fondo negro inicial */
+.tabla-enlaces td {
+    background-color: #000000;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #333;
+}
+
+/* 4. Estilos de los ENLACES (Pseudoclases) */
+
+/* Estado inicial: Texto blanco */
+.tabla-enlaces a:link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Para que sea clicable en toda la celda */
+    line-height: 50px;
+}
+
+/* Enlaces visitados: Izquierda Rosa, Derecha Verde */
+.tabla-enlaces td:first-child a:visited {
+    color: #ffc0cb; /* Pink */
+}
+
+.tabla-enlaces td:last-child a:visited {
+    color: #00ff00; /* Green */
+}
+
+/* Al pasar el ratón: Color Naranja */
+.tabla-enlaces a:hover {
+    color: #ffa500 !important;
+}
+
+/* Al pulsar: Color Rojo */
+.tabla-enlaces a:active {
+    color: #ff0000 !important;
+}

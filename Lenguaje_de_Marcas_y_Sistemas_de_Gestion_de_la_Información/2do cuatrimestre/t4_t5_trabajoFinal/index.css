@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-color: #0056b3;
   --css-color: #2965f1;
   --xml-color: #ff6600;
@@ -18,7 +18,7 @@ body {
   background-color: #fff;
 }
 
-/* CABECERA */
+/* CABECERA *//*
 header {
   text-align: center;
   padding: 40px 20px;
@@ -39,7 +39,7 @@ p.subtitle {
   color: #666;
 }
 
-/* GRID DE TARJETAS */
+/* GRID DE TARJETAS *//*
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,7 +47,7 @@ p.subtitle {
   padding: 0 40px 60px 40px;
 }
 
-/* CARDS */
+/* CARDS *//*
 .card {
   background-color: var(--card-bg);
   border: 1px solid #e0e0e0;
@@ -70,7 +70,7 @@ p.subtitle {
   border-left-color: var(--xml-color);
 }
 
-/* EFECTO HOVER */
+/* EFECTO HOVER *//*
 .card:hover {
   transform: translateY(-5px); 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -88,4 +88,109 @@ p.subtitle {
   font-size: 0.95rem;
   color: #666;
   line-height: 1.4;
+}  */
+
+:root {
+  --primary-color: #0056b3;
+  --css-color: #2965f1;
+  --xml-color: #ff6600;
+  --bg-color: #f4f4f9;
+  --card-bg: #ffffff;
+  --text-color: #333;
+}
+
+/* --- ESTILOS BASE --- */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+header {
+  text-align: center;
+  padding: 30px 15px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+/* --- GRID ADAPTABLE --- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 columna en móvil */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- TARJETAS (CARDS) CON TEXTO CENTRADO --- */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 25px;
+  text-decoration: none;
+  color: inherit;
+  
+  /* Centrado del contenido  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Borde lateral de color */
+  border-left: 8px solid #999; 
+  
+  /* Transición suave para el movimiento */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.card.css { border-left-color: var(--css-color); }
+.card.xml { border-left-color: var(--xml-color); }
+
+/* --- EFECTOS DE MOVIMIENTO (Web y Móvil) --- */
+
+/* Al pasar el ratón (Web) o mantener pulsado (Móvil) [cite: 357, 412] */
+.card:hover, .card:active {
+  transform: translateY(-8px) scale(1.02); /* Movimiento hacia arriba y ligero aumento */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+
+/* Efecto visual al hacer click */
+.card:active {
+  transform: translateY(-2px) scale(0.98); /* Pequeño rebote al presionar */
+  transition: 0.1s;
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* --- MEDIA QUERIES (ESCRITORIO) --- */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr; /* 2 columnas en PC */
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas en pantallas grandes */
+  }
 }
