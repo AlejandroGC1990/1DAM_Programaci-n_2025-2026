@@ -1,10 +1,11 @@
 .tabla-ejercicio3 {
-  border-collapse: collapse;
-  margin: 40px auto;
-  background-color: lightblue;
-  border: 3px solid yellow;
-  font-family: "Times New Roman", serif;
-  font-size: 24px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: lightblue;
+    border: 3px solid yellow;
+    font-family: "Times New Roman", serif;
+    font-size: 24px;
+    width: auto;
 }
 
 .tabla-ejercicio3 td {
@@ -13,7 +14,7 @@
     text-align: center;
 }
 
-/* Los elementos pares toman color rojo y los impares color blanco */
+/* 1 */
 .tabla-ejercicio3 td:nth-child(even) {
     color: red;
 }
@@ -22,12 +23,12 @@
     color: white;
 }
 
-/* Los elementos que sean múltiplos de 5 deben aparecer subrayados (Ciclo 5n) */
+/* 2 */
 .tabla-ejercicio3 td:nth-child(5n) {
     text-decoration: underline;
 }
 
-/* Las celdas en posiciones 11, 12, 13, 14 y 15 deben tener fondo naranja */
+/* 3 */
 .tabla-ejercicio3 td:nth-child(n+11) {
     background-color: orange;
 }
