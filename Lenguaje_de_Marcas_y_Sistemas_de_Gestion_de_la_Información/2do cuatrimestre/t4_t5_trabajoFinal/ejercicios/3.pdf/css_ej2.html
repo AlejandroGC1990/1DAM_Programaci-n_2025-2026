@@ -1,98 +1,76 @@
 <!doctype html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio 2: Selectores de Atributos</title>
+    <link rel="stylesheet" href="../../styles/plantilla.css" />
     <link rel="stylesheet" href="../../styles/css_ej2.css" />
-    <link rel="stylesheet" href="../../styles/components/nav.css" />
-  </head>
-  <body>
+</head>
+<body>
     <nav class="nav-bar">
-      <a href="../../index.html">Inicio</a>
-      <span>Ej. 2: DIV</span>
+        <a href="../../index.html">Inicio</a>
+        <span>Ej. 2: DIV y Atributos</span>
     </nav>
 
-    <div align="center">
-      <p>En este primer bloque aparecen tres elementos:</p>
-      <p>Un enlace <a href="https://www.google.com/">GOOGLE</a></p>
-      <p>Una tabla de dimensión 2x2</p>
+    <div class="exercise-content">
+        <div class="box enunciado">
+            <h3>Enunciado - Ejercicio 2</h3>
+            <p>Diseñar una página con tres bloques DIV. Usar <strong>exclusivamente selectores de atributos</strong> para:</p>
+            <ul>
+                <li>Elementos con atributo [align]: subrayado y 30px.</li>
+                <li>Tablas clase 1: texto en rojo.</li>
+                <li>Tablas clase 3: fondo de celdas azul claro.</li>
+                <li>DIV alineados al centro: fondo naranja y enlaces en blanco/negro.</li>
+                <li>Listas tipo "circle": borde azul y fondo azul claro.</li>
+            </ul>
+        </div>
 
-      <table class="clase1" border="1">
-        <caption>
-          TABLA 1
-        </caption>
-        <tr>
-          <td>11111</td>
-          <td>22222</td>
-        </tr>
-        <tr>
-          <td>33333</td>
-          <td>44444</td>
-        </tr>
-      </table>
+        <h3>Resultado:</h3>
+        <div class="box solucion">
+            <div align="center">
+                <p>En este primer bloque aparecen tres elementos:</p>
+                <p>Un enlace <a href="https://www.google.com/">GOOGLE</a></p>
+                <table class="clase1" border="1">
+                    <caption>TABLA 1</caption>
+                    <tr><td>11111</td><td>22222</td></tr>
+                    <tr><td>33333</td><td>44444</td></tr>
+                </table>
+                <p>Una marquesina</p>
+                <marquee>Tercer elemento del primer párrafo</marquee>
+            </div>
 
-      <p>Una marquesina</p>
-      <marquee>Tercer elemento del primer párrafo</marquee>
+            <div>
+                <p>En este segundo bloque aparecen dos elementos:</p>
+                <table class="clase2" border="1">
+                    <caption>TABLA 2</caption>
+                    <tr><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td></tr>
+                </table>
+                <p>Una lista numerada:</p>
+                <ol>
+                    <li>Ejemplo 1</li>
+                    <li>Ejemplo 2</li>
+                    <li>Ejemplo 3</li>
+                </ol>
+            </div>
+
+            <div>
+                <p>En este tercer bloque aparecen tres elementos:</p>
+                <table class="clase3" border="1">
+                    <caption>TABLA 3</caption>
+                    <tr><td>AAA</td><td>BBB</td><td>CCC</td></tr>
+                    <tr><td>AA</td><td>BB</td><td>CC</td></tr>
+                    <tr><td>A</td><td>B</td><td>C</td></tr>
+                </table>
+                <p>Un enlace <a href="https://ubuntu.com/">UBUNTU</a></p>
+                <p>Una lista no numerada:</p>
+                <ul type="circle">
+                    <li>Capítulo 1</li>
+                    <li>Capítulo 2</li>
+                    <li>Capítulo 3</li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div>
-      <p>En este segundo bloque aparecen dos elementos:</p>
-      <p>Una tabla de dimensión 1x5</p>
-
-      <table class="clase2" border="1">
-        <caption>
-          TABLA 2
-        </caption>
-        <tr>
-          <td>A</td>
-          <td>B</td>
-          <td>C</td>
-          <td>D</td>
-          <td>E</td>
-        </tr>
-      </table>
-
-      <p>Una lista numerada:</p>
-      <ol>
-        <li>Ejemplo 1</li>
-        <li>Ejemplo 2</li>
-        <li>Ejemplo 3</li>
-      </ol>
-    </div>
-
-    <div>
-      <p>En este tercer bloque aparecen tres elementos:</p>
-      <p>Una tabla de dimensión 3x3</p>
-
-      <table class="clase3" border="1">
-        <caption>
-          TABLA 3
-        </caption>
-        <tr>
-          <td>AAA</td>
-          <td>BBB</td>
-          <td>CCC</td>
-        </tr>
-        <tr>
-          <td>AA</td>
-          <td>BB</td>
-          <td>CC</td>
-        </tr>
-        <tr>
-          <td>A</td>
-          <td>B</td>
-          <td>C</td>
-        </tr>
-      </table>
-
-      <p>Un enlace <a href="https://ubuntu.com/">UBUNTU</a></p>
-
-      <p>Una lista no numerada:</p>
-      <ul type="circle">
-        <li>Capítulo 1</li>
-        <li>Capítulo 2</li>
-        <li>Capítulo 3</li>
-      </ul>
-    </div>
-  </body>
+</body>
 </html>
