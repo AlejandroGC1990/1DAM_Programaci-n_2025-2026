@@ -1,55 +1,82 @@
+/* --- VARIABLES Y CONFIGURACIÓN BASE --- */
+:root {
+    --primary-color: #0056b3;
+    --css-color: #2965f1;
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+    --nav-bg: #333;
+}
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-  color: #333;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
 }
 
-.exercise-content {
-  width: 95%; 
-  max-width: 1000px; 
-  margin: 20px auto;
-  background-color: white;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-sizing: border-box; 
-}
-
+/* --- COMPONENTES DE NAVEGACIÓN --- */
 .nav-bar {
-  background-color: #333;
-  color: white;
-  padding: 15px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    background-color: var(--nav-bg);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .nav-bar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
-/* contenedor para que la tabla no rompa el diseño en móviles */
+/* --- ESTRUCTURA DE LOS EJERCICIOS --- */
+.exercise-content {
+    width: 95%; 
+    max-width: 1000px; 
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; 
+}
+
+.box {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.box.enunciado {
+    background-color: #e8f4fd;
+    border-left: 5px solid var(--css-color);
+}
+
+/* Caja de solución estándar (blanca) */
+.box.solucion {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
 .table-container {
-  width: 100%;
-  overflow-x: auto; /* scroll horizontal */
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
 }
 
-/* media query para pantallas pequeñas */
-@media (max-width: 600px) {
-  .exercise-content {
-    padding: 15px;
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
-  }
-  
-  .tabla-ejercicio td {
-    font-size: 0.8rem; 
-    padding: 5px;
-  }
+[class^="tabla-"], table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
 }

@@ -1,39 +1,29 @@
 .tabla-ejercicio {
     width: 100%;
-    border-collapse: collapse;
     background-color: #b0e0e6;
     border: 3px solid #ffff00;
-    margin: 20px 0;
-    font-family: 'Times New Roman', serif;
 }
 
 .tabla-ejercicio td {
     width: 33.33%;
-    padding: 10px;
-    vertical-align: top;
     border: 2px solid #ffff00;
-    text-align: center;
 }
 
-.tabla-ejercicio > tbody > tr > td > ol > li {
-    color: red;
-}
+/* 1 */
+.tabla-ejercicio > tbody > tr > td > ol > li { color: red; }
 
+/* 2 */
 .tabla-ejercicio > tbody > tr + tr > td > a {
     background-color: #00ff00;
     color: #00008b;
     padding: 2px 5px;
 }
 
+/* 3 */
 .tabla-ejercicio > tbody > tr > td > ol > li > span {
     background-color: yellow;
     display: inline-block;
 }
 
-.tabla-ejercicio > tbody > tr + tr > td {
-    color: orange;
-}
-
-.tabla-ejercicio > tbody > tr + tr > td > a {
-    text-decoration: underline;
-}
+/* 4 */
+.tabla-ejercicio > tbody > tr + tr > td { color: orange; }

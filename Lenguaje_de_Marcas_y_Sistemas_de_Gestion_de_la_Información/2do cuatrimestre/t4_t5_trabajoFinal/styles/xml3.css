@@ -1,0 +1,27 @@
+numeros,
+letras,
+colores,
+flores,
+animales,
+escritores,
+musicos,
+agenda,
+sistemaSolar {
+  display: block;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+letra,
+color,
+flor,
+animal,
+escritor,
+musico,
+contacto,
+cuerpo {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}

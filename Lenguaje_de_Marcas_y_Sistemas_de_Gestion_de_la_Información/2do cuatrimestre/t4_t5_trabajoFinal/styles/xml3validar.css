@@ -1,0 +1,67 @@
+escritores,
+musicos,
+agenda,
+sistemaSolar,
+flores,
+colores,
+animales {
+  display: block;
+  background-color: #fdfdfd;
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+escritor,
+musico,
+contacto,
+cuerpo,
+flor,
+color,
+animal {
+  display: block;
+  border-left: 4px solid #333;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+nombre,
+nacimiento,
+apodo,
+fechaNacimiento,
+telefonoFijo,
+telefonoMovil,
+planeta,
+satelite {
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+
+nombre::before,
+nacimiento::before,
+apodo::before,
+fechaNacimiento::before {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  color: #888;
+  margin-right: 10px;
+}
+
+
+nombre::before {
+  content: "Nombre:";
+}
+nacimiento::before {
+  content: "Nacimiento:";
+}
+apodo::before {
+  content: "Apodo:";
+}
+fechaNacimiento::before {
+  content: "Fecha Nac:";
+}

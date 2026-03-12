@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5: Facturas XML y CSS</title>
+    <link rel="stylesheet" href="../../styles/plantilla.css" />
+    <link rel="stylesheet" href="../../styles/xml1y2.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <a href="../../index.html">Inicio</a>
+      <span>Ej. 5: Facturas XML/CSS</span>
+    </nav>
+
+    <div class="exercise-content">
+      <div class="box enunciado">
+        <h3>Enunciado - Ejercicios 1 y 2 (XML)</h3>
+        <p>
+          1. Diseñar un documento <strong>facturas.xml</strong> y su
+          <strong>DTD</strong> para una cadena de alimentación.
+        </p>
+        <p>
+          2. Crear una hoja de estilo <strong>CSS</strong> para visualizar las
+          facturas con el formato de colores específico (Fondo rojo, bloques
+          verdes/naranja).
+        </p>
+      </div>
+
+      <h3>Resultado (Simulación Visual):</h3>
+      <div class="box solucion">
+        <div class="xml-preview">
+          <div class="factura-block">
+            <span class="factura-header">FACTURA: 1</span>
+            <span class="cliente-block">CLIENTE: 0011</span>
+            <div class="articulo-container">
+              <span class="art-codigo">ARTICULO: Codigo: 0001</span>
+              <span class="art-nombre">Nombre: PAN</span>
+              <span class="art-cantidad">Cantidad: 2</span>
+              <span class="art-precio">Precio: 3</span>
+            </div>
+          </div>
+
+          <div class="factura-block">
+            <span class="factura-header">FACTURA: 2</span>
+            <span class="cliente-block">CLIENTE: 0055</span>
+            <div class="articulo-container">
+              <span class="art-codigo">ARTICULO: Codigo: 0002</span>
+              <span class="art-nombre">Nombre: AGUA</span>
+              <span class="art-cantidad">Cantidad: 4</span>
+              <span class="art-precio">Precio: 5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Código Técnico:</h3>
+      <div
+        class="box enunciado"
+        style="background-color: #f0f0f0; border-left-color: #333"
+      >
+        <h4>Facturas.dtd</h4>
+        <pre>
+&lt;!ELEMENT facturas (factura*)&gt;
+&lt;!ELEMENT factura (cod_cliente, articulo+)&gt;
+&lt;!ATTLIST factura facturaID CDATA #REQUIRED&gt;
+&lt;!ATTLIST factura num-fac CDATA #IMPLIED&gt;
+&lt;!ELEMENT cod_cliente (#PCDATA)&gt;
+&lt;!ELEMENT articulo (nom_articulo, cantidad, precio)&gt;
+&lt;!ATTLIST articulo cod_articulo CDATA #IMPLIED&gt;
+&lt;!ELEMENT nom_articulo (#PCDATA)&gt;
+&lt;!ELEMENT cantidad (#PCDATA)&gt;F
+&lt;!ELEMENT precio (#PCDATA)&gt;
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>

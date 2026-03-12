@@ -1,34 +1,13 @@
 .tabla-ejercicio3 {
-    border-collapse: collapse;
-    margin: 20px auto;
     background-color: lightblue;
     border: 3px solid yellow;
-    font-family: "Times New Roman", serif;
     font-size: 24px;
-    width: auto;
 }
 
-.tabla-ejercicio3 td {
-    border: 2px solid yellow;
-    padding: 15px 20px;
-    text-align: center;
-}
+.tabla-ejercicio3 td { border: 2px solid yellow; }
 
-/* 1 */
-.tabla-ejercicio3 td:nth-child(even) {
-    color: red;
-}
+.tabla-ejercicio3 td:nth-child(even) { color: red; }
+.tabla-ejercicio3 td:nth-child(odd) { color: white; }
+.tabla-ejercicio3 td:nth-child(5n) { text-decoration: underline; }
+.tabla-ejercicio3 td:nth-child(n+11) { background-color: orange; }
 
-.tabla-ejercicio3 td:nth-child(odd) {
-    color: white;
-}
-
-/* 2 */
-.tabla-ejercicio3 td:nth-child(5n) {
-    text-decoration: underline;
-}
-
-/* 3 */
-.tabla-ejercicio3 td:nth-child(n+11) {
-    background-color: orange;
-}

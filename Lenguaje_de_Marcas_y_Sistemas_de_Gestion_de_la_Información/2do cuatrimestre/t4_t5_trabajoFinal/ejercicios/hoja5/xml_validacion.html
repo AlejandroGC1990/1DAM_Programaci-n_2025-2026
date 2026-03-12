@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 3: Validación XML</title>
+    <link rel="stylesheet" href="../../styles/plantilla.css" />
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="../../index.html">Inicio</a>
+        <span>Ej. 3: Validación de DTDs</span>
+    </nav>
+
+    <div class="exercise-content">
+        <div class="box enunciado">
+            <h3>Enunciado - Ejercicio 3</h3>
+            <p>Identificar y corregir errores estructurales en documentos XML con DTD interna.</p>
+        </div>
+
+        <div class="box solucion">
+            <h3>Archivos Corregidos</h3>
+            <p>Pulsa en cada enlace para ver el XML corregido y validado:</p>
+            <ul style="text-align: left; list-style: none;">
+                <li>📄 <a href="./xmlej3/escritores.xml" target="_blank">Escritores.xml</a> (Orden de elementos corregido [cite: 91])</li>
+                <li>📄 <a href="dtd_07.xml" target="_blank">Musicos.xml</a> (Etiquetas de cierre corregidas [cite: 120])</li>
+                <li>📄 <a href="dtd_08.xml" target="_blank">Agenda.xml</a> (Uso correcto de cardinalidad [cite: 132])</li>
+            </ul>
+        </div>
+
+        <div class="box enunciado" style="background-color: #f9f9f9; border-left-color: #555;">
+            <h4>Resumen Técnico de Correcciones</h4>
+            <ol>
+                <li><strong>Sincronización:</strong> Se ajustaron nombres de etiquetas que no coincidían con la raíz[cite: 57, 59].</li>
+                <li><strong>Secuenciación:</strong> Se respetó el orden estricto definido en la DTD (ej. Nombre antes que Nacimiento)[cite: 91, 92].</li>
+                <li><strong>Formato:</strong> Se eliminaron espacios prohibidos en nombres de etiquetas y se cerraron etiquetas huérfanas[cite: 120].</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

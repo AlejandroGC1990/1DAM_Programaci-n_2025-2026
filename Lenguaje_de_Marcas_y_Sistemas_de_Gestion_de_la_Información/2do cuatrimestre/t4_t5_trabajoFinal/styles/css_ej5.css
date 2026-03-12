@@ -1,32 +1,31 @@
-/* 1. Fondo azul claro para todo el documento */
-body {
-    background-color: #add8e6; 
-    font-family: 'Times New Roman', Times, serif;
+/* --- CONTENEDOR DE LA SOLUCIÓN --- */
+.solucion {
+    background-color: #add8e6 !important; /* Azul claro del PDF  */
     text-align: center;
-    padding-top: 50px;
+    padding: 40px 10px;
 }
 
-/* 2. Configuración del título "ENLACES" */
+/* TÍTULO INTERACTIVO "ENLACES" */
 h1 {
-    display: inline-block; /* Para que el rectángulo se ajuste al texto */
+    display: inline-block;
     padding: 10px 30px;
     margin-bottom: 30px;
-    transition: all 0.2s;
+    font-family: 'Times New Roman', serif;
+    transition: 0.2s;
 }
 
-/* Efecto hover del título: Rectángulo, borde sólido, fondo amarillo, texto rojo */
 h1:hover {
-    background-color: #ffff00;
-    border: 4px solid blue;
-    color: #ff0000;
+    background-color: #ffff00; /* Fondo amarillo [cite: 201] */
+    border: 4px solid blue;    /* Borde sólido azul [cite: 201] */
+    color: #ff0000;            /* Texto rojo [cite: 201] */
 }
 
-/* 3. Estructura de la tabla */
+/* ESTRUCTURA DE LA TABLA */
 .tabla-enlaces {
-    border: 10px double yellow;
-    margin: 0 auto;
+    margin: 0 auto;            /* Centrado horizontal de la tabla */
     border-collapse: separate;
     border-spacing: 5px;
+    border: 8px double yellow; /* Doble borde amarillo solicitado */
 }
 
 .tabla-enlaces caption {
@@ -34,40 +33,33 @@ h1:hover {
     margin-bottom: 10px;
 }
 
-/* Celdas con fondo negro inicial */
+/* CELDAS Y ENLACES */
 .tabla-enlaces td {
-    background-color: #000000;
+    background-color: #000;    /* Fondo negro inicial [cite: 202] */
     width: 150px;
     height: 50px;
-    border: 1px solid #333;
 }
 
-/* 4. Estilos de los ENLACES (Pseudoclases) */
-
-/* Estado inicial: Texto blanco */
-.tabla-enlaces a:link {
-    color: #ffffff;
+.tabla-enlaces a {
+    display: block;            /* Hace clicable toda la celda */
+    line-height: 50px;         /* Centrado vertical del texto */
     text-decoration: none;
     font-weight: bold;
-    display: block; /* Para que sea clicable en toda la celda */
-    line-height: 50px;
 }
 
-/* Enlaces visitados: Izquierda Rosa, Derecha Verde */
-.tabla-enlaces td:first-child a:visited {
-    color: #ffc0cb; /* Pink */
-}
+/* PSEUDOCLASES DE ENLACES [cite: 200] */
 
-.tabla-enlaces td:last-child a:visited {
-    color: #00ff00; /* Green */
-}
+.tabla-enlaces a:link { color: #fff; } /* Texto blanco inicial [cite: 202] */
 
-/* Al pasar el ratón: Color Naranja */
-.tabla-enlaces a:hover {
-    color: #ffa500 !important;
-}
+/* Visitados: Columna 1 (Rosa), Columna 2 (Verde) [cite: 204, 205] */
+.tabla-enlaces td:first-child a:visited { color: #ffc0cb; }
+.tabla-enlaces td:last-child a:visited { color: #00ff00; }
 
-/* Al pulsar: Color Rojo */
-.tabla-enlaces a:active {
-    color: #ff0000 !important;
+/* Interactividad: Naranja al pasar, Rojo al pulsar [cite: 203] */
+.tabla-enlaces a:hover { color: orange !important; }
+.tabla-enlaces a:active { color: red !important; }
+
+/* AJUSTE MÓVIL */
+@media (max-width: 600px) {
+    .tabla-enlaces td { width: 120px; font-size: 0.9rem; }
 }

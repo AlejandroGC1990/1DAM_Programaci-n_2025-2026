@@ -2,36 +2,77 @@
 .solucion {
   background-color: #0bb !important;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .solucion div {
   background-color: #ff0;
   border: 1px solid #000;
+  margin: 15px auto;
+  padding: 20px;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: left;
+}
 
-    margin: 10px;
-  padding: 10px;
+/* ESTILOS DE LAS TABLAS */
+.solucion table {
+  border-collapse: collapse;
+  margin: 10px 0;
 }
 
 /* TABLAS BORDES */
 .clase1 {
-  border-width: 10px;
+  border-width: 10px solid #000;
 }
 .clase2 {
   border-color: #0f0;
 }
 .clase3 {
   border: dotted #f00;
+  margin-left: 10px;
+  margin-right: auto;
 }
 
 /* 1 */
 [align] {
-  text-decoration: underline;
-  font-size: 30px;
+  text-decoration: underline !important;
+  font-size: 30px !important;
+  text-align: center !important;
 }
 
 /* 2 */
-.clase1 td {
-  color: red;
+[class="clase1"] {
+  margin: 15px auto !important;
+  
+  border-style: solid;
+  border-width: 10px !important;
+  border-collapse: separate !important;
+  border-collapse: separate; 
+  border-spacing: 0;
+  border-top-color: #888 !important;
+  border-left-color: #888 !important;
+  border-bottom-color: #434242 !important;
+  border-right-color: #434242 !important;
+}
+
+[class="clase1"] td {
+  margin: 1px;
+  color: red !important;
+  padding: 10px;
+
+  border-style: solid;
+  border-width: 1px !important;
+  border-top-color: #888 !important;
+  border-left-color: #888 !important;
+  border-bottom-color: #434242 !important;
+  border-right-color: #434242 !important;
+}
+
+[class="clase1"] caption {
+  color: red !important;
 }
 
 /* 3 */
