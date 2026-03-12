@@ -11,6 +11,23 @@ personales y otro que los imprima.
  crear un objeto de la clase Empleado y llamar a sus mét
  */
 
-public class t29 {
+import java.util.Scanner;
 
+public class Persona {
+    protected Scanner teclado; 
+    protected String nombre;
+    protected int edad;
+
+    public void cargarDatosPersonales() {
+        teclado = new Scanner(System.in); 
+        System.out.print("Ingrese nombre: ");
+        nombre = teclado.next();
+        System.out.print("Ingrese edad: ");
+        edad = teclado.nextInt();
+    }
+    
+    public void imprimirDatosPersonales() {
+    	System.out.println("Nombre: " + nombre);
+    	System.out.println("Edad: " + edad);
+    }
 }
